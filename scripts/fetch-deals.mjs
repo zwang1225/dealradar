@@ -1,9 +1,17 @@
 // Builds data/deals.json from LCBO's own "on sale"/"clearance" merchandising
 // categories (the real signal — LCBO.dev's price-history/series endpoints
 // are present in the schema but empirically empty, so they're not used here).
-// Also maintains data/price-history.json, a small log scoped to just the
-// on-sale/clearance products, to layer "price dropped" / "at an all-time
-// low we've seen" badges on top once a few days of runs have accumulated.
+//
+// Also maintains data/price-history.json — but scoped to the ENTIRE catalog,
+// not just today's on-sale subset. That's the only way to eventually know a
+// discount: LCBO.dev never exposes a "regular price" field, only the current
+// one, so the only way to learn what a product cost before it went on sale
+// is to have already been recording its price while it wasn't discounted.
+// Scanning all ~6,662 products daily (just sku + price, cheap — no per-
+// product inventory calls) means once a product we've already seen at full
+// price later shows up in a sale category, we can compute a real discount %.
+// Day one, nothing has a prior price yet, so discounts start showing up a
+// few days in, same as the "near all-time low" badge already did.
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
@@ -43,6 +51,15 @@ const PRODUCTS_BY_CATEGORY_QUERY = `
           alcoholPercent
         }
       }
+    }
+  }
+`;
+
+const CATALOG_PRICES_QUERY = `
+  query CatalogPrices($after: String) {
+    products(pagination: { first: 100, after: $after }) {
+      pageInfo { hasNextPage endCursor }
+      edges { node { sku priceInCents } }
     }
   }
 `;
@@ -94,6 +111,16 @@ async function fetchDealProducts(slugs) {
   return bySku;
 }
 
+async function fetchCatalogPrices() {
+  const prices = new Map();
+  await paginateAll(
+    (after) => lcboQuery(CATALOG_PRICES_QUERY, { after }),
+    (data) => data.products,
+    (product) => prices.set(product.sku, product.priceInCents),
+  );
+  return prices;
+}
+
 async function fetchInStockStoreIds(sku) {
   const data = await lcboQuery(INVENTORY_QUERY, { sku });
   return data.product.inventories.edges.map((edge) => edge.node.store.externalId);
@@ -115,28 +142,48 @@ async function main() {
   const dealProducts = await fetchDealProducts(slugs);
   console.log(`Found ${dealProducts.size} distinct deal products`);
 
+  console.log("Scanning full catalog for price history...");
+  const catalogPrices = await fetchCatalogPrices();
+  console.log(`Scanned ${catalogPrices.size} total products`);
+
   const priceHistoryPath = path.join(DATA_DIR, "price-history.json");
   const priceHistory = await readJsonIfExists(priceHistoryPath, {});
+  const previousSnapshot = { ...priceHistory }; // pre-update per-sku refs, read before overwriting below
+
+  for (const [sku, priceInCents] of catalogPrices) {
+    const previous = previousSnapshot[sku];
+    priceHistory[sku] = {
+      // `high` didn't exist in the schema before this change — fall back to
+      // `priceInCents` for entries written by older runs so this migrates
+      // cleanly instead of poisoning the value with Math.max(undefined, x).
+      low: Math.min(previous?.low ?? priceInCents, priceInCents),
+      high: Math.max(previous?.high ?? priceInCents, priceInCents),
+      last: priceInCents,
+      lastSeenAt: new Date().toISOString(),
+    };
+  }
 
   const deals = [];
   for (const product of dealProducts.values()) {
-    const previous = priceHistory[product.sku];
-    const priceDropped = previous ? product.priceInCents < previous.last : false;
-    const historicalLow = previous ? Math.min(previous.low, product.priceInCents) : product.priceInCents;
-    const nearHistoricalLow = previous ? product.priceInCents <= historicalLow * 1.05 : false;
-
-    priceHistory[product.sku] = {
-      low: historicalLow,
-      last: product.priceInCents,
-      lastSeenAt: new Date().toISOString(),
-    };
+    const currentPrice = catalogPrices.get(product.sku) ?? product.priceInCents;
+    const previous = previousSnapshot[product.sku];
+    const priceDropped = previous ? currentPrice < previous.last : false;
+    const nearHistoricalLow = previous ? currentPrice <= priceHistory[product.sku].low * 1.05 : false;
+    // Only claim a discount once we've actually seen a higher price for this
+    // SKU ourselves — never fabricate a "regular price" the API never gave us.
+    const discountPercent =
+      previous && previous.high > currentPrice
+        ? Math.round((1 - currentPrice / previous.high) * 100)
+        : null;
 
     const inStockStoreIds = await fetchInStockStoreIds(product.sku);
 
     deals.push({
       sku: product.sku,
       name: product.name,
-      priceInCents: product.priceInCents,
+      priceInCents: currentPrice,
+      regularPriceInCents: discountPercent !== null ? previous.high : null,
+      discountPercent,
       category: product.primaryCategory,
       thumbnailUrl: product.thumbnailUrl,
       unitVolumeMl: product.unitVolumeMl,
