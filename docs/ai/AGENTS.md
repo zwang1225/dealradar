@@ -12,52 +12,66 @@ tracker later, without breaking the static-data contract the frontend depends on
 
 1. Read this file fully.
 2. Skim [README.md](../../README.md) for product and data-sourcing context.
-3. Note the shape of the project: no backend server, no build step. `index.html`,
-   `app.js`, `style.css` are shipped as-is and read straight out of `data/*.json`.
-4. `data/*.json` is generated output, not hand-authored — see Ground Rules.
+3. Note the shape of the project: Next.js (App Router, TypeScript) frontend
+   under `app/`, entirely client-rendered (no server data fetching, no DB —
+   yet). It reads deal/store data as static JSON from `public/data/`.
+4. `public/data/*.json` is generated output, not hand-authored — see Ground Rules.
 
 ## Ground Rules
 
-- No backend server, no bundler, no framework. Keep the frontend plain
-  HTML/CSS/JS. Don't introduce a build step without discussing it with the
-  user first.
-- `data/*.json` (`deals.json`, `stores.json`, `price-history.json`) is
+- `public/data/*.json` (`deals.json`, `stores.json`, `price-history.json`) is
   generated output — never hand-edit it. Change the generating script instead
   (`scripts/fetch-deals.mjs`, `scripts/fetch-stores.mjs`) and re-run it.
 - Never fabricate a "regular price" or discount. LCBO.dev doesn't expose one —
   discounts must be derived from an observed prior price recorded in
-  `data/price-history.json`. See the comment block at the top of
+  `public/data/price-history.json`. See the comment block at the top of
   `scripts/fetch-deals.mjs` for why.
 - Respect api.lcbo.dev's rate limit (60 req/60s) and fair-use terms (personal
   use, daily polling) — see the README's Data section. The same expectation
   applies to any future retailer API.
 - Keep changes scoped; don't refactor unrelated areas.
+- Pure logic (filtering, sorting, category-tree building, distance calc)
+  lives in `lib/deals.ts` as framework-free functions — keep new logic there
+  rather than inline in components, so it stays easy to reason about and test.
 
 ## Repo Facts
 
-- Static frontend: `index.html` / `app.js` / `style.css`. No build tooling,
-  no `package.json`, no frontend dependencies.
-- Data fetchers: plain Node ESM scripts under `scripts/`, no npm dependencies.
-  Run directly with `node scripts/fetch-stores.mjs`, `node scripts/fetch-deals.mjs`.
+- Frontend: Next.js App Router + TypeScript + React, entirely client-rendered
+  (`app/deal-radar.tsx` is a single `"use client"` component tree — there's
+  no auth, DB, or server logic yet). Styling is one global stylesheet
+  (`app/globals.css`, ported from the pre-Next.js static site) using plain
+  CSS custom properties, not Tailwind.
+- Package manager: npm.
+- Main commands: `npm run dev`, `npm run build`, `npm run typecheck`.
+- Data fetchers: plain Node ESM scripts under `scripts/`, no npm dependencies
+  of their own. Run directly with `node scripts/fetch-stores.mjs`,
+  `node scripts/fetch-deals.mjs`.
 - `scripts/lib/lcbo-client.mjs` is the shared GraphQL client + pagination
   helper both fetch scripts depend on.
 - Scheduled by `.github/workflows/fetch-deals.yml` (daily cron +
   `workflow_dispatch`), which runs both scripts and commits any resulting
-  `data/*.json` diff back to `main`.
+  `public/data/*.json` diff back to `main`. That push auto-deploys via Vercel.
+- Hosting: Vercel, gated by Vercel Authentication (Hobby-tier, zero-code —
+  restricts the live URL to the owning Vercel account since this is a
+  single-user tool, not a public product).
 - No test suite, no lint config in this repo currently.
 
 ## Running Locally
 
-- Open `index.html` directly in a browser, or serve the folder:
-  `python3 -m http.server 8000` (per README).
+- `npm install`, then `npm run dev` and open `http://localhost:3000`.
 - To test the data fetchers locally: `node scripts/fetch-stores.mjs` then
-  `node scripts/fetch-deals.mjs`. This will modify `data/*.json` in your
-  working tree — don't commit a test run unless it's an intentional refresh.
+  `node scripts/fetch-deals.mjs`. This will modify `public/data/*.json` in
+  your working tree — don't commit a test run unless it's an intentional
+  refresh.
 
 ## High-Impact Paths
 
-- `data/*.json` — the frontend's only data source, with no schema validation.
-  A shape change here breaks the UI silently.
+- `public/data/*.json` — the frontend's only data source, with no schema
+  validation. A shape change here breaks the UI silently; keep it in sync
+  with the `Deal`/`Store` types in `lib/deals.ts`.
+- `lib/deals.ts` — shared types and all pure filter/sort/category-tree/
+  distance logic; both `app/deal-radar.tsx` and its child components depend
+  on it.
 - `scripts/lib/lcbo-client.mjs` — shared by both fetch scripts; a bug here
   breaks both.
 - `.github/workflows/fetch-deals.yml` — the only thing keeping data fresh in
@@ -68,10 +82,11 @@ tracker later, without breaking the static-data contract the frontend depends on
 1. Understand the request and impacted files.
 2. Edit only the necessary files.
 3. If touching `scripts/`, run the relevant script locally and confirm
-   `data/*.json` still looks sane.
-4. If touching `app.js`, open `index.html` in a browser and manually exercise
-   the changed flow — there's no test suite to lean on.
-5. Report: what changed, why, and what was validated.
+   `public/data/*.json` still looks sane.
+4. If touching `app/` or `lib/`, run `npm run dev` and manually exercise the
+   changed flow in a browser — there's no test suite to lean on.
+5. Run `npm run typecheck` before considering a change done.
+6. Report: what changed, why, and what was validated.
 
 ## Skills Folder
 

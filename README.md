@@ -2,13 +2,16 @@
 
 A deals/stock tracker, currently scoped to LCBO (Ontario) but meant to
 grow into a general multi-retailer tracker over time (e.g. Best Buy and
-others) — hence the name isn't liquor-specific. Static frontend (plain
-HTML/CSS/JS), no backend server.
+others) — hence the name isn't liquor-specific. Next.js (App Router,
+TypeScript) frontend, entirely client-rendered — no auth or database yet.
+Deployed on Vercel, gated by Vercel Authentication since this is a
+single-user tool, not a public product.
 
-**Today**: LCBO only. The data layer (`scripts/`, `data/*.json`) and the
-frontend's filtering/sorting are LCBO-shaped for now; extending to another
-retailer means adding its own fetch script + a shared/normalized deal
-shape, not a rewrite of the UI.
+**Today**: LCBO only. The data layer (`scripts/`, `public/data/*.json`) and
+the frontend's filtering/sorting are LCBO-shaped for now; extending to
+another retailer means adding its own fetch script + a shared/normalized
+deal shape, not a rewrite of the UI. See
+[`docs/ai/skills/adding-a-retailer/SKILL.md`](docs/ai/skills/adding-a-retailer/SKILL.md).
 
 ## Data
 
@@ -17,17 +20,17 @@ LCBO-affiliated) GraphQL API — no auth required. It doesn't allow CORS
 from the browser and rate-limits to 60 req/60s per IP, so a scheduled
 GitHub Action (`.github/workflows/fetch-deals.yml`, daily) does the
 fetching server-side and commits static JSON, which the frontend reads
-directly (no API calls from the browser at all):
+directly as a static asset (no API calls from the browser at all):
 
-- `scripts/fetch-stores.mjs` → `data/stores.json` — every LCBO store's
-  location. The frontend uses the browser's Geolocation API + client-side
-  distance calculation to find your nearest store; prices are the same
-  everywhere in Ontario, only stock varies by store.
-- `scripts/fetch-deals.mjs` → `data/deals.json` — pulls LCBO's own
+- `scripts/fetch-stores.mjs` → `public/data/stores.json` — every LCBO
+  store's location. The frontend uses the browser's Geolocation API +
+  client-side distance calculation to find your nearest store; prices are
+  the same everywhere in Ontario, only stock varies by store.
+- `scripts/fetch-deals.mjs` → `public/data/deals.json` — pulls LCBO's own
   official "on sale"/"clearance" merchandising categories (the real
   signal; the API's price-history endpoints exist in its schema but are
-  currently unpopulated). Also maintains `data/price-history.json`, a
-  small log of our own, to add "price dropped" / "at an all-time low"
+  currently unpopulated). Also maintains `public/data/price-history.json`,
+  a small log of our own, to add "price dropped" / "at an all-time low"
   badges once a few days of runs have accumulated.
 
 Per api.lcbo.dev's [terms of service](https://lcbo.dev/legal/terms-of-service):
@@ -36,8 +39,9 @@ personal use, daily polling of a few hundred products — well within
 
 ## Running locally
 
-No build step. Open `index.html` directly, or serve the folder:
-
 ```bash
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
+
+Open `http://localhost:3000`.

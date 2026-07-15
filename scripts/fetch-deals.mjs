@@ -20,6 +20,7 @@ import { lcboQuery, paginateAll } from "./lib/lcbo-client.mjs";
 const DATA_DIR = path.join(
   path.dirname(fileURLToPath(import.meta.url)),
   "..",
+  "public",
   "data",
 );
 

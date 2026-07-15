@@ -37,6 +37,7 @@ async function main() {
   const outPath = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
     "..",
+    "public",
     "data",
     "stores.json",
   );
