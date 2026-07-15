@@ -38,6 +38,10 @@ tracker later, without breaking the static-data contract the frontend depends on
 - Pure logic (filtering, sorting, category-tree building, distance calc)
   lives in `lib/deals.ts` as framework-free functions — keep new logic there
   rather than inline in components, so it stays easy to reason about and test.
+- New or changed logic in `lib/*.ts` should get a colocated `*.test.ts` (see
+  `lib/deals.test.ts`, `lib/favorites.test.ts`). Not a hard requirement for
+  UI/component code — the test suite is intentionally scoped to pure,
+  framework-free logic, not component rendering or the API routes.
 - Never hand-edit the Postgres schema in the Neon/Vercel dashboard. Change
   `scripts/db/migrate.mjs` (the schema's source of truth) and re-run
   `npm run db:migrate`.
@@ -58,8 +62,9 @@ tracker later, without breaking the static-data contract the frontend depends on
   production deployment.
 - Package manager: npm.
 - Main commands: `npm run dev`, `npm run build`, `npm run typecheck`,
-  `npm run db:migrate` (applies `scripts/db/migrate.mjs` against
-  `DATABASE_URL` from `.env.local`).
+  `npm test` (Vitest, colocated `lib/*.test.ts` — pure logic only, no
+  component/route tests), `npm run db:migrate` (applies
+  `scripts/db/migrate.mjs` against `DATABASE_URL` from `.env.local`).
 - Data fetchers: plain Node ESM scripts under `scripts/`, no npm dependencies
   of their own. Run directly with `node scripts/fetch-stores.mjs`,
   `node scripts/fetch-deals.mjs`.
@@ -71,7 +76,8 @@ tracker later, without breaking the static-data contract the frontend depends on
 - Hosting: Vercel, gated by Vercel Authentication (Hobby-tier, zero-code —
   restricts the live URL to the owning Vercel account since this is a
   single-user tool, not a public product).
-- No test suite, no lint config in this repo currently.
+- Tests: Vitest, `lib/*.test.ts` colocated with the code they cover. No lint
+  config in this repo currently.
 
 ## Running Locally
 
@@ -107,8 +113,9 @@ picture; the short version:
 3. If touching `scripts/`, run the relevant script locally and confirm
    `public/data/*.json` still looks sane.
 4. If touching `app/` or `lib/`, run `npm run dev` and manually exercise the
-   changed flow in a browser — there's no test suite to lean on.
-5. Run `npm run typecheck` before considering a change done.
+   changed flow in a browser — `npm test` only covers pure logic, not
+   components, routing, or the API routes.
+5. Run `npm run typecheck` and `npm test` before considering a change done.
 6. Report: what changed, why, and what was validated.
 
 ## Skills Folder
