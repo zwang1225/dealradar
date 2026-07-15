@@ -1,0 +1,5525 @@
+{
+  "generatedAt": "2026-07-15T03:22:21.711Z",
+  "stores": [
+    {
+      "externalId": "43",
+      "name": "King West & Victoria",
+      "city": "Kitchener",
+      "address": "340 King Street West",
+      "latitude": 43.452129199999995,
+      "longitude": -80.49547179999999
+    },
+    {
+      "externalId": "388",
+      "name": "Robertson & Stafford",
+      "city": "Ottawa-Nepean",
+      "address": "1811 Robertson Road",
+      "latitude": 45.330205799999995,
+      "longitude": -75.817179
+    },
+    {
+      "externalId": "389",
+      "name": "Queen Mary & Bath",
+      "city": "Kingston",
+      "address": "1280 Bath Road",
+      "latitude": 44.2393324,
+      "longitude": -76.5426892
+    },
+    {
+      "externalId": "390",
+      "name": "Mccowan & Highway 7",
+      "city": "Markham",
+      "address": "192 Bullock Drive",
+      "latitude": 43.8742695,
+      "longitude": -79.2818048
+    },
+    {
+      "externalId": "391",
+      "name": "Yonge & Green Lane",
+      "city": "East Gwillimbury",
+      "address": "180 Green Lane East",
+      "latitude": 44.0740019,
+      "longitude": -79.482126
+    },
+    {
+      "externalId": "392",
+      "name": "Vansickle & Fourth",
+      "city": "St. Catharines",
+      "address": "420 Vansickle Road",
+      "latitude": 43.152630800000004,
+      "longitude": -79.2683715
+    },
+    {
+      "externalId": "394",
+      "name": "Carling & Woodroffe",
+      "city": "Ottawa",
+      "address": "2164 Carling Avenue",
+      "latitude": 45.3699474,
+      "longitude": -75.7700035
+    },
+    {
+      "externalId": "380",
+      "name": "Highway 2 & Church",
+      "city": "Colborne",
+      "address": "9 Toronto Road",
+      "latitude": 44.0055913,
+      "longitude": -77.8892686
+    },
+    {
+      "externalId": "383",
+      "name": "Dufferin & Major Mackenzie",
+      "city": "Vaughan",
+      "address": "9970 Dufferin Street",
+      "latitude": 43.860634000000005,
+      "longitude": -79.4881886
+    },
+    {
+      "externalId": "384",
+      "name": "Metcalfe & Isabella",
+      "city": "Ottawa",
+      "address": "22 Isabella Street",
+      "latitude": 45.4107006,
+      "longitude": -75.68537599999999
+    },
+    {
+      "externalId": "386",
+      "name": "Highway 47 & Brock",
+      "city": "Uxbridge",
+      "address": "2b Welwood Drive",
+      "latitude": 44.0870484,
+      "longitude": -79.1345237
+    },
+    {
+      "externalId": "387",
+      "name": "Highway 11 & Highway 17",
+      "city": "North Bay",
+      "address": "1711 Algonquin Avenue",
+      "latitude": 46.3305739,
+      "longitude": -79.4668684
+    },
+    {
+      "externalId": "370",
+      "name": "Malden & Elmdale",
+      "city": "Lasalle",
+      "address": "1825 Wyoming Avenue",
+      "latitude": 42.2493342,
+      "longitude": -83.06030899999999
+    },
+    {
+      "externalId": "371",
+      "name": "Southdown & Royal Windsor",
+      "city": "Mississauga",
+      "address": "930 Southdown Road",
+      "latitude": 43.508131399999996,
+      "longitude": -79.6325339
+    },
+    {
+      "externalId": "372",
+      "name": "Highway 3 & Kent",
+      "city": "Wheatley",
+      "address": "676 Highway 3 East",
+      "latitude": 42.7641741,
+      "longitude": -80.9580597
+    },
+    {
+      "externalId": "378",
+      "name": "Gibb & Stevenson",
+      "city": "Oshawa",
+      "address": "400 Gibb Street",
+      "latitude": 43.8873667,
+      "longitude": -78.8758604
+    },
+    {
+      "externalId": "361",
+      "name": "Rymal & Upper Centennial Pkwy",
+      "city": "Stoney Creek",
+      "address": "2273 Rymal Road East",
+      "latitude": 43.174707399999996,
+      "longitude": -79.77792269999999
+    },
+    {
+      "externalId": "362",
+      "name": "Albion & Kipling",
+      "city": "Toronto-Etobicoke",
+      "address": "1530 Albion Road",
+      "latitude": 43.742055799999996,
+      "longitude": -79.5849257
+    },
+    {
+      "externalId": "363",
+      "name": "Lakeshore & Marshall Park",
+      "city": "North Bay",
+      "address": "536 Lakeshore Drive",
+      "latitude": 46.2725176,
+      "longitude": -79.4432702
+    },
+    {
+      "externalId": "366",
+      "name": "Martingrove & The Westway",
+      "city": "Toronto-Etobicoke",
+      "address": "415 The Westway",
+      "latitude": 43.683014299999996,
+      "longitude": -79.5663967
+    },
+    {
+      "externalId": "368",
+      "name": "Bank & Findlay Creek",
+      "city": "Ottawa",
+      "address": "4750 Bank Street",
+      "latitude": 45.3189534,
+      "longitude": -75.5956363
+    },
+    {
+      "externalId": "360",
+      "name": "Wilson & Dufferin",
+      "city": "Toronto-North York",
+      "address": "675 Wilson Avenue",
+      "latitude": 43.7326263,
+      "longitude": -79.4548306
+    },
+    {
+      "externalId": "358",
+      "name": "Chemong & Milroy",
+      "city": "Peterborough",
+      "address": "1154 Chemong Road",
+      "latitude": 44.3297291,
+      "longitude": -78.339418
+    },
+    {
+      "externalId": "52",
+      "name": "Ontario & Southworth",
+      "city": "Welland",
+      "address": "815 Ontario Road",
+      "latitude": 42.976224699999996,
+      "longitude": -79.2398285
+    },
+    {
+      "externalId": "55",
+      "name": "Pembroke East & Angus Campbell",
+      "city": "Pembroke",
+      "address": "1050 Pembroke Street East",
+      "latitude": 45.8206846,
+      "longitude": -77.0816018
+    },
+    {
+      "externalId": "57",
+      "name": "Bell & N Front",
+      "city": "Belleville",
+      "address": "190 Bell Boulevard",
+      "latitude": 44.1874612,
+      "longitude": -77.4050452
+    },
+    {
+      "externalId": "59",
+      "name": "Mary & Dunlop",
+      "city": "Barrie",
+      "address": "55 Mary Street",
+      "latitude": 44.3889311,
+      "longitude": -79.69242160000002
+    },
+    {
+      "externalId": "60",
+      "name": "Wellington & St. Patrick",
+      "city": "Stratford",
+      "address": "91 Wellington Street",
+      "latitude": 43.368981399999996,
+      "longitude": -80.9831502
+    },
+    {
+      "externalId": "44",
+      "name": "Market S & Icomm",
+      "city": "Brantford",
+      "address": "50 Market Street South",
+      "latitude": 43.135844999999996,
+      "longitude": -80.2615801
+    },
+    {
+      "externalId": "45",
+      "name": "Sherbrooke & George",
+      "city": "Peterborough",
+      "address": "196 Sherbrooke Street",
+      "latitude": 44.30102300000001,
+      "longitude": -78.32149
+    },
+    {
+      "externalId": "47",
+      "name": "King & Academy",
+      "city": "St. Catharines",
+      "address": "189 King Street East",
+      "latitude": 43.161662,
+      "longitude": -79.2437431
+    },
+    {
+      "externalId": "48",
+      "name": "Victoria & Valley Way",
+      "city": "Niagara Falls",
+      "address": "4694 Victoria Avenue",
+      "latitude": 43.1062322,
+      "longitude": -79.0729393
+    },
+    {
+      "externalId": "49",
+      "name": "Second & Glengarry",
+      "city": "Cornwall",
+      "address": "1315 Second Street",
+      "latitude": 45.0246342,
+      "longitude": -74.7052348
+    },
+    {
+      "externalId": "50",
+      "name": "Elm & Paris",
+      "city": "Sudbury",
+      "address": "190 Cedar Street",
+      "latitude": 46.4927318,
+      "longitude": -80.99090009999999
+    },
+    {
+      "externalId": "665",
+      "name": "Highway 2 & Mcclure",
+      "city": "Ancaster",
+      "address": "1191 Wilson Street West",
+      "latitude": 43.1969979,
+      "longitude": -80.02202
+    },
+    {
+      "externalId": "34",
+      "name": "Walker & Ottawa",
+      "city": "Windsor",
+      "address": "1320 Walker Road",
+      "latitude": 42.3137033,
+      "longitude": -83.00110289999999
+    },
+    {
+      "externalId": "35",
+      "name": "Lansdowne West & Parkway",
+      "city": "Peterborough",
+      "address": "879 Lansdowne Street West",
+      "latitude": 44.2823901,
+      "longitude": -78.3395276
+    },
+    {
+      "externalId": "36",
+      "name": "Hazeldean & Castlefrank",
+      "city": "Ottawa-Kanata",
+      "address": "457 Hazeldean Road",
+      "latitude": 45.3001034,
+      "longitude": -75.8870791
+    },
+    {
+      "externalId": "38",
+      "name": "Rideau & King Edward",
+      "city": "Ottawa",
+      "address": "275 Rideau Street",
+      "latitude": 45.4289434,
+      "longitude": -75.6863821
+    },
+    {
+      "externalId": "654",
+      "name": "Division & John Counter",
+      "city": "Kingston",
+      "address": "1044 Division Street",
+      "latitude": 44.2629804,
+      "longitude": -76.5013165
+    },
+    {
+      "externalId": "42",
+      "name": "King & John",
+      "city": "Brockville",
+      "address": "179 King Street West",
+      "latitude": 44.5875057,
+      "longitude": -75.6874966
+    },
+    {
+      "externalId": "27",
+      "name": "Oxford East & Gammage",
+      "city": "London",
+      "address": "900 Oxford Street East",
+      "latitude": 43.0035679,
+      "longitude": -81.2276962
+    },
+    {
+      "externalId": "32",
+      "name": "University & Church",
+      "city": "Windsor",
+      "address": "400 University Avenue West",
+      "latitude": 42.3166485,
+      "longitude": -83.04351559999999
+    },
+    {
+      "externalId": "33",
+      "name": "Mcleod & Qew",
+      "city": "Niagara Falls",
+      "address": "7481 Oakwood Drive",
+      "latitude": 43.067132199999996,
+      "longitude": -79.1195714
+    },
+    {
+      "externalId": "15",
+      "name": "Dupont & Spadina",
+      "city": "Toronto",
+      "address": "232 Dupont Street",
+      "latitude": 43.6754186,
+      "longitude": -79.4057248
+    },
+    {
+      "externalId": "16",
+      "name": "Yonge & Empress",
+      "city": "Toronto-North York",
+      "address": "5095 Yonge Street",
+      "latitude": 43.7687022,
+      "longitude": -79.4123463
+    },
+    {
+      "externalId": "17",
+      "name": "Front & Sherbourne",
+      "city": "Toronto",
+      "address": "222 Front Street East",
+      "latitude": 43.6510655,
+      "longitude": -79.3654134
+    },
+    {
+      "externalId": "19",
+      "name": "St. Clair & Keele",
+      "city": "Toronto",
+      "address": "2151 St. Clair Avenue West",
+      "latitude": 43.670746099999995,
+      "longitude": -79.47298239999999
+    },
+    {
+      "externalId": "20",
+      "name": "Lake Shore & Islington",
+      "city": "Toronto-Etobicoke",
+      "address": "2762 Lake Shore Boulevard West",
+      "latitude": 43.6023828,
+      "longitude": -79.49934379999999
+    },
+    {
+      "externalId": "21",
+      "name": "Golf Links & Hwy 403",
+      "city": "Ancaster",
+      "address": "737 Golf Links Road",
+      "latitude": 43.2264884,
+      "longitude": -79.9545934
+    },
+    {
+      "externalId": "22",
+      "name": "Big Bay Point & Yonge",
+      "city": "Barrie",
+      "address": "461 Big Bay Point Road",
+      "latitude": 44.355791499999995,
+      "longitude": -79.65091869999999
+    },
+    {
+      "externalId": "6",
+      "name": "Queen & Lansdowne",
+      "city": "Toronto",
+      "address": "1357 Queen Street West",
+      "latitude": 43.640758299999995,
+      "longitude": -79.434742
+    },
+    {
+      "externalId": "7",
+      "name": "Eglinton & Dunfield",
+      "city": "Toronto",
+      "address": "101 Eglinton Avenue East",
+      "latitude": 43.7072728,
+      "longitude": -79.3945502
+    },
+    {
+      "externalId": "10",
+      "name": "Yonge & Summerhill",
+      "city": "Toronto",
+      "address": "10 Scrivener Square",
+      "latitude": 43.681108099999996,
+      "longitude": -79.3905073
+    },
+    {
+      "externalId": "13",
+      "name": "Danforth & Greenwood",
+      "city": "Toronto",
+      "address": "1145 Danforth Avenue",
+      "latitude": 43.681005899999995,
+      "longitude": -79.3333095
+    },
+    {
+      "externalId": "14",
+      "name": "Spadina & Dundas",
+      "city": "Toronto",
+      "address": "337 Spadina Avenue",
+      "latitude": 43.6547384,
+      "longitude": -79.3982022
+    },
+    {
+      "externalId": "1",
+      "name": "Highway 401 & Weston",
+      "city": "Toronto-North York",
+      "address": "2625 Weston Road",
+      "latitude": 43.712962499999996,
+      "longitude": -79.5335599
+    },
+    {
+      "externalId": "3",
+      "name": "Dundas & Dovercourt",
+      "city": "Toronto",
+      "address": "1230 Dundas Street West",
+      "latitude": 43.6496402,
+      "longitude": -79.42351959999999
+    },
+    {
+      "externalId": "5",
+      "name": "Queen & Coxwell",
+      "city": "Toronto",
+      "address": "1654 Queen Street East",
+      "latitude": 43.6669394,
+      "longitude": -79.3149553
+    },
+    {
+      "externalId": "139",
+      "name": "Dalton & Black River",
+      "city": "Sutton",
+      "address": "20954 Dalton Road",
+      "latitude": 44.312216,
+      "longitude": -79.36749929999999
+    },
+    {
+      "externalId": "140",
+      "name": "Montreal & Vanier Parkway",
+      "city": "Ottawa-Vanier",
+      "address": "230 Montreal Road",
+      "latitude": 45.4356848,
+      "longitude": -75.6618972
+    },
+    {
+      "externalId": "150",
+      "name": "Qew & Fifty",
+      "city": "Hamilton-Winona",
+      "address": "1342 South Service Road",
+      "latitude": 43.21716,
+      "longitude": -79.6415262
+    },
+    {
+      "externalId": "141",
+      "name": "King & Walker",
+      "city": "Harrow",
+      "address": "119 King Street West",
+      "latitude": 42.0352404,
+      "longitude": -82.9207153
+    },
+    {
+      "externalId": "144",
+      "name": "O'brien & Wrangler",
+      "city": "Renfrew",
+      "address": "910 O'brien Road",
+      "latitude": 45.4774136,
+      "longitude": -76.6566934
+    },
+    {
+      "externalId": "145",
+      "name": "Holland West & Summerlyn Trail",
+      "city": "Bradford",
+      "address": "484 Holland Street West",
+      "latitude": 44.1077922,
+      "longitude": -79.59149939999999
+    },
+    {
+      "externalId": "130",
+      "name": "Wellington & Muskoka",
+      "city": "Bracebridge",
+      "address": "125 Muskoka Road 118 West",
+      "latitude": 45.044064299999995,
+      "longitude": -79.3266964
+    },
+    {
+      "externalId": "649",
+      "name": "Bronte & Louis St. Laurent",
+      "city": "Milton",
+      "address": "1025 Bronte Street South",
+      "latitude": 43.488519,
+      "longitude": -79.8587015
+    },
+    {
+      "externalId": "132",
+      "name": "Mcneely & Highway 7",
+      "city": "Carleton Place",
+      "address": "525 Mcneely Avenue",
+      "latitude": 45.1324289,
+      "longitude": -76.1184768
+    },
+    {
+      "externalId": "644",
+      "name": "Ontario & C.h. Meir",
+      "city": "Stratford",
+      "address": "1067 Ontario Street",
+      "latitude": 43.369324399999996,
+      "longitude": -80.9463457
+    },
+    {
+      "externalId": "122",
+      "name": "8th & George",
+      "city": "Hearst",
+      "address": "806 George Street",
+      "latitude": 49.689032999999995,
+      "longitude": -83.66302130000001
+    },
+    {
+      "externalId": "123",
+      "name": "Molan & Highway 34",
+      "city": "Lancaster",
+      "address": "16 Molan Street",
+      "latitude": 45.1413526,
+      "longitude": -74.4987591
+    },
+    {
+      "externalId": "124",
+      "name": "Queen & King",
+      "city": "Niagara-On-The-Lake",
+      "address": "20 Queen Street",
+      "latitude": 43.2549078,
+      "longitude": -79.0716774
+    },
+    {
+      "externalId": "125",
+      "name": "Richelieu & Poupart",
+      "city": "Rockland",
+      "address": "3000 Richelieu Street",
+      "latitude": 45.5340657,
+      "longitude": -75.3056689
+    },
+    {
+      "externalId": "115",
+      "name": "King South & William",
+      "city": "Waterloo",
+      "address": "115 King Street South",
+      "latitude": 43.4624236,
+      "longitude": -80.5220525
+    },
+    {
+      "externalId": "106",
+      "name": "Highway 11b & William",
+      "city": "Huntsville",
+      "address": "91 King William Street",
+      "latitude": 45.335497700000005,
+      "longitude": -79.2030008
+    },
+    {
+      "externalId": "107",
+      "name": "Highway 89 & 23",
+      "city": "Palmerston",
+      "address": "440 Main Street West",
+      "latitude": 43.8328932,
+      "longitude": -80.8573644
+    },
+    {
+      "externalId": "109",
+      "name": "Sandwich St S & Pickering",
+      "city": "Amherstburg",
+      "address": "400 Sandwich Street South",
+      "latitude": 42.0962616,
+      "longitude": -83.10942899999999
+    },
+    {
+      "externalId": "677",
+      "name": "York & Lake Shore",
+      "city": "Toronto",
+      "address": "15 York Street",
+      "latitude": 43.641874099999995,
+      "longitude": -79.38092859999999
+    },
+    {
+      "externalId": "95",
+      "name": "Franklin & Dundas",
+      "city": "Cambridge",
+      "address": "200 Franklin Boulevard",
+      "latitude": 43.356487699999995,
+      "longitude": -80.2892668
+    },
+    {
+      "externalId": "98",
+      "name": "Main South & Albert",
+      "city": "Alexandria",
+      "address": "410 Main Street South",
+      "latitude": 45.3001623,
+      "longitude": -74.62812989999999
+    },
+    {
+      "externalId": "651",
+      "name": "Avenue & St. Clair",
+      "city": "Toronto",
+      "address": "111 St. Clair Avenue West",
+      "latitude": 43.686709799999996,
+      "longitude": -79.3992581
+    },
+    {
+      "externalId": "102",
+      "name": "Edward & Talisman",
+      "city": "Gravenhurst",
+      "address": "155 Edward Street",
+      "latitude": 44.9084806,
+      "longitude": -79.3700152
+    },
+    {
+      "externalId": "89",
+      "name": "Mcconnell & Main",
+      "city": "Mattawa",
+      "address": "450 Valois Drive",
+      "latitude": 46.3167889,
+      "longitude": -78.7004781
+    },
+    {
+      "externalId": "78",
+      "name": "Armstrong & Cedar",
+      "city": "New Liskeard",
+      "address": "55 Armstrong Street",
+      "latitude": 47.506857499999995,
+      "longitude": -79.671251
+    },
+    {
+      "externalId": "79",
+      "name": "Walton & Ontario",
+      "city": "Port Hope",
+      "address": "15 Ontario Street",
+      "latitude": 43.952079999999995,
+      "longitude": -78.29381099999999
+    },
+    {
+      "externalId": "83",
+      "name": "Highway 17 & Tupper",
+      "city": "Hawkesbury",
+      "address": "452 County Road 17",
+      "latitude": 45.590992899999996,
+      "longitude": -74.5930005
+    },
+    {
+      "externalId": "84",
+      "name": "Highway 62 33 & County 10",
+      "city": "Picton",
+      "address": "2 Lake Street",
+      "latitude": 44.0032687,
+      "longitude": -77.1512576
+    },
+    {
+      "externalId": "85",
+      "name": "Highway 417 & Daniel",
+      "city": "Arnprior",
+      "address": "45 Winner's Circle Drive",
+      "latitude": 45.4217958,
+      "longitude": -76.3679835
+    },
+    {
+      "externalId": "68",
+      "name": "Park & Railway",
+      "city": "Kenora",
+      "address": "546 Park Street",
+      "latitude": 49.7677714,
+      "longitude": -94.4822841
+    },
+    {
+      "externalId": "655",
+      "name": "Mississauga Rd. & Williams Parkway",
+      "city": "Brampton",
+      "address": "9445 Mississauga Road",
+      "latitude": 43.6560811,
+      "longitude": -79.8140469
+    },
+    {
+      "externalId": "71",
+      "name": "King & Charles",
+      "city": "Gananoque",
+      "address": "189 King Street East",
+      "latitude": 44.3304587,
+      "longitude": -76.16074499999999
+    },
+    {
+      "externalId": "499",
+      "name": "Strandherd & Greenbank",
+      "city": "Ottawa-Nepean",
+      "address": "120 Riocan Avenue",
+      "latitude": 45.2687895,
+      "longitude": -75.74173549999999
+    },
+    {
+      "externalId": "500",
+      "name": "Bank & Holmwood",
+      "city": "Ottawa",
+      "address": "953 Bank Street",
+      "latitude": 45.3992156,
+      "longitude": -75.6859346
+    },
+    {
+      "externalId": "501",
+      "name": "Dawson & Highway 11",
+      "city": "Thunder Bay",
+      "address": "1010 Dawson Road",
+      "latitude": 48.4518351,
+      "longitude": -89.2508958
+    },
+    {
+      "externalId": "62",
+      "name": "First & Talbot",
+      "city": "St. Thomas",
+      "address": "1010 Talbot Street",
+      "latitude": 42.7784331,
+      "longitude": -81.1771938
+    },
+    {
+      "externalId": "65",
+      "name": "Front & Division",
+      "city": "Trenton",
+      "address": "150 Front Street",
+      "latitude": 44.103876799999995,
+      "longitude": -77.5797242
+    },
+    {
+      "externalId": "67",
+      "name": "Lakeshore & Broadway",
+      "city": "Haileybury",
+      "address": "316 Broadway Street",
+      "latitude": 47.449558499999995,
+      "longitude": -79.6318598
+    },
+    {
+      "externalId": "483",
+      "name": "Front & Bay",
+      "city": "Toronto",
+      "address": "200 Bay Street",
+      "latitude": 43.6463304,
+      "longitude": -79.3797223
+    },
+    {
+      "externalId": "486",
+      "name": "Cornwall & Trafalgar",
+      "city": "Oakville",
+      "address": "321 Cornwall Road",
+      "latitude": 43.457914300000006,
+      "longitude": -79.6787239
+    },
+    {
+      "externalId": "489",
+      "name": "King & Church",
+      "city": "Newcastle",
+      "address": "91 King Avenue West",
+      "latitude": 43.917013,
+      "longitude": -78.5903143
+    },
+    {
+      "externalId": "477",
+      "name": "Highway 27 & Sheardown",
+      "city": "Nobleton",
+      "address": "13255 Highway 27",
+      "latitude": 43.908055,
+      "longitude": -79.65249109999999
+    },
+    {
+      "externalId": "478",
+      "name": "Highway 62 & Highway 127",
+      "city": "Maynooth",
+      "address": "33004 Highway 62 North",
+      "latitude": 45.2310282,
+      "longitude": -77.93637989999999
+    },
+    {
+      "externalId": "657",
+      "name": "Bathurst & Lawrence",
+      "city": "Toronto-North York",
+      "address": "502 Lawrence Avenue West",
+      "latitude": 43.7204373,
+      "longitude": -79.4308733
+    },
+    {
+      "externalId": "465",
+      "name": "Harmony & Taunton",
+      "city": "Oshawa",
+      "address": "1409 Harmony Road",
+      "latitude": 43.9428396,
+      "longitude": -78.84406419999999
+    },
+    {
+      "externalId": "467",
+      "name": "Lakeshore & Geneva",
+      "city": "St. Catharines",
+      "address": "115 Lakeshore Road",
+      "latitude": 43.204665899999995,
+      "longitude": -79.24374929999999
+    },
+    {
+      "externalId": "468",
+      "name": "Ward & Causeway",
+      "city": "Bridgenorth",
+      "address": "861 Ward Street",
+      "latitude": 44.38182320000001,
+      "longitude": -78.38328949999999
+    },
+    {
+      "externalId": "470",
+      "name": "Worthington & Bovaird",
+      "city": "Brampton",
+      "address": "31 Worthington Avenue",
+      "latitude": 43.6835003,
+      "longitude": -79.8149662
+    },
+    {
+      "externalId": "471",
+      "name": "Highway 48 & Kirkfield",
+      "city": "Kirkfield",
+      "address": "1002 Portage Road",
+      "latitude": 44.5618434,
+      "longitude": -78.9826525
+    },
+    {
+      "externalId": "660",
+      "name": "Kingston & Mccowan",
+      "city": "Toronto-Scarborough",
+      "address": "2963 Kingston Road",
+      "latitude": 43.7251122,
+      "longitude": -79.2319425
+    },
+    {
+      "externalId": "472",
+      "name": "Main & Church",
+      "city": "Warkworth",
+      "address": "44 Church Street",
+      "latitude": 44.201823399999995,
+      "longitude": -77.8864784
+    },
+    {
+      "externalId": "457",
+      "name": "Yonge & Eglinton",
+      "city": "Toronto",
+      "address": "2300 Yonge Street",
+      "latitude": 43.7064459,
+      "longitude": -79.4011926
+    },
+    {
+      "externalId": "458",
+      "name": "King St W & Hurontario St",
+      "city": "Mississauga",
+      "address": "55 King St West",
+      "latitude": 43.578021,
+      "longitude": -79.6154794
+    },
+    {
+      "externalId": "445",
+      "name": "Dundas & Trafalgar",
+      "city": "Oakville",
+      "address": "251 Oak Walk Drive",
+      "latitude": 43.4850595,
+      "longitude": -79.71986249999999
+    },
+    {
+      "externalId": "449",
+      "name": "Main & Prince Edward",
+      "city": "Wellington",
+      "address": "462 Main Street",
+      "latitude": 43.949154,
+      "longitude": -77.36535060000001
+    },
+    {
+      "externalId": "453",
+      "name": "Leslie & Davis",
+      "city": "Newmarket",
+      "address": "17365 Leslie Street",
+      "latitude": 44.062515999999995,
+      "longitude": -79.43035420000001
+    },
+    {
+      "externalId": "586",
+      "name": "Ferry & Stanley",
+      "city": "Niagara Falls",
+      "address": "5389 Ferry Street",
+      "latitude": 43.0897155,
+      "longitude": -79.0833164
+    },
+    {
+      "externalId": "587",
+      "name": "Thickson & Dundas",
+      "city": "Whitby",
+      "address": "74 Thickson Road South",
+      "latitude": 43.8846193,
+      "longitude": -78.9126587
+    },
+    {
+      "externalId": "590",
+      "name": "Highway 7 & Woodbine",
+      "city": "Markham",
+      "address": "3075 Highway 7 East",
+      "latitude": 43.8496445,
+      "longitude": -79.3562437
+    },
+    {
+      "externalId": "443",
+      "name": "Blair & Ogilvie",
+      "city": "Ottawa-Gloucester",
+      "address": "1130 Blair Road",
+      "latitude": 45.433628500000005,
+      "longitude": -75.60869149999999
+    },
+    {
+      "externalId": "444",
+      "name": "Kennedy & Sheppard",
+      "city": "Toronto-Scarborough",
+      "address": "2356 Kennedy Road",
+      "latitude": 43.7847016,
+      "longitude": -79.28957489999999
+    },
+    {
+      "externalId": "580",
+      "name": "Highway 7 & Birchmount",
+      "city": "Markham",
+      "address": "3991 Highway 7",
+      "latitude": 43.8564706,
+      "longitude": -79.32300049999999
+    },
+    {
+      "externalId": "584",
+      "name": "Mccowan & Finch",
+      "city": "Toronto-Scarborough",
+      "address": "1571 Sandhurst Circle",
+      "latitude": 43.809714799999995,
+      "longitude": -79.26978079999999
+    },
+    {
+      "externalId": "571",
+      "name": "King & Bay",
+      "city": "Hamilton",
+      "address": "2 King Street West",
+      "latitude": 43.2582805,
+      "longitude": -79.8709837
+    },
+    {
+      "externalId": "642",
+      "name": "Allen & Rimrock",
+      "city": "Toronto-North York",
+      "address": "1115 Lodestar Road",
+      "latitude": 43.7593143,
+      "longitude": -79.46643329999999
+    },
+    {
+      "externalId": "560",
+      "name": "John & Albert",
+      "city": "Victoria Harbour",
+      "address": "144 Albert Street",
+      "latitude": 44.750928599999995,
+      "longitude": -79.7760152
+    },
+    {
+      "externalId": "562",
+      "name": "Highway 12 & Cameron",
+      "city": "Cannington",
+      "address": "25 Cameron Street East",
+      "latitude": 44.3501191,
+      "longitude": -79.0377334
+    },
+    {
+      "externalId": "564",
+      "name": "Victoria Park & Finch",
+      "city": "Toronto-Scarborough",
+      "address": "2946 Finch Avenue East",
+      "latitude": 43.7939157,
+      "longitude": -79.329353
+    },
+    {
+      "externalId": "568",
+      "name": "Yonge & Dundas",
+      "city": "Toronto",
+      "address": "595 Bay Street",
+      "latitude": 43.656239199999995,
+      "longitude": -79.38333589999999
+    },
+    {
+      "externalId": "553",
+      "name": "Queensway & Highway 427",
+      "city": "Toronto-Etobicoke",
+      "address": "1750 The Queensway",
+      "latitude": 43.6152071,
+      "longitude": -79.5574458
+    },
+    {
+      "externalId": "554",
+      "name": "Yonge & Stouffville",
+      "city": "Richmond Hill",
+      "address": "12300 Yonge Street",
+      "latitude": 43.9278652,
+      "longitude": -79.4516512
+    },
+    {
+      "externalId": "555",
+      "name": "Airport & Bovaird",
+      "city": "Brampton",
+      "address": "9970 Airport Road",
+      "latitude": 43.762062,
+      "longitude": -79.7212241
+    },
+    {
+      "externalId": "556",
+      "name": "Terry Fox & Campeau",
+      "city": "Ottawa-Kanata",
+      "address": "499 Terry Fox Drive",
+      "latitude": 45.3108116,
+      "longitude": -75.9199687
+    },
+    {
+      "externalId": "559",
+      "name": "King George & Powerline",
+      "city": "Brantford",
+      "address": "300 King George Road",
+      "latitude": 43.1816069,
+      "longitude": -80.2806744
+    },
+    {
+      "externalId": "546",
+      "name": "Don Mills & Sheppard",
+      "city": "Toronto-North York",
+      "address": "1800 Sheppard Avenue East",
+      "latitude": 43.7777951,
+      "longitude": -79.3432855
+    },
+    {
+      "externalId": "547",
+      "name": "Nepean & Elgin",
+      "city": "Ottawa",
+      "address": "160 Elgin Street",
+      "latitude": 45.4191929,
+      "longitude": -75.6939664
+    },
+    {
+      "externalId": "537",
+      "name": "Arthur & Elma",
+      "city": "Thornbury",
+      "address": "105 Arthur Street West",
+      "latitude": 44.5649386,
+      "longitude": -80.45971770000001
+    },
+    {
+      "externalId": "539",
+      "name": "Tecumseh & Huron Line",
+      "city": "Windsor",
+      "address": "1550 Huron Church Road",
+      "latitude": 42.2884536,
+      "longitude": -83.05719900000001
+    },
+    {
+      "externalId": "540",
+      "name": "Cumberland & Ninth",
+      "city": "Cornwall",
+      "address": "430 Ninth Street West",
+      "latitude": 45.0250737,
+      "longitude": -74.74624179999999
+    },
+    {
+      "externalId": "638",
+      "name": "March & Maxwell Bridge",
+      "city": "Ottawa-Kanata",
+      "address": "858 March Road",
+      "latitude": 45.358377999999995,
+      "longitude": -75.9359343
+    },
+    {
+      "externalId": "526",
+      "name": "Bank & Mcleod",
+      "city": "Ottawa",
+      "address": "465 Bank Street",
+      "latitude": 45.4114414,
+      "longitude": -75.69302019999999
+    },
+    {
+      "externalId": "532",
+      "name": "Front & Jarvis",
+      "city": "Toronto",
+      "address": "87 Front Street East",
+      "latitude": 43.6488042,
+      "longitude": -79.37223209999999
+    },
+    {
+      "externalId": "533",
+      "name": "Lawrence & Port Union",
+      "city": "Toronto-Scarborough",
+      "address": "5508 Lawrence Avenue East",
+      "latitude": 43.779752599999995,
+      "longitude": -79.1388351
+    },
+    {
+      "externalId": "523",
+      "name": "Bathurst & Centre",
+      "city": "Thornhill",
+      "address": "180 Promenade Circle",
+      "latitude": 43.808439,
+      "longitude": -79.4500363
+    },
+    {
+      "externalId": "507",
+      "name": "Falconbridge Highway & Garson",
+      "city": "Garson",
+      "address": "3060 Falconbridge Highway",
+      "latitude": 46.5491404,
+      "longitude": -80.8762867
+    },
+    {
+      "externalId": "513",
+      "name": "Grand Trunk Avenue & District Avenue",
+      "city": "Stayner",
+      "address": "100c Grand Trunk Road",
+      "latitude": 44.424889400000005,
+      "longitude": -80.0715572
+    },
+    {
+      "externalId": "502",
+      "name": "Highway 2 & Highway 4",
+      "city": "London",
+      "address": "2490 Main Street",
+      "latitude": 42.909612599999996,
+      "longitude": -81.29758079999999
+    },
+    {
+      "externalId": "505",
+      "name": "Highway 10 & Eglinton",
+      "city": "Mississauga",
+      "address": "5035 Hurontario Street",
+      "latitude": 43.608497,
+      "longitude": -79.65355129999999
+    },
+    {
+      "externalId": "697",
+      "name": "Queen & Bellefair",
+      "city": "Toronto",
+      "address": "1986 Queen Street East",
+      "latitude": 43.670153899999995,
+      "longitude": -79.3004667
+    },
+    {
+      "externalId": "700",
+      "name": "Kennedy & Highway401",
+      "city": "Toronto-Scarborough",
+      "address": "21 William Kitchen Road",
+      "latitude": 43.774062199999996,
+      "longitude": -79.27971
+    },
+    {
+      "externalId": "701",
+      "name": "Highway 89 & Count",
+      "city": "Alliston",
+      "address": "22 Dunham Drive",
+      "latitude": 44.1614831,
+      "longitude": -79.8220896
+    },
+    {
+      "externalId": "703",
+      "name": "Steeles & Markham",
+      "city": "Toronto-Scarborough",
+      "address": "5979 Steeles Avenue East",
+      "latitude": 43.8350112,
+      "longitude": -79.25627879999999
+    },
+    {
+      "externalId": "637",
+      "name": "Steeles & Laureleaf",
+      "city": "Toronto-North York",
+      "address": "1563 Steeles Avenue East",
+      "latitude": 43.8054682,
+      "longitude": -79.3842073
+    },
+    {
+      "externalId": "623",
+      "name": "Yonge & Highway 7",
+      "city": "Richmond Hill",
+      "address": "8783 Yonge Street",
+      "latitude": 43.842398599999996,
+      "longitude": -79.4298294
+    },
+    {
+      "externalId": "624",
+      "name": "Innes & Tenth Line",
+      "city": "Ottawa-Orleans",
+      "address": "4220 Innes Road",
+      "latitude": 45.4556331,
+      "longitude": -75.49761579999999
+    },
+    {
+      "externalId": "626",
+      "name": "Lafontaine & Cedar Point",
+      "city": "Lafontaine",
+      "address": "336b Lafontaine Road West",
+      "latitude": 44.758529,
+      "longitude": -80.052759
+    },
+    {
+      "externalId": "627",
+      "name": "Dixie & Dundas",
+      "city": "Mississauga",
+      "address": "1520 Dundas Street East",
+      "latitude": 43.611524499999994,
+      "longitude": -79.5799212
+    },
+    {
+      "externalId": "693",
+      "name": "Queen & Beverley",
+      "city": "Toronto",
+      "address": "272 Queen Street West",
+      "latitude": 43.6498633,
+      "longitude": -79.3924057
+    },
+    {
+      "externalId": "612",
+      "name": "Highway 27 & Dillane",
+      "city": "Schomberg",
+      "address": "17240 Highway 27",
+      "latitude": 44.0036318,
+      "longitude": -79.6779009
+    },
+    {
+      "externalId": "615",
+      "name": "County Road 3 & Mill",
+      "city": "Paisley",
+      "address": "277 Queen Street North",
+      "latitude": 44.307251699999995,
+      "longitude": -81.2730966
+    },
+    {
+      "externalId": "617",
+      "name": "Ottawa & Homer Watson",
+      "city": "Kitchener",
+      "address": "721 Ottawa Street South",
+      "latitude": 43.4241014,
+      "longitude": -80.48314169999999
+    },
+    {
+      "externalId": "618",
+      "name": "Steeles & Dufferin",
+      "city": "Toronto-North York",
+      "address": "2181 Steeles Avenue West",
+      "latitude": 43.7851164,
+      "longitude": -79.4754222
+    },
+    {
+      "externalId": "602",
+      "name": "Arthur & Neebing",
+      "city": "Thunder Bay",
+      "address": "1095 Arthur Street West",
+      "latitude": 48.3811849,
+      "longitude": -89.3065321
+    },
+    {
+      "externalId": "605",
+      "name": "Innisfil Beach Rd & 20th Siderd",
+      "city": "Innisfil",
+      "address": "1465 Innisfil Beach Road",
+      "latitude": 44.308498799999995,
+      "longitude": -79.5742602
+    },
+    {
+      "externalId": "609",
+      "name": "Elgin & Rogers",
+      "city": "Cobourg",
+      "address": "1111 Elgin Street West",
+      "latitude": 43.9696788,
+      "longitude": -78.1999019
+    },
+    {
+      "externalId": "596",
+      "name": "Highway 48 & Pefferlaw",
+      "city": "Pefferlaw",
+      "address": "17 Hastings Road",
+      "latitude": 44.3143172,
+      "longitude": -79.20453429999999
+    },
+    {
+      "externalId": "313",
+      "name": "Mosley & Second",
+      "city": "Wasaga Beach",
+      "address": "90 Mosley Street",
+      "latitude": 44.521620399999996,
+      "longitude": -80.02076459999999
+    },
+    {
+      "externalId": "320",
+      "name": "Overlea & Millwood",
+      "city": "Toronto",
+      "address": "45 Overlea Boulevard",
+      "latitude": 43.7057953,
+      "longitude": -79.3460276
+    },
+    {
+      "externalId": "667",
+      "name": "Upper James & Rymal",
+      "city": "Hamilton",
+      "address": "1550 Upper James Street",
+      "latitude": 43.2041122,
+      "longitude": -79.8947804
+    },
+    {
+      "externalId": "760",
+      "name": "Yonge & Steeles",
+      "city": "Toronto-North York",
+      "address": "6267 Yonge Street",
+      "latitude": 43.7949348,
+      "longitude": -79.41882629999999
+    },
+    {
+      "externalId": "751",
+      "name": "Bathurst & Lakeshore",
+      "city": "Toronto",
+      "address": "95 Housey Street",
+      "latitude": 43.6376026,
+      "longitude": -79.3998555
+    },
+    {
+      "externalId": "647",
+      "name": "Bovaird & Great Lakes",
+      "city": "Brampton",
+      "address": "180 Great Lakes Drive",
+      "latitude": 43.7308437,
+      "longitude": -79.76434379999999
+    },
+    {
+      "externalId": "676",
+      "name": "Yonge & Lawrence",
+      "city": "Toronto",
+      "address": "3372 Yonge Street",
+      "latitude": 43.7325126,
+      "longitude": -79.4045012
+    },
+    {
+      "externalId": "684",
+      "name": "Cundles & Highway 400",
+      "city": "Barrie",
+      "address": "587 Cundles Road East",
+      "latitude": 44.4141459,
+      "longitude": -79.6772008
+    },
+    {
+      "externalId": "674",
+      "name": "Glendon & Tunks",
+      "city": "Komoka",
+      "address": "10166 Glendon Drive",
+      "latitude": 42.951872699999996,
+      "longitude": -81.4226419
+    },
+    {
+      "externalId": "680",
+      "name": "Cope & Terry Fox",
+      "city": "Stittsville",
+      "address": "1140 Terry Fox Drive",
+      "latitude": 45.2758849,
+      "longitude": -75.87455849999999
+    },
+    {
+      "externalId": "776",
+      "name": "Brock & Kingston",
+      "city": "Pickering",
+      "address": "1899 Brock Road",
+      "latitude": 43.845535500000004,
+      "longitude": -79.0707257
+    },
+    {
+      "externalId": "632",
+      "name": "Highway 27 & Innovation",
+      "city": "Woodbridge",
+      "address": "8260 Highway 27",
+      "latitude": 43.7844939,
+      "longitude": -79.6252234
+    },
+    {
+      "externalId": "629",
+      "name": "Major Mackenzie & Leslie",
+      "city": "Richmond Hill",
+      "address": "1520 Major Mackenzie Drive East",
+      "latitude": 43.8807009,
+      "longitude": -79.3925105
+    },
+    {
+      "externalId": "630",
+      "name": "Bayview & St John",
+      "city": "Aurora",
+      "address": "15830 Bayview Avenue",
+      "latitude": 44.0203237,
+      "longitude": -79.4490065
+    },
+    {
+      "externalId": "694",
+      "name": "Innes & Trim",
+      "city": "Ottawa-Orleans",
+      "address": "5150 Innes Road",
+      "latitude": 45.469772999999996,
+      "longitude": -75.45531609999999
+    },
+    {
+      "externalId": "634",
+      "name": "Clair & Gordon",
+      "city": "Guelph",
+      "address": "50 Clair Road East",
+      "latitude": 43.5016907,
+      "longitude": -80.1877794
+    },
+    {
+      "externalId": "639",
+      "name": "College & Bathurst",
+      "city": "Toronto",
+      "address": "491 College Street",
+      "latitude": 43.6557908,
+      "longitude": -79.40957039999999
+    },
+    {
+      "externalId": "748",
+      "name": "Brimley & Progress",
+      "city": "Toronto",
+      "address": "420 Progress Avenue",
+      "latitude": 43.776747,
+      "longitude": -79.2631305
+    },
+    {
+      "externalId": "695",
+      "name": "Victoria & Gordon",
+      "city": "Whitby",
+      "address": "629 Victoria Street West",
+      "latitude": 43.8592886,
+      "longitude": -78.9468546
+    },
+    {
+      "externalId": "699",
+      "name": "Limebank & Spratt",
+      "city": "Ottawa",
+      "address": "4460 Limebank Road",
+      "latitude": 45.2877095,
+      "longitude": -75.671785
+    },
+    {
+      "externalId": "771",
+      "name": "Kingston & Harwood",
+      "city": "Ajax",
+      "address": "40 Kingston Road East",
+      "latitude": 43.864410299999996,
+      "longitude": -79.02071269999999
+    },
+    {
+      "externalId": "746",
+      "name": "Highway 400 & Highway 12",
+      "city": "Waubaushene",
+      "address": "5 Fallowfield Lane",
+      "latitude": 44.7493128,
+      "longitude": -79.7054531
+    },
+    {
+      "externalId": "221",
+      "name": "Scugog Line 6 & Highway 7a",
+      "city": "Port Perry",
+      "address": "1535 Highway 7a",
+      "latitude": 44.0941456,
+      "longitude": -78.9645297
+    },
+    {
+      "externalId": "217",
+      "name": "Queens Quay & Cooper Street",
+      "city": "Toronto",
+      "address": "15 Cooper Street",
+      "latitude": 43.644271499999995,
+      "longitude": -79.3714624
+    },
+    {
+      "externalId": "218",
+      "name": "North Service & Dixie",
+      "city": "Mississauga",
+      "address": "1077 North Service Road",
+      "latitude": 43.5926476,
+      "longitude": -79.57506889999999
+    },
+    {
+      "externalId": "207",
+      "name": "Dundas & Highway 427",
+      "city": "Toronto-Etobicoke",
+      "address": "250 The East Mall",
+      "latitude": 43.630485199999995,
+      "longitude": -79.55528559999999
+    },
+    {
+      "externalId": "209",
+      "name": "Highway 89 & Young",
+      "city": "Alliston",
+      "address": "36 Young Street",
+      "latitude": 44.148583099999996,
+      "longitude": -79.8829027
+    },
+    {
+      "externalId": "210",
+      "name": "Highway 9 & Highway 21",
+      "city": "Kincardine",
+      "address": "781 Broadway Street",
+      "latitude": 44.1762231,
+      "longitude": -81.6150675
+    },
+    {
+      "externalId": "195",
+      "name": "Eglinton & Warden",
+      "city": "Toronto-Scarborough",
+      "address": "1900 Eglinton Avenue East",
+      "latitude": 43.7263332,
+      "longitude": -79.2958245
+    },
+    {
+      "externalId": "196",
+      "name": "Highway 81 & Highway 21",
+      "city": "Grand Bend",
+      "address": "49 Main Street East",
+      "latitude": 43.3107172,
+      "longitude": -81.7524586
+    },
+    {
+      "externalId": "198",
+      "name": "Kingston & Morningside",
+      "city": "Toronto-Scarborough",
+      "address": "4525 Kingston Road",
+      "latitude": 43.770323499999996,
+      "longitude": -79.1839068
+    },
+    {
+      "externalId": "201",
+      "name": "Bayly & Harwood",
+      "city": "Ajax",
+      "address": "105 Bayly Street West",
+      "latitude": 43.8417519,
+      "longitude": -79.0233179
+    },
+    {
+      "externalId": "186",
+      "name": "Jane & Wilson",
+      "city": "Toronto-North York",
+      "address": "1618 Wilson Avenue",
+      "latitude": 43.7212518,
+      "longitude": -79.5103946
+    },
+    {
+      "externalId": "191",
+      "name": "Salem & Taunton",
+      "city": "Ajax",
+      "address": "1979 Salem Road North",
+      "latitude": 43.897168099999995,
+      "longitude": -79.02835200000001
+    },
+    {
+      "externalId": "192",
+      "name": "Wellington & Grand",
+      "city": "London",
+      "address": "85 Wellington Road",
+      "latitude": 42.9712543,
+      "longitude": -81.2376497
+    },
+    {
+      "externalId": "194",
+      "name": "Shaw & Kerr",
+      "city": "Elmvale",
+      "address": "10 Shaw Street",
+      "latitude": 44.5853738,
+      "longitude": -79.86496650000001
+    },
+    {
+      "externalId": "183",
+      "name": "Main & Queen",
+      "city": "Brampton",
+      "address": "27 George Street North",
+      "latitude": 43.685687699999995,
+      "longitude": -79.762388
+    },
+    {
+      "externalId": "166",
+      "name": "Arthur & Talbot",
+      "city": "Essex",
+      "address": "39 Arthur Avenue",
+      "latitude": 42.1739728,
+      "longitude": -82.8204057
+    },
+    {
+      "externalId": "167",
+      "name": "Princess & Concession",
+      "city": "Kingston",
+      "address": "905 Princess Street",
+      "latitude": 44.2409701,
+      "longitude": -76.5104471
+    },
+    {
+      "externalId": "171",
+      "name": "Sandalwood & Kennedy",
+      "city": "Brampton",
+      "address": "170 Sandalwood Parkway East",
+      "latitude": 43.7268107,
+      "longitude": -79.7978447
+    },
+    {
+      "externalId": "175",
+      "name": "Front & Mississaga",
+      "city": "Orillia",
+      "address": "201 Mississaga Street East",
+      "latitude": 44.610464199999996,
+      "longitude": -79.41354799999999
+    },
+    {
+      "externalId": "311",
+      "name": "Yonge & Henderson",
+      "city": "Aurora",
+      "address": "1 Henderson Drive",
+      "latitude": 43.9825881,
+      "longitude": -79.4645401
+    },
+    {
+      "externalId": "161",
+      "name": "Highway 21 & Lindsley",
+      "city": "Dresden",
+      "address": "188 Lindsley Street West",
+      "latitude": 42.5921173,
+      "longitude": -82.18047779999999
+    },
+    {
+      "externalId": "163",
+      "name": "Danforth & Victoria Park",
+      "city": "Toronto-Scarborough",
+      "address": "3111 Danforth Avenue",
+      "latitude": 43.6910674,
+      "longitude": -79.28585939999999
+    },
+    {
+      "externalId": "164",
+      "name": "Eglinton & Laird",
+      "city": "Toronto",
+      "address": "65 Wicksteed Avenue",
+      "latitude": 43.7108861,
+      "longitude": -79.36001999999999
+    },
+    {
+      "externalId": "305",
+      "name": "Albert & Highway 35",
+      "city": "Coboconk",
+      "address": "13 Albert Street",
+      "latitude": 44.6583331,
+      "longitude": -78.79881800000001
+    },
+    {
+      "externalId": "306",
+      "name": "Highway 121 & Colbourne",
+      "city": "Fenelon Falls",
+      "address": "27 Francis Street West",
+      "latitude": 44.5375204,
+      "longitude": -78.7384281
+    },
+    {
+      "externalId": "297",
+      "name": "Young & Queen",
+      "city": "Acton",
+      "address": "256 Queen Street",
+      "latitude": 43.634344899999995,
+      "longitude": -80.0308307
+    },
+    {
+      "externalId": "281",
+      "name": "King & Sturgeon",
+      "city": "Omemee",
+      "address": "4 King Street",
+      "latitude": 44.2986881,
+      "longitude": -78.55941080000001
+    },
+    {
+      "externalId": "284",
+      "name": "Bruce 10 & First",
+      "city": "Chesley",
+      "address": "115 First Avenue North",
+      "latitude": 44.3031935,
+      "longitude": -81.09630179999999
+    },
+    {
+      "externalId": "288",
+      "name": "Mapleview & Bryne",
+      "city": "Barrie",
+      "address": "37 Caplan Avenue",
+      "latitude": 44.3371516,
+      "longitude": -79.69046349999999
+    },
+    {
+      "externalId": "272",
+      "name": "Elgin & Superior",
+      "city": "White River",
+      "address": "204 Elgin Street",
+      "latitude": 48.590398199999996,
+      "longitude": -85.2803732
+    },
+    {
+      "externalId": "276",
+      "name": "Highway 23 & 86",
+      "city": "Listowel",
+      "address": "598 Mitchell Road South",
+      "latitude": 43.7321624,
+      "longitude": -80.9679882
+    },
+    {
+      "externalId": "277",
+      "name": "Victoria & Main",
+      "city": "Forest",
+      "address": "8 Main Street South",
+      "latitude": 43.0963925,
+      "longitude": -82.0009867
+    },
+    {
+      "externalId": "279",
+      "name": "Keele & Lawrence",
+      "city": "Toronto-North York",
+      "address": "1339 Lawrence Avenue West",
+      "latitude": 43.7085862,
+      "longitude": -79.4746459
+    },
+    {
+      "externalId": "265",
+      "name": "Highway 50 & King Side",
+      "city": "Bolton",
+      "address": "30 Mcewan Drive East",
+      "latitude": 43.862876,
+      "longitude": -79.7135574
+    },
+    {
+      "externalId": "267",
+      "name": "Elizabeth & Mill",
+      "city": "Creemore",
+      "address": "12 Elizabeth Street East",
+      "latitude": 44.325682099999995,
+      "longitude": -80.10376579999999
+    },
+    {
+      "externalId": "269",
+      "name": "Markham & Lawrence",
+      "city": "Toronto-Scarborough",
+      "address": "3441 Lawrence Avenue East",
+      "latitude": 43.75801990000001,
+      "longitude": -79.2324853
+    },
+    {
+      "externalId": "254",
+      "name": "Tupper & King",
+      "city": "Millbrook",
+      "address": "4 Centre Street",
+      "latitude": 44.1521208,
+      "longitude": -78.4487777
+    },
+    {
+      "externalId": "259",
+      "name": "Highway 12  & Coldwater",
+      "city": "Coldwater",
+      "address": "48 Coldwater Road",
+      "latitude": 44.706197599999996,
+      "longitude": -79.6433687
+    },
+    {
+      "externalId": "260",
+      "name": "10th & 22nd",
+      "city": "Hanover",
+      "address": "893 10th Street",
+      "latitude": 44.1552474,
+      "longitude": -81.0053746
+    },
+    {
+      "externalId": "261",
+      "name": "Nichols & Water",
+      "city": "Lakefield",
+      "address": "2 Nichols Street",
+      "latitude": 44.421219799999996,
+      "longitude": -78.27056220000001
+    },
+    {
+      "externalId": "672",
+      "name": "Highway 27 & Queens Plate",
+      "city": "Etobicoke",
+      "address": "340 Queens Plate Drive",
+      "latitude": 43.7224167,
+      "longitude": -79.5963751
+    },
+    {
+      "externalId": "252",
+      "name": "Glendale & Merritt",
+      "city": "St. Catharines",
+      "address": "343 Glendale Avenue",
+      "latitude": 43.137641699999996,
+      "longitude": -79.21635529999999
+    },
+    {
+      "externalId": "237",
+      "name": "Winchester & Baldwin",
+      "city": "Brooklin",
+      "address": "11 Winchester Road East",
+      "latitude": 43.953356299999996,
+      "longitude": -78.9604066
+    },
+    {
+      "externalId": "242",
+      "name": "Brimley & Eglinton",
+      "city": "Toronto-Scarborough",
+      "address": "510 Brimley Road",
+      "latitude": 43.7355608,
+      "longitude": -79.2481695
+    },
+    {
+      "externalId": "244",
+      "name": "Mosley & 45th",
+      "city": "Wasaga Beach",
+      "address": "1900 Mosley Street",
+      "latitude": 44.4751945,
+      "longitude": -80.07473
+    },
+    {
+      "externalId": "228",
+      "name": "Ellesmere & Victoria Park",
+      "city": "Toronto-Scarborough",
+      "address": "55 Ellesmere Road",
+      "latitude": 43.7577834,
+      "longitude": -79.3140749
+    },
+    {
+      "externalId": "234",
+      "name": "Eglinton & Kipling",
+      "city": "Toronto-Etobicoke",
+      "address": "211 Lloyd Manor Road",
+      "latitude": 43.6753621,
+      "longitude": -79.5571804
+    },
+    {
+      "externalId": "348",
+      "name": "Talbot & Highway 3",
+      "city": "Blenheim",
+      "address": "24 Marlborough Street South",
+      "latitude": 42.3333435,
+      "longitude": -81.9983057
+    },
+    {
+      "externalId": "351",
+      "name": "North Augusta & Parkdale",
+      "city": "Brockville",
+      "address": "2075 Parkdale Avenue",
+      "latitude": 44.6150674,
+      "longitude": -75.6828008
+    },
+    {
+      "externalId": "652",
+      "name": "Kingsway & Barrydowne",
+      "city": "Sudbury",
+      "address": "1099 Marcus Drive",
+      "latitude": 46.500169899999996,
+      "longitude": -80.9477498
+    },
+    {
+      "externalId": "225",
+      "name": "Hillside & Ontario",
+      "city": "Elliot Lake",
+      "address": "11 Charles Walk",
+      "latitude": 46.386356799999994,
+      "longitude": -82.647948
+    },
+    {
+      "externalId": "226",
+      "name": "Yonge & Davis West",
+      "city": "Newmarket",
+      "address": "17600 Yonge Street",
+      "latitude": 44.0562244,
+      "longitude": -79.4836673
+    },
+    {
+      "externalId": "343",
+      "name": "Lansdowne & Ashburnham",
+      "city": "Peterborough",
+      "address": "400 Lansdowne Street East",
+      "latitude": 44.2923683,
+      "longitude": -78.28985689999999
+    },
+    {
+      "externalId": "344",
+      "name": "Highway 24 & Highway 401",
+      "city": "Cambridge",
+      "address": "101 Holiday Inn Drive",
+      "latitude": 43.4188422,
+      "longitude": -80.3244441
+    },
+    {
+      "externalId": "345",
+      "name": "Victoria & Edna",
+      "city": "Kitchener",
+      "address": "617 Victoria Street North",
+      "latitude": 43.4605789,
+      "longitude": -80.474285
+    },
+    {
+      "externalId": "346",
+      "name": "Highway 7 & Weston",
+      "city": "Woodbridge",
+      "address": "7850 Weston Road",
+      "latitude": 43.7910316,
+      "longitude": -79.55020189999999
+    },
+    {
+      "externalId": "331",
+      "name": "Nelson & Sykes",
+      "city": "Meaford",
+      "address": "31 Nelson Street",
+      "latitude": 44.607462999999996,
+      "longitude": -80.5931823
+    },
+    {
+      "externalId": "698",
+      "name": "Square One & Rathburn",
+      "city": "Mississauga",
+      "address": "65 Square One Drive",
+      "latitude": 43.597375,
+      "longitude": -79.6432389
+    },
+    {
+      "externalId": "334",
+      "name": "Winston Churchill & Aquitaine",
+      "city": "Mississauga",
+      "address": "6975 Meadowvale Town Centre",
+      "latitude": 43.581938,
+      "longitude": -79.7579496
+    },
+    {
+      "externalId": "335",
+      "name": "Highway 17 & Oliver",
+      "city": "Kakabeka Falls",
+      "address": "4793 Highway 11",
+      "latitude": 48.4014404,
+      "longitude": -89.6145185
+    },
+    {
+      "externalId": "322",
+      "name": "Highway 64 & Highway 535",
+      "city": "Noelville",
+      "address": "142 St David Street North",
+      "latitude": 46.1396504,
+      "longitude": -80.431005
+    },
+    {
+      "externalId": "327",
+      "name": "Highway 69 & Elmview",
+      "city": "Hanmer",
+      "address": "5-5085 Highway 69",
+      "latitude": 46.432282799999996,
+      "longitude": -80.9035689
+    },
+    {
+      "externalId": "152",
+      "name": "Wentworth & Cedar",
+      "city": "Oshawa",
+      "address": "199 Wentworth Street West",
+      "latitude": 43.8698517,
+      "longitude": -78.84994280000001
+    },
+    {
+      "externalId": "153",
+      "name": "Erie South & Seacliff",
+      "city": "Leamington",
+      "address": "16 Seacliff Drive East",
+      "latitude": 42.0330356,
+      "longitude": -82.5978878
+    },
+    {
+      "externalId": "434",
+      "name": "Whites & Kingston",
+      "city": "Pickering",
+      "address": "705 Kingston Road",
+      "latitude": 43.688992899999995,
+      "longitude": -79.26952469999999
+    },
+    {
+      "externalId": "436",
+      "name": "Derry & Goreway",
+      "city": "Mississauga",
+      "address": "7205 Goreway Drive",
+      "latitude": 43.7195822,
+      "longitude": -79.6377636
+    },
+    {
+      "externalId": "438",
+      "name": "Wonderland & Southdale",
+      "city": "London",
+      "address": "3050 Wonderland Road South",
+      "latitude": 42.9376732,
+      "longitude": -81.2802166
+    },
+    {
+      "externalId": "425",
+      "name": "Bloor & Tomken",
+      "city": "Mississauga",
+      "address": "1125 Bloor Street East",
+      "latitude": 43.67423,
+      "longitude": -79.3661803
+    },
+    {
+      "externalId": "427",
+      "name": "St. Clair & Pioneer Line",
+      "city": "Chatham",
+      "address": "807 St. Clair Street",
+      "latitude": 42.4316217,
+      "longitude": -82.21977799999999
+    },
+    {
+      "externalId": "428",
+      "name": "Morningside & Highway 401",
+      "city": "Toronto-Scarborough",
+      "address": "785 Milner Avenue",
+      "latitude": 43.7968481,
+      "longitude": -79.2047106
+    },
+    {
+      "externalId": "650",
+      "name": "Bayview & Millwood",
+      "city": "Toronto",
+      "address": "1524 Bayview Avenue",
+      "latitude": 43.70399390000001,
+      "longitude": -79.3747801
+    },
+    {
+      "externalId": "417",
+      "name": "King & Northfield",
+      "city": "Waterloo",
+      "address": "571 King Street North",
+      "latitude": 43.5012039,
+      "longitude": -80.53372159999999
+    },
+    {
+      "externalId": "418",
+      "name": "Main & Millwood",
+      "city": "Erin",
+      "address": "41 Main Street",
+      "latitude": 43.7684703,
+      "longitude": -80.0609613
+    },
+    {
+      "externalId": "419",
+      "name": "Highway 89 & Highway 124",
+      "city": "Shelburne",
+      "address": "816 Ojibway Road",
+      "latitude": 44.084360499999995,
+      "longitude": -80.1854304
+    },
+    {
+      "externalId": "420",
+      "name": "Bloor & Runnymede",
+      "city": "Toronto",
+      "address": "2180 Bloor Street West",
+      "latitude": 43.651786799999996,
+      "longitude": -79.4743874
+    },
+    {
+      "externalId": "406",
+      "name": "Simcoe Road 10 & Commerce",
+      "city": "Angus",
+      "address": "7 Commerce Road",
+      "latitude": 44.3292916,
+      "longitude": -79.8900565
+    },
+    {
+      "externalId": "408",
+      "name": "Jane & Finch",
+      "city": "Toronto-North York",
+      "address": "1 York Gate Boulevard",
+      "latitude": 43.7590204,
+      "longitude": -79.5188099
+    },
+    {
+      "externalId": "411",
+      "name": "Yonge & Wellesley",
+      "city": "Toronto",
+      "address": "547 Yonge Street",
+      "latitude": 43.6644654,
+      "longitude": -79.384137
+    },
+    {
+      "externalId": "412",
+      "name": "Hunt Club & Merivale",
+      "city": "Ottawa-Nepean",
+      "address": "543 West Hunt Club Road",
+      "latitude": 45.3343292,
+      "longitude": -75.7278888
+    },
+    {
+      "externalId": "414",
+      "name": "Highway 14 & Victoria",
+      "city": "Stirling",
+      "address": "125 North Street",
+      "latitude": 44.299459299999995,
+      "longitude": -77.5488209
+    },
+    {
+      "externalId": "397",
+      "name": "Major Mackenzie & Weston",
+      "city": "Vaughan",
+      "address": "3631 Major Mackenzie Drive",
+      "latitude": 43.8449113,
+      "longitude": -79.5555916
+    },
+    {
+      "externalId": "404",
+      "name": "Main & Mostar",
+      "city": "Stouffville",
+      "address": "5710 Main Street",
+      "latitude": 43.9682162,
+      "longitude": -79.2647629
+    },
+    {
+      "externalId": "762",
+      "name": "Sunningdale & Adelaide",
+      "city": "London",
+      "address": "1820 Adelaide Street North",
+      "latitude": 43.0460628,
+      "longitude": -81.2585898
+    },
+    {
+      "externalId": "757",
+      "name": "Dufferin & Eglinton",
+      "city": "Toronto",
+      "address": "2409 Dufferin Street",
+      "latitude": 43.697551399999995,
+      "longitude": -79.4506444
+    },
+    {
+      "externalId": "778",
+      "name": "Lawrence & Allen",
+      "city": "Toronto",
+      "address": "700 Lawrence Avenue West",
+      "latitude": 43.7166199,
+      "longitude": -79.44753419999999
+    },
+    {
+      "externalId": "759",
+      "name": "Hespeler & Dunbar",
+      "city": "Cambridge",
+      "address": "350 Hespeler Road",
+      "latitude": 43.3907721,
+      "longitude": -80.3244441
+    },
+    {
+      "externalId": "789",
+      "name": "Islington & Highway 401",
+      "city": "Toronto-Etobicoke",
+      "address": "145 Silver Reign Drive",
+      "latitude": 43.7118926,
+      "longitude": -79.55681539999999
+    },
+    {
+      "externalId": "779",
+      "name": "Mapleview & Bayview",
+      "city": "Barrie",
+      "address": "110 Concert Way",
+      "latitude": 44.3372974,
+      "longitude": -79.6835621
+    },
+    {
+      "externalId": "752",
+      "name": "Lakeshore & Mississauga Rd.",
+      "city": "Mississauga",
+      "address": "175 Lakeshore Road West",
+      "latitude": 43.5474123,
+      "longitude": -79.58984199999999
+    },
+    {
+      "externalId": "787",
+      "name": "Major Mackenzie Drive West & Moody Drive",
+      "city": "Vaughan-Kleinburg",
+      "address": "6540 Major Mackenzie Drive West",
+      "latitude": 43.826402099999996,
+      "longitude": -79.6532941
+    },
+    {
+      "externalId": "393",
+      "name": "Richmond & Fanshawe Park",
+      "city": "London",
+      "address": "109 Fanshawe Park Road East",
+      "latitude": 43.0270912,
+      "longitude": -81.2742514
+    },
+    {
+      "externalId": "382",
+      "name": "Cedar & St Andrew",
+      "city": "Cambridge",
+      "address": "45 - 130 Cedar Street",
+      "latitude": 43.3523369,
+      "longitude": -80.32824699999999
+    },
+    {
+      "externalId": "385",
+      "name": "Mavis & Britannia",
+      "city": "Mississauga",
+      "address": "5925 Rodeo Drive",
+      "latitude": 43.6131217,
+      "longitude": -79.6886615
+    },
+    {
+      "externalId": "373",
+      "name": "Lynden & Wayne Gretzky Parkway",
+      "city": "Brantford",
+      "address": "84 Lynden Road",
+      "latitude": 43.1707104,
+      "longitude": -80.2397989
+    },
+    {
+      "externalId": "367",
+      "name": "Howard & E.c. Row Expressway",
+      "city": "Windsor",
+      "address": "3165 Howard Avenue",
+      "latitude": 42.274175899999996,
+      "longitude": -83.0058528
+    },
+    {
+      "externalId": "353",
+      "name": "Main & Ramona",
+      "city": "Markham",
+      "address": "219 Main Street",
+      "latitude": 43.883373299999995,
+      "longitude": -79.2615083
+    },
+    {
+      "externalId": "354",
+      "name": "Highway 7 & Highway 8",
+      "city": "New Hamburg",
+      "address": "366 Waterloo Street",
+      "latitude": 43.3866771,
+      "longitude": -80.71209859999999
+    },
+    {
+      "externalId": "355",
+      "name": "Bayview & Sheppard",
+      "city": "Toronto-North York",
+      "address": "2901 Bayview Avenue",
+      "latitude": 43.768540099999996,
+      "longitude": -79.3852713
+    },
+    {
+      "externalId": "359",
+      "name": "Great Northern & Second Line",
+      "city": "Sault Ste. Marie",
+      "address": "616 Great Northern Road",
+      "latitude": 46.5440458,
+      "longitude": -84.3179362
+    },
+    {
+      "externalId": "58",
+      "name": "Algonquin & Texas Gulf Road",
+      "city": "Timmins",
+      "address": "681 Algonquin Boulevard East",
+      "latitude": 48.475925,
+      "longitude": -81.3157104
+    },
+    {
+      "externalId": "39",
+      "name": "3rd & Albert",
+      "city": "Cobourg",
+      "address": "63 Albert Street",
+      "latitude": 43.9584159,
+      "longitude": -78.1677093
+    },
+    {
+      "externalId": "40",
+      "name": "Barrack & King",
+      "city": "Kingston",
+      "address": "34 Barrack Street",
+      "latitude": 44.2330541,
+      "longitude": -76.4808747
+    },
+    {
+      "externalId": "41",
+      "name": "Industrial & St. Laurent",
+      "city": "Ottawa",
+      "address": "665 Industrial Avenue",
+      "latitude": 45.4110204,
+      "longitude": -75.6393263
+    },
+    {
+      "externalId": "25",
+      "name": "Osler & Main West",
+      "city": "Dundas",
+      "address": "119 Osler Drive",
+      "latitude": 43.257182199999995,
+      "longitude": -79.9411556
+    },
+    {
+      "externalId": "26",
+      "name": "York & Ridout",
+      "city": "London",
+      "address": "71 York Street",
+      "latitude": 42.980210799999995,
+      "longitude": -81.2518705
+    },
+    {
+      "externalId": "18",
+      "name": "King St & Dufferin",
+      "city": "Toronto",
+      "address": "85 Hanna Avenue",
+      "latitude": 43.640134499999995,
+      "longitude": -79.4197681
+    },
+    {
+      "externalId": "23",
+      "name": "Barton & Kenilworth",
+      "city": "Hamilton",
+      "address": "1149 Barton Street East",
+      "latitude": 43.2516716,
+      "longitude": -79.81334149999999
+    },
+    {
+      "externalId": "8",
+      "name": "St. Clair & Oakwood",
+      "city": "Toronto",
+      "address": "900 St. Clair Avenue West",
+      "latitude": 43.6802655,
+      "longitude": -79.4333863
+    },
+    {
+      "externalId": "168",
+      "name": "Riddell & Centennial",
+      "city": "Orangeville",
+      "address": "510 Riddell Road",
+      "latitude": 43.903945199999995,
+      "longitude": -80.1196094
+    },
+    {
+      "externalId": "11",
+      "name": "Gerrard & Pape",
+      "city": "Toronto",
+      "address": "932 Gerrard Street East",
+      "latitude": 43.6682358,
+      "longitude": -79.3411191
+    },
+    {
+      "externalId": "148",
+      "name": "North Service & Dorval",
+      "city": "Oakville",
+      "address": "270 North Service Road West",
+      "latitude": 43.447527,
+      "longitude": -79.70326349999999
+    },
+    {
+      "externalId": "4",
+      "name": "Danforth & Broadview",
+      "city": "Toronto",
+      "address": "200 Danforth Avenue",
+      "latitude": 43.676945499999995,
+      "longitude": -79.3559958
+    },
+    {
+      "externalId": "143",
+      "name": "Dundurn & Charlton",
+      "city": "Hamilton",
+      "address": "233 Dundurn Street South",
+      "latitude": 43.254517899999996,
+      "longitude": -79.8909711
+    },
+    {
+      "externalId": "146",
+      "name": "Grosvenor & High",
+      "city": "Southampton",
+      "address": "11 Grosvenor Street North",
+      "latitude": 44.4966607,
+      "longitude": -81.3731305
+    },
+    {
+      "externalId": "633",
+      "name": "Lakeshore & Browns Line",
+      "city": "Toronto-Etobicoke",
+      "address": "3730 Lake Shore Boulevard West",
+      "latitude": 43.594038399999995,
+      "longitude": -79.53961989999999
+    },
+    {
+      "externalId": "116",
+      "name": "Arthur & South",
+      "city": "Elmira",
+      "address": "315  Arthur Street South",
+      "latitude": 43.5830012,
+      "longitude": -80.56085820000001
+    },
+    {
+      "externalId": "641",
+      "name": "Appleby & New",
+      "city": "Burlington",
+      "address": "501 Appleby Line",
+      "latitude": 43.3688474,
+      "longitude": -79.75524039999999
+    },
+    {
+      "externalId": "97",
+      "name": "Alkenbrack & Centre North",
+      "city": "Napanee",
+      "address": "10 Alkenbrack Street",
+      "latitude": 44.256457999999995,
+      "longitude": -76.96112169999999
+    },
+    {
+      "externalId": "101",
+      "name": "Christie & Main",
+      "city": "Grimsby",
+      "address": "25 Elm Street",
+      "latitude": 43.1925034,
+      "longitude": -79.5618756
+    },
+    {
+      "externalId": "88",
+      "name": "Mechanic & Broadway",
+      "city": "Paris",
+      "address": "25 Mechanic Street",
+      "latitude": 43.191874,
+      "longitude": -80.3842318
+    },
+    {
+      "externalId": "90",
+      "name": "Ritson & Adelaide",
+      "city": "Oshawa",
+      "address": "232 Ritson Road North",
+      "latitude": 43.9055061,
+      "longitude": -78.8593264
+    },
+    {
+      "externalId": "658",
+      "name": "Leslie & Wellington",
+      "city": "Aurora",
+      "address": "94 First Commerce Drive",
+      "latitude": 44.0131952,
+      "longitude": -79.4165173
+    },
+    {
+      "externalId": "640",
+      "name": "Winston Churchill & Hwy 401",
+      "city": "Mississauga",
+      "address": "3017 Argentia Road",
+      "latitude": 43.5972826,
+      "longitude": -79.7860982
+    },
+    {
+      "externalId": "72",
+      "name": "Dufferin & Wilson",
+      "city": "Perth",
+      "address": "80 Dufferin Street",
+      "latitude": 44.9076224,
+      "longitude": -76.2649133
+    },
+    {
+      "externalId": "74",
+      "name": "Queensway & Ireland",
+      "city": "Simcoe",
+      "address": "154 Queensway Road East",
+      "latitude": 42.8480871,
+      "longitude": -80.2883628
+    },
+    {
+      "externalId": "63",
+      "name": "Trunk Rd & Lake St",
+      "city": "Sault Ste. Marie",
+      "address": "150 Churchill Blvd",
+      "latitude": 46.5101997,
+      "longitude": -84.2970557
+    },
+    {
+      "externalId": "64",
+      "name": "Dundas & Springbank",
+      "city": "Woodstock",
+      "address": "959 Dundas Street",
+      "latitude": 43.1348419,
+      "longitude": -80.73261529999999
+    },
+    {
+      "externalId": "495",
+      "name": "Scottsdale & Stone",
+      "city": "Guelph",
+      "address": "615 Scottsdale Drive",
+      "latitude": 43.5150371,
+      "longitude": -80.2394286
+    },
+    {
+      "externalId": "496",
+      "name": "Perth & Eagleson",
+      "city": "Richmond",
+      "address": "5921 Perth Street",
+      "latitude": 45.202666300000004,
+      "longitude": -75.8302892
+    },
+    {
+      "externalId": "485",
+      "name": "Coxwell & O'connor",
+      "city": "Toronto",
+      "address": "1009 Coxwell Avenue",
+      "latitude": 43.6966099,
+      "longitude": -79.32864409999999
+    },
+    {
+      "externalId": "490",
+      "name": "Tecumseh & Lauzon",
+      "city": "Windsor",
+      "address": "7640 Tecumseh Road East",
+      "latitude": 42.315495399999996,
+      "longitude": -82.9386565
+    },
+    {
+      "externalId": "481",
+      "name": "Fairview & Maple",
+      "city": "Burlington",
+      "address": "1235 Fairview Street",
+      "latitude": 43.331038299999996,
+      "longitude": -79.8194314
+    },
+    {
+      "externalId": "455",
+      "name": "Carp & Highway 17",
+      "city": "Carp",
+      "address": "461 Donald B Munro Drive",
+      "latitude": 45.3447137,
+      "longitude": -76.0379502
+    },
+    {
+      "externalId": "456",
+      "name": "Mountainview & Argyll",
+      "city": "Georgetown",
+      "address": "365 Mountainview Road South",
+      "latitude": 43.6311749,
+      "longitude": -79.8770989
+    },
+    {
+      "externalId": "459",
+      "name": "Exmouth & Lambton Mall",
+      "city": "Sarnia",
+      "address": "1450 Quinn Drive",
+      "latitude": 42.98665340000001,
+      "longitude": -82.3466157
+    },
+    {
+      "externalId": "461",
+      "name": "Metcalfe & Mill",
+      "city": "Elora",
+      "address": "23 Metcalfe Street",
+      "latitude": 43.6801475,
+      "longitude": -80.4286968
+    },
+    {
+      "externalId": "450",
+      "name": "County Road 9 & Highway 10",
+      "city": "Dundalk",
+      "address": "772200 Highway 10",
+      "latitude": 44.1779945,
+      "longitude": -80.38003859999999
+    },
+    {
+      "externalId": "452",
+      "name": "Avenue & Lawrence",
+      "city": "Toronto-North York",
+      "address": "1838-1844 Avenue Road",
+      "latitude": 43.7309608,
+      "longitude": -79.41933949999999
+    },
+    {
+      "externalId": "454",
+      "name": "Highway 21 & Goderich",
+      "city": "Port Elgin",
+      "address": "5120 Highway 21",
+      "latitude": 44.4233998,
+      "longitude": -81.39858
+    },
+    {
+      "externalId": "585",
+      "name": "Markham & Bur Oak",
+      "city": "Markham",
+      "address": "9720 Markham Road",
+      "latitude": 43.9022655,
+      "longitude": -79.2672264
+    },
+    {
+      "externalId": "569",
+      "name": "Hazeldean & Main",
+      "city": "Stittsville",
+      "address": "6065 Hazeldean Road",
+      "latitude": 45.272095400000005,
+      "longitude": -75.93149700000001
+    },
+    {
+      "externalId": "573",
+      "name": "Appleby & Upper Middle",
+      "city": "Burlington",
+      "address": "2000 Appleby Line",
+      "latitude": 43.3938947,
+      "longitude": -79.7912357
+    },
+    {
+      "externalId": "563",
+      "name": "Rossland & Wilson",
+      "city": "Oshawa",
+      "address": "555 Rossland Road East",
+      "latitude": 43.9191795,
+      "longitude": -78.849961
+    },
+    {
+      "externalId": "566",
+      "name": "Fairview & Walkers Line",
+      "city": "Burlington",
+      "address": "3365 Fairview Street",
+      "latitude": 43.35562410000001,
+      "longitude": -79.7851428
+    },
+    {
+      "externalId": "542",
+      "name": "Dundas & Mavis",
+      "city": "Mississauga",
+      "address": "3020 Elmcreek Road",
+      "latitude": 43.568023499999995,
+      "longitude": -79.63130559999999
+    },
+    {
+      "externalId": "544",
+      "name": "Ottawa & River",
+      "city": "Kitchener",
+      "address": "1005 Ottawa Street North",
+      "latitude": 43.44932,
+      "longitude": -80.4448211
+    },
+    {
+      "externalId": "545",
+      "name": "Centennial & Queenston",
+      "city": "Stoney Creek",
+      "address": "75 Centennial Parkway North",
+      "latitude": 43.2309069,
+      "longitude": -79.7659219
+    },
+    {
+      "externalId": "549",
+      "name": "Highland & Westmount",
+      "city": "Kitchener",
+      "address": "324 Highland Road West",
+      "latitude": 43.4391888,
+      "longitude": -80.5095363
+    },
+    {
+      "externalId": "534",
+      "name": "Dundas & Bloor",
+      "city": "Toronto",
+      "address": "2290 Dundas Street West",
+      "latitude": 43.65533990000001,
+      "longitude": -79.4507672
+    },
+    {
+      "externalId": "527",
+      "name": "Hamilton & Oakwood",
+      "city": "Dorchester",
+      "address": "4349 Hamilton Road",
+      "latitude": 42.985124299999995,
+      "longitude": -81.04889539999999
+    },
+    {
+      "externalId": "528",
+      "name": "Bay & Bloor",
+      "city": "Toronto",
+      "address": "55 Bloor Street West",
+      "latitude": 43.669204099999995,
+      "longitude": -79.38815919999999
+    },
+    {
+      "externalId": "529",
+      "name": "Highway 9 & Tottenham",
+      "city": "Tottenham",
+      "address": "55 Queen Street South",
+      "latitude": 44.019842,
+      "longitude": -79.80388669999999
+    },
+    {
+      "externalId": "530",
+      "name": "William & Hope",
+      "city": "Tavistock",
+      "address": "82 Hope Street West",
+      "latitude": 43.3204256,
+      "longitude": -80.83918249999999
+    },
+    {
+      "externalId": "521",
+      "name": "Rideau Valley & Bridge",
+      "city": "Ottawa-Manotick",
+      "address": "1154 Currier Street",
+      "latitude": 45.2234682,
+      "longitude": -75.6828415
+    },
+    {
+      "externalId": "522",
+      "name": "Geneva & Scott",
+      "city": "St. Catharines",
+      "address": "311 Geneva Street",
+      "latitude": 43.1788953,
+      "longitude": -79.2421808
+    },
+    {
+      "externalId": "509",
+      "name": "Highway 20 & Rice",
+      "city": "Fonthill",
+      "address": "114 Highway 20 East",
+      "latitude": 43.0476939,
+      "longitude": -79.27838349999999
+    },
+    {
+      "externalId": "512",
+      "name": "Yonge & Bloor",
+      "city": "Toronto",
+      "address": "20 Bloor Street East",
+      "latitude": 43.6708929,
+      "longitude": -79.3867082
+    },
+    {
+      "externalId": "702",
+      "name": "Columbia & Fischer Hallman",
+      "city": "Waterloo",
+      "address": "450 Columbia Street West",
+      "latitude": 43.467337199999996,
+      "longitude": -80.56835720000001
+    },
+    {
+      "externalId": "614",
+      "name": "Carlton & Church",
+      "city": "Toronto",
+      "address": "60 Carlton Street",
+      "latitude": 43.6620357,
+      "longitude": -79.3795403
+    },
+    {
+      "externalId": "616",
+      "name": "Fort William & Main",
+      "city": "Thunder Bay",
+      "address": "969 Fort William Road",
+      "latitude": 48.401796,
+      "longitude": -89.2388201
+    },
+    {
+      "externalId": "593",
+      "name": "Commissioners & Boler",
+      "city": "London",
+      "address": "1240 Commissioners Road West",
+      "latitude": 42.957940699999995,
+      "longitude": -81.3314324
+    },
+    {
+      "externalId": "598",
+      "name": "St. Laurent & Queensway",
+      "city": "Ottawa",
+      "address": "1021 Cyrville Road",
+      "latitude": 45.425488699999995,
+      "longitude": -75.6358537
+    },
+    {
+      "externalId": "599",
+      "name": "Church & Airport",
+      "city": "Caledon",
+      "address": "16000 Airport Road",
+      "latitude": 43.869856999999996,
+      "longitude": -79.8673329
+    },
+    {
+      "externalId": "312",
+      "name": "Primeway & Woodlawn",
+      "city": "Welland",
+      "address": "102 Primeway Drive",
+      "latitude": 43.016754,
+      "longitude": -79.22747269999999
+    },
+    {
+      "externalId": "317",
+      "name": "Highway 4 & Highway 6",
+      "city": "Durham",
+      "address": "114 Garafraxa Street South",
+      "latitude": 44.175956,
+      "longitude": -80.8187051
+    },
+    {
+      "externalId": "321",
+      "name": "Britannia & Queen",
+      "city": "Mississauga",
+      "address": "128 Queen Street South",
+      "latitude": 43.582603,
+      "longitude": -79.7176393
+    },
+    {
+      "externalId": "675",
+      "name": "Lake Shore & Leslie",
+      "city": "Toronto",
+      "address": "1015 Lake Shore Boulevard East",
+      "latitude": 43.6582347,
+      "longitude": -79.3287763
+    },
+    {
+      "externalId": "749",
+      "name": "Maggie Johnson & Regnl Rd 56",
+      "city": "Binbrook",
+      "address": "2525 Regional Road 56",
+      "latitude": 43.125071299999995,
+      "longitude": -79.802489
+    },
+    {
+      "externalId": "754",
+      "name": "Yonge & King",
+      "city": "Toronto",
+      "address": "4 King Street West",
+      "latitude": 43.6495044,
+      "longitude": -79.3784429
+    },
+    {
+      "externalId": "747",
+      "name": "9th Line & Highway 407",
+      "city": "Markham",
+      "address": "100 Copper Creek Drive",
+      "latitude": 43.8680926,
+      "longitude": -79.22831599999999
+    },
+    {
+      "externalId": "670",
+      "name": "Strandherd & Maravista",
+      "city": "Ottawa-Nepean",
+      "address": "4305 Strandherd Drive",
+      "latitude": 45.270616499999996,
+      "longitude": -75.7824874
+    },
+    {
+      "externalId": "743",
+      "name": "Highway15 & Waterside",
+      "city": "Kingston",
+      "address": "1218 Highway 15",
+      "latitude": 44.2704313,
+      "longitude": -76.45134999999999
+    },
+    {
+      "externalId": "755",
+      "name": "Yonge & Davisville",
+      "city": "Toronto",
+      "address": "1965 Yonge Street",
+      "latitude": 43.6999017,
+      "longitude": -79.396655
+    },
+    {
+      "externalId": "756",
+      "name": "Victoria Park & Kingston",
+      "city": "Toronto",
+      "address": "1100 Kingston Road",
+      "latitude": 43.6813461,
+      "longitude": -79.282341
+    },
+    {
+      "externalId": "668",
+      "name": "Dupont & Christie",
+      "city": "Toronto",
+      "address": "750 Dupont Street",
+      "latitude": 43.6712,
+      "longitude": -79.42448999999999
+    },
+    {
+      "externalId": "691",
+      "name": "Homer Watson & Pioneer",
+      "city": "Kitchener",
+      "address": "123 Pioneer Drive",
+      "latitude": 43.393925700000004,
+      "longitude": -80.43230439999999
+    },
+    {
+      "externalId": "686",
+      "name": "Beechwood & Mackay",
+      "city": "Ottawa",
+      "address": "19 Beechwood Avenue",
+      "latitude": 45.43908510000001,
+      "longitude": -75.67743899999999
+    },
+    {
+      "externalId": "671",
+      "name": "King Road & Dufferin",
+      "city": "King City",
+      "address": "1700 King Road",
+      "latitude": 43.9342713,
+      "longitude": -79.50588929999999
+    },
+    {
+      "externalId": "679",
+      "name": "Niagara Stone & Field",
+      "city": "Virgil",
+      "address": "1561 Niagara Stone Road",
+      "latitude": 43.2235747,
+      "longitude": -79.119395
+    },
+    {
+      "externalId": "646",
+      "name": "College & Bay",
+      "city": "Toronto",
+      "address": "777 Bay Street",
+      "latitude": 43.660761799999996,
+      "longitude": -79.3847803
+    },
+    {
+      "externalId": "212",
+      "name": "Richmond & Kirkwood",
+      "city": "Ottawa",
+      "address": "222 Richmond Road",
+      "latitude": 45.3940817,
+      "longitude": -75.74905729999999
+    },
+    {
+      "externalId": "214",
+      "name": "Queensway & Park Lawn",
+      "city": "Toronto-Etobicoke",
+      "address": "125 The Queensway",
+      "latitude": 43.63032,
+      "longitude": -79.48134689999999
+    },
+    {
+      "externalId": "205",
+      "name": "Highway 10 & Toronto",
+      "city": "Markdale",
+      "address": "155 Toronto Street",
+      "latitude": 44.3217558,
+      "longitude": -80.6523342
+    },
+    {
+      "externalId": "208",
+      "name": "Highway 62 & Highway 28",
+      "city": "Bancroft",
+      "address": "315 Hastings Street North",
+      "latitude": 45.0598974,
+      "longitude": -77.8568094
+    },
+    {
+      "externalId": "211",
+      "name": "Highway 416 & Highway 43",
+      "city": "Kemptville",
+      "address": "324 Colonnade Drive East",
+      "latitude": 45.029929599999996,
+      "longitude": -75.63050009999999
+    },
+    {
+      "externalId": "653",
+      "name": "King & Darlington",
+      "city": "Courtice",
+      "address": "1437 King Street East",
+      "latitude": 43.9066999,
+      "longitude": -78.8084879
+    },
+    {
+      "externalId": "188",
+      "name": "Brock & Dundas",
+      "city": "Whitby",
+      "address": "111 Gilbert Street East",
+      "latitude": 43.876762199999995,
+      "longitude": -78.9398473
+    },
+    {
+      "externalId": "177",
+      "name": "Yonge & Sheppard",
+      "city": "Toronto-North York",
+      "address": "22 Poyntz Avenue",
+      "latitude": 43.7600542,
+      "longitude": -79.4111633
+    },
+    {
+      "externalId": "179",
+      "name": "Upper Middle & 8th Line",
+      "city": "Oakville",
+      "address": "1011 Upper Middle Road East",
+      "latitude": 43.4836828,
+      "longitude": -79.6942217
+    },
+    {
+      "externalId": "661",
+      "name": "Bramalea & Mayfield",
+      "city": "Brampton",
+      "address": "11785 Bramalea Road",
+      "latitude": 43.7715908,
+      "longitude": -79.7786235
+    },
+    {
+      "externalId": "685",
+      "name": "Dundas & Keele",
+      "city": "Toronto",
+      "address": "2803 Dundas Street West",
+      "latitude": 43.665172399999996,
+      "longitude": -79.4627026
+    },
+    {
+      "externalId": "300",
+      "name": "9th & 16th",
+      "city": "Owen Sound",
+      "address": "1613 9th Avenue East",
+      "latitude": 44.5740281,
+      "longitude": -80.9265128
+    },
+    {
+      "externalId": "295",
+      "name": "Dundas & Jane",
+      "city": "Toronto",
+      "address": "3520 Dundas Street West",
+      "latitude": 43.666173099999995,
+      "longitude": -79.4887638
+    },
+    {
+      "externalId": "298",
+      "name": "Broadway & Townline",
+      "city": "Orangeville",
+      "address": "40 Broadway",
+      "latitude": 43.920751599999996,
+      "longitude": -80.0875858
+    },
+    {
+      "externalId": "673",
+      "name": "Queen & Broadview",
+      "city": "Toronto",
+      "address": "776 Queen Street East",
+      "latitude": 43.6596804,
+      "longitude": -79.3475018
+    },
+    {
+      "externalId": "286",
+      "name": "Main & Jasperson",
+      "city": "Kingsville",
+      "address": "410 Main Street East",
+      "latitude": 42.0381084,
+      "longitude": -82.7214254
+    },
+    {
+      "externalId": "275",
+      "name": "Main & Wellington",
+      "city": "Exeter",
+      "address": "146 Main Street South",
+      "latitude": 43.3524411,
+      "longitude": -81.4813151
+    },
+    {
+      "externalId": "278",
+      "name": "County Road 22 & Manning",
+      "city": "Tecumseh",
+      "address": "15 Amy Croft Drive",
+      "latitude": 42.305551699999995,
+      "longitude": -82.8680625
+    },
+    {
+      "externalId": "263",
+      "name": "Highway 2 & Green",
+      "city": "Bowmanville",
+      "address": "2344 Highway 2",
+      "latitude": 43.9104478,
+      "longitude": -78.7130475
+    },
+    {
+      "externalId": "253",
+      "name": "Lawrence & Don Mills",
+      "city": "Toronto-North York",
+      "address": "195 The Donway West",
+      "latitude": 43.7363344,
+      "longitude": -79.3459878
+    },
+    {
+      "externalId": "255",
+      "name": "Main & Bronte",
+      "city": "Milton",
+      "address": "14 Main Street East",
+      "latitude": 43.5088296,
+      "longitude": -79.8873244
+    },
+    {
+      "externalId": "744",
+      "name": "Big Bay Point & Sea Ray",
+      "city": "Innisfil-Friday Harb",
+      "address": "279 Sunseeker Avenue",
+      "latitude": 44.392500999999996,
+      "longitude": -79.5330054
+    },
+    {
+      "externalId": "248",
+      "name": "Yonge & Crosby",
+      "city": "Richmond Hill",
+      "address": "10375 Yonge Street North",
+      "latitude": 43.8806565,
+      "longitude": -79.4384528
+    },
+    {
+      "externalId": "250",
+      "name": "Gray's & Highway 8",
+      "city": "Stoney Creek",
+      "address": "122  Hamilton Regional Road 8",
+      "latitude": 43.2232972,
+      "longitude": -79.7462209
+    },
+    {
+      "externalId": "243",
+      "name": "Bank & Walkley",
+      "city": "Ottawa",
+      "address": "1980 Bank Street",
+      "latitude": 45.3662875,
+      "longitude": -75.66213359999999
+    },
+    {
+      "externalId": "227",
+      "name": "King & Heritage",
+      "city": "Midland",
+      "address": "930 Jones Road",
+      "latitude": 44.728967399999995,
+      "longitude": -79.87289679999999
+    },
+    {
+      "externalId": "229",
+      "name": "Parkside & St. David",
+      "city": "Fergus",
+      "address": "97 Parkside Drive West",
+      "latitude": 43.7108728,
+      "longitude": -80.3881768
+    },
+    {
+      "externalId": "233",
+      "name": "Upper James & Fennell",
+      "city": "Hamilton",
+      "address": "657 Upper James Street",
+      "latitude": 43.2355057,
+      "longitude": -79.8764123
+    },
+    {
+      "externalId": "223",
+      "name": "Highway 121 & 118",
+      "city": "Haliburton",
+      "address": "230 Highland Street",
+      "latitude": 45.0463643,
+      "longitude": -78.5075406
+    },
+    {
+      "externalId": "340",
+      "name": "Woodbine & Arlington",
+      "city": "Keswick",
+      "address": "76 Arlington Drive",
+      "latitude": 44.234438499999996,
+      "longitude": -79.4501715
+    },
+    {
+      "externalId": "341",
+      "name": "Spadina & Lonsdale",
+      "city": "Toronto",
+      "address": "420 Spadina Road",
+      "latitude": 43.688838499999996,
+      "longitude": -79.4131321
+    },
+    {
+      "externalId": "330",
+      "name": "Bridge & Carlow",
+      "city": "Port Stanley",
+      "address": "325 Bridge Street",
+      "latitude": 42.6647264,
+      "longitude": -81.2151555
+    },
+    {
+      "externalId": "333",
+      "name": "Bay & King",
+      "city": "Toronto",
+      "address": "100 King Street West",
+      "latitude": 43.6488576,
+      "longitude": -79.3821042
+    },
+    {
+      "externalId": "325",
+      "name": "Speedvale & Stevenson",
+      "city": "Guelph",
+      "address": "378 Speedvale Avenue East",
+      "latitude": 43.567517099999996,
+      "longitude": -80.25710509999999
+    },
+    {
+      "externalId": "329",
+      "name": "Steeles & Hwy 410",
+      "city": "Brampton",
+      "address": "545 Steeles Avenue East",
+      "latitude": 43.6780656,
+      "longitude": -79.7192266
+    },
+    {
+      "externalId": "154",
+      "name": "Midland & Princess",
+      "city": "Kingston",
+      "address": "1089 Midland Avenue",
+      "latitude": 44.2627618,
+      "longitude": -76.5746149
+    },
+    {
+      "externalId": "155",
+      "name": "Cumberland & Water",
+      "city": "Thunder Bay",
+      "address": "100 North Cumberland Street",
+      "latitude": 48.4378654,
+      "longitude": -89.21663679999999
+    },
+    {
+      "externalId": "156",
+      "name": "Guelph & Mountainview",
+      "city": "Georgetown",
+      "address": "236 Guelph Street",
+      "latitude": 43.649553,
+      "longitude": -79.9012971
+    },
+    {
+      "externalId": "432",
+      "name": "Taunton & Brock",
+      "city": "Whitby",
+      "address": "170 Taunton Road West",
+      "latitude": 43.9157685,
+      "longitude": -78.9602041
+    },
+    {
+      "externalId": "431",
+      "name": "Woodroffe & Baseline",
+      "city": "Ottawa-Nepean",
+      "address": "1363 Woodroffe Avenue",
+      "latitude": 45.3508168,
+      "longitude": -75.7584962
+    },
+    {
+      "externalId": "415",
+      "name": "Royal York & Dundas",
+      "city": "Toronto-Etobicoke",
+      "address": "270 The Kingsway",
+      "latitude": 43.6620103,
+      "longitude": -79.5197802
+    },
+    {
+      "externalId": "416",
+      "name": "Dixie & Highway 7",
+      "city": "Brampton-Bramalea",
+      "address": "80 Peel Centre Drive",
+      "latitude": 43.712507699999996,
+      "longitude": -79.7231544
+    },
+    {
+      "externalId": "407",
+      "name": "Regent & Long Lake",
+      "city": "Sudbury",
+      "address": "2400 Long Lake Road",
+      "latitude": 46.4415158,
+      "longitude": -81.00458139999999
+    },
+    {
+      "externalId": "398",
+      "name": "Burnhamthorpe & Highway 427",
+      "city": "Toronto-Etobicoke",
+      "address": "662 Burnhamthorpe Road",
+      "latitude": 43.6421926,
+      "longitude": -79.57611349999999
+    },
+    {
+      "externalId": "399",
+      "name": "Highway 117 & Highway 35",
+      "city": "Dorset",
+      "address": "1059 Main Street",
+      "latitude": 45.2462097,
+      "longitude": -78.8935099
+    },
+    {
+      "externalId": "400",
+      "name": "St. Laurent & Smyth",
+      "city": "Ottawa",
+      "address": "1910 St. Laurent Boulevard",
+      "latitude": 45.398235199999995,
+      "longitude": -75.62379949999999
+    },
+    {
+      "externalId": "401",
+      "name": "Portage & Colborne",
+      "city": "Niagara Falls",
+      "address": "3714 Portage Road",
+      "latitude": 43.1187883,
+      "longitude": -79.098749
+    },
+    {
+      "externalId": "758",
+      "name": "Front & Lakeshore",
+      "city": "Toronto",
+      "address": "65 Front Street West",
+      "latitude": 43.6459991,
+      "longitude": -79.3782616
+    },
+    {
+      "externalId": "772",
+      "name": "Bathurst & Bloor",
+      "city": "Toronto",
+      "address": "770 Bathurst Street",
+      "latitude": 43.6644921,
+      "longitude": -79.41124479999999
+    },
+    {
+      "externalId": "773",
+      "name": "Queen St E & Airport Road",
+      "city": "Brampton",
+      "address": "40 Coventry Road",
+      "latitude": 43.7419237,
+      "longitude": -79.69464529999999
+    },
+    {
+      "externalId": "784",
+      "name": "Jozo Weider & Village",
+      "city": "Collingwood",
+      "address": "182 Jozo Weider Boulvevard",
+      "latitude": 44.504351799999995,
+      "longitude": -80.31277349999999
+    },
+    {
+      "externalId": "656",
+      "name": "Queen & Portland",
+      "city": "Toronto",
+      "address": "619 Queen Street West",
+      "latitude": 43.6473213,
+      "longitude": -79.4028881
+    },
+    {
+      "externalId": "374",
+      "name": "Highway 81 & Highway 7",
+      "city": "Parkhill",
+      "address": "1-264 Parkhill Main Street",
+      "latitude": 43.1649575,
+      "longitude": -81.6828957
+    },
+    {
+      "externalId": "53",
+      "name": "Hwy 89 & Hwy 27",
+      "city": "Cookstown",
+      "address": "52 Queen Street",
+      "latitude": 44.1894746,
+      "longitude": -79.7088314
+    },
+    {
+      "externalId": "54",
+      "name": "Worthington & Fraser",
+      "city": "North Bay",
+      "address": "186 Worthington Street West",
+      "latitude": 46.312888099999995,
+      "longitude": -79.4627604
+    },
+    {
+      "externalId": "56",
+      "name": "Highway 401 & 2",
+      "city": "Prescott",
+      "address": "325 King Street West",
+      "latitude": 44.7079623,
+      "longitude": -75.5163893
+    },
+    {
+      "externalId": "46",
+      "name": "Christina & George",
+      "city": "Sarnia",
+      "address": "250 Christina Street North",
+      "latitude": 42.974754,
+      "longitude": -82.4056414
+    },
+    {
+      "externalId": "9",
+      "name": "Bloor & Ossington",
+      "city": "Toronto",
+      "address": "879 Bloor Street West",
+      "latitude": 43.6618719,
+      "longitude": -79.4250958
+    },
+    {
+      "externalId": "669",
+      "name": "Lake Shore & Park Lawn",
+      "city": "Toronto-Etobicoke",
+      "address": "2218 Lake Shore Boulevard West",
+      "latitude": 43.6222041,
+      "longitude": -79.48197619999999
+    },
+    {
+      "externalId": "133",
+      "name": "Petrolia Line & Highway 21",
+      "city": "Petrolia",
+      "address": "4353 Petrolia Line",
+      "latitude": 42.8812735,
+      "longitude": -82.1341746
+    },
+    {
+      "externalId": "135",
+      "name": "Highway 62 & 7",
+      "city": "Madoc",
+      "address": "219 Russel Street",
+      "latitude": 44.510112799999995,
+      "longitude": -77.4782778
+    },
+    {
+      "externalId": "126",
+      "name": "Highway 2 & Queen",
+      "city": "Tilbury",
+      "address": "34 Queen Street South",
+      "latitude": 42.2576585,
+      "longitude": -82.43194969999999
+    },
+    {
+      "externalId": "127",
+      "name": "Highway 31 & 2",
+      "city": "Morrisburg",
+      "address": "15 Main Street",
+      "latitude": 44.9003191,
+      "longitude": -75.18368319999999
+    },
+    {
+      "externalId": "104",
+      "name": "Highway 17b & Huron",
+      "city": "Thessalon",
+      "address": "163 Main Street",
+      "latitude": 46.255943699999996,
+      "longitude": -83.5567195
+    },
+    {
+      "externalId": "110",
+      "name": "Mcnaughton & Highway 40",
+      "city": "Wallaceburg",
+      "address": "30 Mcnaughton Avenue",
+      "latitude": 42.5880343,
+      "longitude": -82.3864179
+    },
+    {
+      "externalId": "94",
+      "name": "Highway 41 & Highway 60",
+      "city": "Eganville",
+      "address": "234 Bonnechere Street",
+      "latitude": 45.5438281,
+      "longitude": -77.10576019999999
+    },
+    {
+      "externalId": "92",
+      "name": "Fourth & Third",
+      "city": "Englehart",
+      "address": "65 Fourth Avenue",
+      "latitude": 47.825771599999996,
+      "longitude": -79.8741223
+    },
+    {
+      "externalId": "61",
+      "name": "Wellington & Raleigh",
+      "city": "Chatham",
+      "address": "210 Wellington Street West",
+      "latitude": 42.4037619,
+      "longitude": -82.1881458
+    },
+    {
+      "externalId": "66",
+      "name": "4th & 5th",
+      "city": "Cochrane",
+      "address": "137 Fourth Street",
+      "latitude": 49.0637803,
+      "longitude": -81.0262159
+    },
+    {
+      "externalId": "474",
+      "name": "Baybridge & Highway 62",
+      "city": "Rossmore",
+      "address": "5503 Highway 62",
+      "latitude": 44.1397209,
+      "longitude": -77.38430869999999
+    },
+    {
+      "externalId": "591",
+      "name": "Oil Heritage & London Line",
+      "city": "Reeces Corners",
+      "address": "4475 London Line",
+      "latitude": 42.978881699999995,
+      "longitude": -82.1202291
+    },
+    {
+      "externalId": "558",
+      "name": "Florence & Main",
+      "city": "Norwich",
+      "address": "93 Main Street West",
+      "latitude": 42.9862143,
+      "longitude": -80.60511269999999
+    },
+    {
+      "externalId": "538",
+      "name": "Rideau & Colonel By",
+      "city": "Ottawa",
+      "address": "50 Rideau Street",
+      "latitude": 45.4255122,
+      "longitude": -75.6929621
+    },
+    {
+      "externalId": "645",
+      "name": "Wellington & Somerset",
+      "city": "Ottawa",
+      "address": "981 Wellington Street West",
+      "latitude": 45.4058376,
+      "longitude": -75.7230678
+    },
+    {
+      "externalId": "515",
+      "name": "Bank & Riverside",
+      "city": "Ottawa",
+      "address": "2269 Riverside Drive",
+      "latitude": 45.3859377,
+      "longitude": -75.6784031
+    },
+    {
+      "externalId": "611",
+      "name": "John & Manvers",
+      "city": "Pontypool",
+      "address": "646 Drum Road",
+      "latitude": 44.1004685,
+      "longitude": -78.6284593
+    },
+    {
+      "externalId": "603",
+      "name": "Hill & Lyndock",
+      "city": "Corunna",
+      "address": "408 Lyndoch Street",
+      "latitude": 42.888340899999996,
+      "longitude": -82.45304449999999
+    },
+    {
+      "externalId": "594",
+      "name": "Rice Lake & Lake",
+      "city": "Bewdley",
+      "address": "5087 Rice Lake Drive North",
+      "latitude": 44.0893084,
+      "longitude": -78.3210549
+    },
+    {
+      "externalId": "597",
+      "name": "Beachburg & Lapasse",
+      "city": "Beachburg",
+      "address": "35 Lapasse Road",
+      "latitude": 45.7360062,
+      "longitude": -76.8637504
+    },
+    {
+      "externalId": "319",
+      "name": "Ottawa & Haycreek",
+      "city": "Whitney",
+      "address": "16 Hay Creek Road",
+      "latitude": 45.4925044,
+      "longitude": -78.2383121
+    },
+    {
+      "externalId": "753",
+      "name": "Simcoe & Winchester",
+      "city": "Oshawa",
+      "address": "2610 Simcoe Street North",
+      "latitude": 43.962917499999996,
+      "longitude": -78.9059005
+    },
+    {
+      "externalId": "696",
+      "name": "Derry & Mclaughlin",
+      "city": "Mississauga",
+      "address": "7010 Saint Barbara Boulevard",
+      "latitude": 43.638849799999996,
+      "longitude": -79.71501099999999
+    },
+    {
+      "externalId": "213",
+      "name": "Main & Mary",
+      "city": "Dutton",
+      "address": "234 Mary Street",
+      "latitude": 42.6631406,
+      "longitude": -81.5031939
+    },
+    {
+      "externalId": "203",
+      "name": "Lakeshore & Elizabeth",
+      "city": "Burlington",
+      "address": "413 Elizabeth Street",
+      "latitude": 43.3259289,
+      "longitude": -79.7955704
+    },
+    {
+      "externalId": "197",
+      "name": "Champlain & Deep River",
+      "city": "Deep River",
+      "address": "47 Champlain Avenue",
+      "latitude": 46.100401399999996,
+      "longitude": -77.4885573
+    },
+    {
+      "externalId": "190",
+      "name": "Main At Traffic Circle",
+      "city": "Hamilton",
+      "address": "1601 Main Street East",
+      "latitude": 43.238366,
+      "longitude": -79.8015527
+    },
+    {
+      "externalId": "193",
+      "name": "Notre Dame & 11th",
+      "city": "Belle River",
+      "address": "337 Notre Dame Street",
+      "latitude": 42.2932328,
+      "longitude": -82.6997598
+    },
+    {
+      "externalId": "174",
+      "name": "Victoria & Bridge",
+      "city": "Tweed",
+      "address": "16 Bridge Street East",
+      "latitude": 44.4799461,
+      "longitude": -77.3142305
+    },
+    {
+      "externalId": "176",
+      "name": "Highway 7 & 14",
+      "city": "Marmora",
+      "address": "23 Forsyth Street",
+      "latitude": 44.483264999999996,
+      "longitude": -77.6830094
+    },
+    {
+      "externalId": "165",
+      "name": "Mohawk & Upper Wentworth",
+      "city": "Hamilton",
+      "address": "76 Mall Road",
+      "latitude": 43.221046199999996,
+      "longitude": -79.8615502
+    },
+    {
+      "externalId": "307",
+      "name": "Highway 503 & Highway 121",
+      "city": "Kinmount",
+      "address": "4094 Highway 121",
+      "latitude": 44.78432550000001,
+      "longitude": -78.6527456
+    },
+    {
+      "externalId": "283",
+      "name": "Brock & Bay",
+      "city": "Tobermory",
+      "address": "23 Brock Street",
+      "latitude": 45.25499930000001,
+      "longitude": -81.6624211
+    },
+    {
+      "externalId": "262",
+      "name": "Heritage Highway 4 & 2",
+      "city": "Iroquois",
+      "address": "17 Plaza Drive",
+      "latitude": 44.8495819,
+      "longitude": -75.31660289999999
+    },
+    {
+      "externalId": "246",
+      "name": "Lite & Louisa",
+      "city": "Point Edward",
+      "address": "692 Lite Street",
+      "latitude": 42.9912499,
+      "longitude": -82.406408
+    },
+    {
+      "externalId": "240",
+      "name": "Main & Centre",
+      "city": "Port Rowan",
+      "address": "3 Centre Street",
+      "latitude": 42.625529,
+      "longitude": -80.4511222
+    },
+    {
+      "externalId": "235",
+      "name": "Highway 11 & Highway 534",
+      "city": "Powassan",
+      "address": "601 Main Street",
+      "latitude": 46.076774,
+      "longitude": -79.35995199999999
+    },
+    {
+      "externalId": "160",
+      "name": "Highway 54 & 3",
+      "city": "Cayuga",
+      "address": "1 Talbot Street  West",
+      "latitude": 42.950015,
+      "longitude": -79.8564047
+    },
+    {
+      "externalId": "324",
+      "name": "Carling & Kirkwood",
+      "city": "Ottawa",
+      "address": "1385 Carling Avenue",
+      "latitude": 45.386378799999996,
+      "longitude": -75.73941219999999
+    },
+    {
+      "externalId": "441",
+      "name": "Highway 417 & St. Albert",
+      "city": "Casselman",
+      "address": "644 Principale Street",
+      "latitude": 45.3079887,
+      "longitude": -75.08255
+    },
+    {
+      "externalId": "433",
+      "name": "Highway 508 & Mill",
+      "city": "Calabogie",
+      "address": "703 Mill Street",
+      "latitude": 45.294081999999996,
+      "longitude": -76.7311378
+    },
+    {
+      "externalId": "463",
+      "name": "Highway 11 & King",
+      "city": "Mattice",
+      "address": "275 King Street East",
+      "latitude": 49.6112326,
+      "longitude": -83.259733
+    },
+    {
+      "externalId": "426",
+      "name": "Queensway & Islington",
+      "city": "Toronto-Etobicoke",
+      "address": "1090 The Queensway",
+      "latitude": 43.6232714,
+      "longitude": -79.51814449999999
+    },
+    {
+      "externalId": "635",
+      "name": "Bathurst & Rutherford",
+      "city": "Maple",
+      "address": "9310 Bathurst Street",
+      "latitude": 43.848636299999995,
+      "longitude": -79.4594546
+    },
+    {
+      "externalId": "395",
+      "name": "Regional Road 24 & Hill",
+      "city": "Lively",
+      "address": "145 Regional Road 24",
+      "latitude": 46.4228466,
+      "longitude": -81.14341759999999
+    },
+    {
+      "externalId": "381",
+      "name": "Fairway & Manitou",
+      "city": "Kitchener",
+      "address": "655 Fairway Road South",
+      "latitude": 43.4195122,
+      "longitude": -80.4497751
+    },
+    {
+      "externalId": "375",
+      "name": "Old Highway 17 & Highway 17",
+      "city": "Plantagenet",
+      "address": "240 Old Highway 17",
+      "latitude": 45.5398043,
+      "longitude": -74.9916253
+    },
+    {
+      "externalId": "364",
+      "name": "Trent & Mill",
+      "city": "Frankford",
+      "address": "14 King Drive North",
+      "latitude": 44.2016892,
+      "longitude": -77.59689259999999
+    },
+    {
+      "externalId": "369",
+      "name": "Queen & Arthur",
+      "city": "Harriston",
+      "address": "2 Queen Street South",
+      "latitude": 43.9141422,
+      "longitude": -80.8705889
+    },
+    {
+      "externalId": "24",
+      "name": "Clarence & Elm",
+      "city": "Port Colborne",
+      "address": "144 Clarence Street",
+      "latitude": 42.885916699999996,
+      "longitude": -79.25519489999999
+    },
+    {
+      "externalId": "30",
+      "name": "Victoria & Durham",
+      "city": "Walkerton",
+      "address": "3 Victoria Street North",
+      "latitude": 44.1337865,
+      "longitude": -81.147215
+    },
+    {
+      "externalId": "31",
+      "name": "First & Pine",
+      "city": "Collingwood",
+      "address": "1 First Street",
+      "latitude": 44.5019947,
+      "longitude": -80.2259232
+    },
+    {
+      "externalId": "12",
+      "name": "Parliament & Wellesley",
+      "city": "Toronto",
+      "address": "512 Parliament Street   A",
+      "latitude": 43.6655344,
+      "longitude": -79.36879929999999
+    },
+    {
+      "externalId": "142",
+      "name": "Highway 45 & Front",
+      "city": "Hastings",
+      "address": "18  Front Street West",
+      "latitude": 44.308862399999995,
+      "longitude": -77.95746360000001
+    },
+    {
+      "externalId": "114",
+      "name": "6th & Atwood",
+      "city": "Rainy River",
+      "address": "318 Atwood Avenue",
+      "latitude": 48.721892399999994,
+      "longitude": -94.5707795
+    },
+    {
+      "externalId": "118",
+      "name": "Hanna & Dennie",
+      "city": "Capreol",
+      "address": "12 Hanna Street",
+      "latitude": 46.7062488,
+      "longitude": -80.9219468
+    },
+    {
+      "externalId": "119",
+      "name": "Elgin & Wellington",
+      "city": "Merrickville",
+      "address": "205 Elgin Street",
+      "latitude": 44.91549,
+      "longitude": -75.83469989999999
+    },
+    {
+      "externalId": "108",
+      "name": "Woodward & Murray",
+      "city": "Blind River",
+      "address": "30 Woodward Avenue",
+      "latitude": 46.1866129,
+      "longitude": -82.9534931
+    },
+    {
+      "externalId": "99",
+      "name": "Notre Dame & Ste Marie",
+      "city": "Embrun",
+      "address": "757 Notre Dame Street",
+      "latitude": 45.2686171,
+      "longitude": -75.302537
+    },
+    {
+      "externalId": "86",
+      "name": "King & Kirkpatrick",
+      "city": "Dryden",
+      "address": "99 King Street North",
+      "latitude": 49.7845422,
+      "longitude": -92.8340607
+    },
+    {
+      "externalId": "91",
+      "name": "Summer Hayes & Duncan",
+      "city": "Kirkland Lake",
+      "address": "5 Summer Hayes Avenue",
+      "latitude": 48.1522471,
+      "longitude": -80.03624200000002
+    },
+    {
+      "externalId": "93",
+      "name": "Thompson & Garrison",
+      "city": "Fort Erie",
+      "address": "1105 Thompson Road",
+      "latitude": 42.9058407,
+      "longitude": -78.9411547
+    },
+    {
+      "externalId": "77",
+      "name": "Poyntz  & Penetang",
+      "city": "Penetang",
+      "address": "2 Poyntz Street",
+      "latitude": 44.765922499999995,
+      "longitude": -79.9325612
+    },
+    {
+      "externalId": "80",
+      "name": "Seguin & Miller",
+      "city": "Parry Sound",
+      "address": "19 Seguin Street",
+      "latitude": 45.3437171,
+      "longitude": -80.03292359999999
+    },
+    {
+      "externalId": "81",
+      "name": "Front & Holditch",
+      "city": "Sturgeon Falls",
+      "address": "55 Front Street",
+      "latitude": 46.3663234,
+      "longitude": -79.9304069
+    },
+    {
+      "externalId": "69",
+      "name": "Third & Mowat",
+      "city": "Fort Frances",
+      "address": "210 Third Street East",
+      "latitude": 48.6130803,
+      "longitude": -93.3985055
+    },
+    {
+      "externalId": "70",
+      "name": "Lombard & Ferrara",
+      "city": "Smiths Falls",
+      "address": "123 Lombard Street",
+      "latitude": 44.8905819,
+      "longitude": -76.02971529999999
+    },
+    {
+      "externalId": "73",
+      "name": "King & Dolph",
+      "city": "Cambridge-Preston",
+      "address": "1145 King Street East",
+      "latitude": 43.3930083,
+      "longitude": -80.3520748
+    },
+    {
+      "externalId": "75",
+      "name": "Devonshire & Cambridge",
+      "city": "Iroquois Falls",
+      "address": "187 Devonshire Avenue",
+      "latitude": 48.767109999999995,
+      "longitude": -80.6781831
+    },
+    {
+      "externalId": "482",
+      "name": "Highway 400 & Port Severn",
+      "city": "Port Severn",
+      "address": "3238 Port Severn Road",
+      "latitude": 44.8046009,
+      "longitude": -79.7169055
+    },
+    {
+      "externalId": "488",
+      "name": "Highway 535 & King",
+      "city": "St. Charles",
+      "address": "8 King Street East",
+      "latitude": 46.3626145,
+      "longitude": -80.41534349999999
+    },
+    {
+      "externalId": "479",
+      "name": "George & Clarence",
+      "city": "Lanark",
+      "address": "99 Clarence Street",
+      "latitude": 45.0183847,
+      "longitude": -76.3651168
+    },
+    {
+      "externalId": "464",
+      "name": "Manitoba & Winnipeg",
+      "city": "Schreiber",
+      "address": "207 Manitoba Street",
+      "latitude": 48.8080244,
+      "longitude": -87.26400989999999
+    },
+    {
+      "externalId": "466",
+      "name": "St. Philippe & Highway 17",
+      "city": "Alfred",
+      "address": "602 St. Philippe Street",
+      "latitude": 45.5563838,
+      "longitude": -74.8898312
+    },
+    {
+      "externalId": "462",
+      "name": "Highway 20 & Industrial Park",
+      "city": "Smithville",
+      "address": "249 St. Catharine Street",
+      "latitude": 43.0953641,
+      "longitude": -79.5379401
+    },
+    {
+      "externalId": "447",
+      "name": "Highway 648 & Esson",
+      "city": "Wilberforce",
+      "address": "2763 Essonville Road",
+      "latitude": 45.0368503,
+      "longitude": -78.2227419
+    },
+    {
+      "externalId": "589",
+      "name": "Orleans & Jeanne D'arc",
+      "city": "Ottawa-Orleans",
+      "address": "6487 Jeanne D'arc Boulevard",
+      "latitude": 45.4800549,
+      "longitude": -75.53430589999999
+    },
+    {
+      "externalId": "442",
+      "name": "Truelove & Wren",
+      "city": "Cobden",
+      "address": "22 Truelove Street",
+      "latitude": 45.6275398,
+      "longitude": -76.8866358
+    },
+    {
+      "externalId": "579",
+      "name": "Highway 12 & Coldwater",
+      "city": "Orillia",
+      "address": "293 Coldwater Road",
+      "latitude": 44.609446899999995,
+      "longitude": -79.43938949999999
+    },
+    {
+      "externalId": "581",
+      "name": "Highway 12 & Gladstone",
+      "city": "Brechin",
+      "address": "2211 Gladstone Street",
+      "latitude": 44.544809099999995,
+      "longitude": -79.1749931
+    },
+    {
+      "externalId": "583",
+      "name": "Main & Amaranth",
+      "city": "Grand Valley",
+      "address": "22 Main Street South",
+      "latitude": 43.898261,
+      "longitude": -80.31545679999999
+    },
+    {
+      "externalId": "574",
+      "name": "Yonge & James",
+      "city": "Bonfield",
+      "address": "234 Yonge Street",
+      "latitude": 46.2357851,
+      "longitude": -79.1450187
+    },
+    {
+      "externalId": "565",
+      "name": "Highway 17 & Trunk",
+      "city": "Spanish",
+      "address": "4 Goderich Road",
+      "latitude": 46.1939645,
+      "longitude": -82.343092
+    },
+    {
+      "externalId": "567",
+      "name": "Industrial & Jane",
+      "city": "Thamesville",
+      "address": "99 Industrial Road",
+      "latitude": 42.5552832,
+      "longitude": -81.9833987
+    },
+    {
+      "externalId": "552",
+      "name": "Highway 69 & Main",
+      "city": "Val Caron",
+      "address": "3140 Highway 69 North",
+      "latitude": 46.433394,
+      "longitude": -80.94713449999999
+    },
+    {
+      "externalId": "550",
+      "name": "Mill & Highway 21",
+      "city": "Bayfield",
+      "address": "71 Main Street South",
+      "latitude": 43.555282899999995,
+      "longitude": -81.69141259999999
+    },
+    {
+      "externalId": "536",
+      "name": "Major Mackenzie & Jane",
+      "city": "Maple",
+      "address": "2943 Major Mackenzie Drive",
+      "latitude": 43.8486584,
+      "longitude": -79.5350674
+    },
+    {
+      "externalId": "517",
+      "name": "Manitou & Sherwood",
+      "city": "Amherstview",
+      "address": "18 Manitou Cresent West",
+      "latitude": 44.219131499999996,
+      "longitude": -76.6450207
+    },
+    {
+      "externalId": "511",
+      "name": "Front & Spadina",
+      "city": "Toronto",
+      "address": "49 Spadina Avenue",
+      "latitude": 43.6435568,
+      "longitude": -79.3939667
+    },
+    {
+      "externalId": "514",
+      "name": "Highway 520 & Spark",
+      "city": "Magnetawan",
+      "address": "12 Biddy Street",
+      "latitude": 45.664745499999995,
+      "longitude": -79.6427016
+    },
+    {
+      "externalId": "504",
+      "name": "Highway 7 & Highway 45",
+      "city": "Norwood",
+      "address": "4246 Highway 7",
+      "latitude": 44.3815096,
+      "longitude": -77.98140599999999
+    },
+    {
+      "externalId": "706",
+      "name": "Paisley & Imperial",
+      "city": "Guelph",
+      "address": "995 Paisley Road",
+      "latitude": 43.5236501,
+      "longitude": -80.2871438
+    },
+    {
+      "externalId": "621",
+      "name": "Highway 9 & Absalom",
+      "city": "Mildmay",
+      "address": "1024 Highway 9",
+      "latitude": 44.0388628,
+      "longitude": -81.1104318
+    },
+    {
+      "externalId": "622",
+      "name": "Hensall & London",
+      "city": "Hensall",
+      "address": "72941 London Road",
+      "latitude": 43.440584,
+      "longitude": -81.5004677
+    },
+    {
+      "externalId": "619",
+      "name": "Erin Mills & Eglinton",
+      "city": "Mississauga",
+      "address": "5100 Erin Mills Parkway",
+      "latitude": 43.55883540000001,
+      "longitude": -79.71369500000002
+    },
+    {
+      "externalId": "604",
+      "name": "Highway 69 & Highway 64",
+      "city": "Alban",
+      "address": "524 Highway 64",
+      "latitude": 46.104217299999995,
+      "longitude": -80.6324727
+    },
+    {
+      "externalId": "607",
+      "name": "Highway 503 & Buckhorn",
+      "city": "Gooderham",
+      "address": "1007 Gooderham Street",
+      "latitude": 44.9067508,
+      "longitude": -78.38040819999999
+    },
+    {
+      "externalId": "318",
+      "name": "Burleigh & Wellington",
+      "city": "Apsley",
+      "address": "3 Burleigh Street",
+      "latitude": 44.750890399999996,
+      "longitude": -78.0915079
+    },
+    {
+      "externalId": "648",
+      "name": "Dufferin & Bloor",
+      "city": "Toronto",
+      "address": "900 Dufferin Street",
+      "latitude": 43.6579875,
+      "longitude": -79.4350058
+    },
+    {
+      "externalId": "216",
+      "name": "Carroll & Caradoc",
+      "city": "Strathroy",
+      "address": "70 Carroll Street East",
+      "latitude": 42.947043,
+      "longitude": -81.6095053
+    },
+    {
+      "externalId": "220",
+      "name": "Huron & Barber Walk",
+      "city": "Manitouwadge",
+      "address": "66 Huron Walk",
+      "latitude": 49.127241,
+      "longitude": -85.8269273
+    },
+    {
+      "externalId": "187",
+      "name": "Bayfield & Hanmer",
+      "city": "Barrie",
+      "address": "534 Bayfield Street",
+      "latitude": 44.4142686,
+      "longitude": -79.7134248
+    },
+    {
+      "externalId": "178",
+      "name": "Bridge & Front",
+      "city": "Campbellford",
+      "address": "37 Front Street South",
+      "latitude": 44.3069186,
+      "longitude": -77.79773039999999
+    },
+    {
+      "externalId": "182",
+      "name": "Lakeshore & Highway 10",
+      "city": "Mississauga",
+      "address": "200 Lakeshore Road East",
+      "latitude": 43.5577926,
+      "longitude": -79.579527
+    },
+    {
+      "externalId": "184",
+      "name": "Broadway & Ganley",
+      "city": "Wawa",
+      "address": "20 Ganley Street",
+      "latitude": 47.9957117,
+      "longitude": -84.7720658
+    },
+    {
+      "externalId": "170",
+      "name": "Main & Burns",
+      "city": "Atikokan",
+      "address": "116 Main Street East",
+      "latitude": 48.7577819,
+      "longitude": -91.6205907
+    },
+    {
+      "externalId": "173",
+      "name": "Hwy 17 North & Simcoe Plaza",
+      "city": "Terrace Bay",
+      "address": "7 Simcoe Plaza",
+      "latitude": 48.7825339,
+      "longitude": -87.1029793
+    },
+    {
+      "externalId": "299",
+      "name": "Alice & St James South",
+      "city": "Waterford",
+      "address": "37 St. James Street",
+      "latitude": 42.9337665,
+      "longitude": -80.2933856
+    },
+    {
+      "externalId": "302",
+      "name": "Highway 6 & 89",
+      "city": "Mount Forest",
+      "address": "195 King Street West",
+      "latitude": 43.9798313,
+      "longitude": -80.7353275
+    },
+    {
+      "externalId": "303",
+      "name": "Highway 43 & Queen",
+      "city": "Chesterville",
+      "address": "150 Queen Street",
+      "latitude": 45.1014975,
+      "longitude": -75.2365885
+    },
+    {
+      "externalId": "304",
+      "name": "Highway 2 & Dundas",
+      "city": "Cardinal",
+      "address": "623 Village Square",
+      "latitude": 44.788224799999995,
+      "longitude": -75.3831685
+    },
+    {
+      "externalId": "293",
+      "name": "Highway 6 & 9",
+      "city": "Arthur",
+      "address": "151 Catherine Street West",
+      "latitude": 43.8845956,
+      "longitude": -81.3076246
+    },
+    {
+      "externalId": "294",
+      "name": "Currie & Mckellar",
+      "city": "Glencoe",
+      "address": "228 Currie Street",
+      "latitude": 42.7468423,
+      "longitude": -81.7129033
+    },
+    {
+      "externalId": "282",
+      "name": "Highway 4 & Highway 8",
+      "city": "Clinton",
+      "address": "95 Maple Street",
+      "latitude": 43.619942099999996,
+      "longitude": -81.5377171
+    },
+    {
+      "externalId": "285",
+      "name": "Highway 11 & Emo Road",
+      "city": "Emo",
+      "address": "5912 Highway 11",
+      "latitude": 48.6321055,
+      "longitude": -93.8366717
+    },
+    {
+      "externalId": "287",
+      "name": "Lasalle & Barrydowne",
+      "city": "Sudbury",
+      "address": "1467 Lasalle Boulevard",
+      "latitude": 46.521151499999995,
+      "longitude": -80.9424694
+    },
+    {
+      "externalId": "289",
+      "name": "Wellington & Parkview",
+      "city": "St. Marys",
+      "address": "115 Parkview Drive",
+      "latitude": 43.2611318,
+      "longitude": -81.14309089999999
+    },
+    {
+      "externalId": "273",
+      "name": "Main & Highway 8",
+      "city": "Seaforth",
+      "address": "50 Main Street North",
+      "latitude": 43.5547754,
+      "longitude": -81.39179159999999
+    },
+    {
+      "externalId": "274",
+      "name": "Main & East",
+      "city": "Zurich",
+      "address": "11 Main Street",
+      "latitude": 43.421451999999995,
+      "longitude": -81.61896360000001
+    },
+    {
+      "externalId": "266",
+      "name": "County Road 17 & Renfrew",
+      "city": "Petawawa",
+      "address": "2 Renfrew Street",
+      "latitude": 45.8867231,
+      "longitude": -77.2581187
+    },
+    {
+      "externalId": "270",
+      "name": "Huron & Suncoast",
+      "city": "Goderich",
+      "address": "520 Huron Road",
+      "latitude": 43.7288427,
+      "longitude": -81.6885758
+    },
+    {
+      "externalId": "247",
+      "name": "Highway 2 & Park",
+      "city": "Brighton",
+      "address": "11 Park Street",
+      "latitude": 44.0411587,
+      "longitude": -77.73738709999999
+    },
+    {
+      "externalId": "251",
+      "name": "Highway 169 & 612",
+      "city": "Mactier",
+      "address": "426 High Street",
+      "latitude": 45.1340913,
+      "longitude": -79.769823
+    },
+    {
+      "externalId": "236",
+      "name": "Errington & Highway144",
+      "city": "Chelmsford",
+      "address": "3468 Errington Avenue",
+      "latitude": 46.579226399999996,
+      "longitude": -81.1982475
+    },
+    {
+      "externalId": "238",
+      "name": "Highway 6 & Market",
+      "city": "Port Dover",
+      "address": "117 Market Street East",
+      "latitude": 42.7877113,
+      "longitude": -80.20149789999999
+    },
+    {
+      "externalId": "231",
+      "name": "Highway 7 & 30",
+      "city": "Havelock",
+      "address": "30 Ottawa Street",
+      "latitude": 44.4332102,
+      "longitude": -77.8826929
+    },
+    {
+      "externalId": "232",
+      "name": "Highway 520 & Highway 11",
+      "city": "Burk's Falls",
+      "address": "10 Commercial Drive",
+      "latitude": 45.6099525,
+      "longitude": -79.40218229999999
+    },
+    {
+      "externalId": "222",
+      "name": "King & Highway 36",
+      "city": "Bobcaygeon",
+      "address": "37 King Street East",
+      "latitude": 44.5358774,
+      "longitude": -78.5413588
+    },
+    {
+      "externalId": "336",
+      "name": "Highway 518 & Main",
+      "city": "Kearney",
+      "address": "86 Main Street",
+      "latitude": 45.555409,
+      "longitude": -79.2241106
+    },
+    {
+      "externalId": "326",
+      "name": "Highway 5 & Highway 6",
+      "city": "Waterdown",
+      "address": "74 Dundas Street East",
+      "latitude": 43.3161943,
+      "longitude": -79.91142459999999
+    },
+    {
+      "externalId": "328",
+      "name": "Main & Huron",
+      "city": "Watford",
+      "address": "538 Huron Street",
+      "latitude": 42.9469785,
+      "longitude": -81.8785429
+    },
+    {
+      "externalId": "151",
+      "name": "Ontario & Peninsula",
+      "city": "Marathon",
+      "address": "1c Ontario Street",
+      "latitude": 48.71844600000001,
+      "longitude": -86.38077919999999
+    },
+    {
+      "externalId": "157",
+      "name": "Meredith & Dawson",
+      "city": "Gore Bay",
+      "address": "1 Dawson Street",
+      "latitude": 45.918262299999995,
+      "longitude": -82.46489430000001
+    },
+    {
+      "externalId": "437",
+      "name": "Third Line & Rebecca",
+      "city": "Oakville",
+      "address": "1527 Rebecca Street",
+      "latitude": 43.411203199999996,
+      "longitude": -79.70627549999999
+    },
+    {
+      "externalId": "439",
+      "name": "Colborne & Campbell",
+      "city": "Portland",
+      "address": "34 Colbourne Street",
+      "latitude": 44.698609399999995,
+      "longitude": -76.1889633
+    },
+    {
+      "externalId": "440",
+      "name": "Inglis & Willoughby",
+      "city": "Lucknow",
+      "address": "566 Willoughby Street",
+      "latitude": 43.959377599999996,
+      "longitude": -81.51566249999999
+    },
+    {
+      "externalId": "430",
+      "name": "King & Indian Line",
+      "city": "Hagersville",
+      "address": "42 Main Street North",
+      "latitude": 42.9633949,
+      "longitude": -80.0500515
+    },
+    {
+      "externalId": "422",
+      "name": "Highway 144 & Regional Road 8",
+      "city": "Onaping",
+      "address": "2 Regional Road 8",
+      "latitude": 46.62795,
+      "longitude": -81.40388999999999
+    },
+    {
+      "externalId": "413",
+      "name": "Highway 19 & County Road 42",
+      "city": "Port Burwell",
+      "address": "30 Robinson Street",
+      "latitude": 42.6462844,
+      "longitude": -80.80637039999999
+    },
+    {
+      "externalId": "402",
+      "name": "Dundas & Herchimer",
+      "city": "Belleville",
+      "address": "400 Dundas Street East",
+      "latitude": 44.16693360000001,
+      "longitude": -77.3578354
+    },
+    {
+      "externalId": "403",
+      "name": "Highway 118 & Medora",
+      "city": "Port Carling",
+      "address": "115 Medora Street",
+      "latitude": 45.120910699999996,
+      "longitude": -79.5789501
+    },
+    {
+      "externalId": "405",
+      "name": "St. Agnes & Notre Dame",
+      "city": "Azilda",
+      "address": "93 Notre Dame Street West",
+      "latitude": 46.5518418,
+      "longitude": -81.1171739
+    },
+    {
+      "externalId": "793",
+      "name": "Keele Street & St. Regis Crescent North",
+      "city": "Toronto-North York",
+      "address": "3685 Keele Street",
+      "latitude": 43.754113499999995,
+      "longitude": -79.4875364
+    },
+    {
+      "externalId": "51",
+      "name": "Wellington & Gordon",
+      "city": "Guelph",
+      "address": "16 Wellington Street West",
+      "latitude": 43.539921299999996,
+      "longitude": -80.2446992
+    },
+    {
+      "externalId": "29",
+      "name": "William & Claude",
+      "city": "Wiarton",
+      "address": "415 William Street",
+      "latitude": 44.7435561,
+      "longitude": -81.138707
+    },
+    {
+      "externalId": "149",
+      "name": "Bloor & Royal York",
+      "city": "Toronto-Etobicoke",
+      "address": "2946 Bloor Street West",
+      "latitude": 43.648366499999995,
+      "longitude": -79.50823059999999
+    },
+    {
+      "externalId": "2",
+      "name": "St. Clair & Bathurst",
+      "city": "Toronto",
+      "address": "396 St. Clair Avenue West",
+      "latitude": 43.684089400000005,
+      "longitude": -79.4152883
+    },
+    {
+      "externalId": "82",
+      "name": "Kent & Highway 35",
+      "city": "Lindsay",
+      "address": "449 Kent Street West",
+      "latitude": 44.3483692,
+      "longitude": -78.766119
+    },
+    {
+      "externalId": "491",
+      "name": "Ira Needles & Highland",
+      "city": "Kitchener",
+      "address": "235 Ira Needles Boulevard",
+      "latitude": 43.4255979,
+      "longitude": -80.55391449999999
+    },
+    {
+      "externalId": "494",
+      "name": "Dundas & Winston Churchill",
+      "city": "Mississauga",
+      "address": "2458 Dundas Street West",
+      "latitude": 43.527007499999996,
+      "longitude": -79.6761114
+    },
+    {
+      "externalId": "497",
+      "name": "Guelph Line & Upper Middle",
+      "city": "Burlington",
+      "address": "2025 Guelph Line",
+      "latitude": 43.366779199999996,
+      "longitude": -79.82249569999999
+    },
+    {
+      "externalId": "469",
+      "name": "Highway 169 & Highway 11",
+      "city": "Washago",
+      "address": "8409 County Road 169",
+      "latitude": 44.753377099999994,
+      "longitude": -79.3366363
+    },
+    {
+      "externalId": "582",
+      "name": "Main & Sauble Falls",
+      "city": "Sauble Beach",
+      "address": "611 Main Street",
+      "latitude": 44.6301875,
+      "longitude": -81.2632076
+    },
+    {
+      "externalId": "575",
+      "name": "Wellington & Bradley",
+      "city": "London",
+      "address": "1073 Wellington Road South",
+      "latitude": 42.9348996,
+      "longitude": -81.2244137
+    },
+    {
+      "externalId": "576",
+      "name": "Highway 17 & 2nd",
+      "city": "Coniston",
+      "address": "24 - 5 Amanda Street",
+      "latitude": 46.494223,
+      "longitude": -80.8460545
+    },
+    {
+      "externalId": "561",
+      "name": "Lakehurst & Buckhorn",
+      "city": "Buckhorn",
+      "address": "1976 Lakehurst Road",
+      "latitude": 44.5569357,
+      "longitude": -78.3490952
+    },
+    {
+      "externalId": "551",
+      "name": "Walkers Line & Dundas",
+      "city": "Burlington",
+      "address": "3041 Walkers Line",
+      "latitude": 43.3928413,
+      "longitude": -79.8240546
+    },
+    {
+      "externalId": "548",
+      "name": "Caesar & Main",
+      "city": "Belmont",
+      "address": "210 Caesar Road",
+      "latitude": 42.8823709,
+      "longitude": -81.0847153
+    },
+    {
+      "externalId": "516",
+      "name": "Brunel & Regional Road 117",
+      "city": "Baysville",
+      "address": "2641 Muskoka Road 117 East",
+      "latitude": 45.148084399999995,
+      "longitude": -79.1192836
+    },
+    {
+      "externalId": "506",
+      "name": "Tenth & 10th",
+      "city": "Earlton",
+      "address": "4 Tenth Avenue South",
+      "latitude": 47.710704299999996,
+      "longitude": -79.8247178
+    },
+    {
+      "externalId": "601",
+      "name": "Mavis & Steeles",
+      "city": "Brampton",
+      "address": "100 Clementine Drive",
+      "latitude": 43.6455555,
+      "longitude": -79.7552054
+    },
+    {
+      "externalId": "606",
+      "name": "Ferndale & Main",
+      "city": "Lion's Head",
+      "address": "1 Ferndale Road",
+      "latitude": 44.980806,
+      "longitude": -81.2516064
+    },
+    {
+      "externalId": "761",
+      "name": "Stone Church & Upper Red Hill",
+      "city": "Stoney Creek",
+      "address": "1798 Stone Church Road East",
+      "latitude": 43.1908542,
+      "longitude": -79.81311889999999
+    },
+    {
+      "externalId": "631",
+      "name": "Main & Thompson",
+      "city": "Milton",
+      "address": "830 Main Street East",
+      "latitude": 43.5252243,
+      "longitude": -79.8684763
+    },
+    {
+      "externalId": "741",
+      "name": "Hyde Park & Fanshawe Park",
+      "city": "London",
+      "address": "1981 Hyde Park Road",
+      "latitude": 43.009052200000006,
+      "longitude": -81.3331515
+    },
+    {
+      "externalId": "219",
+      "name": "Highway 169 & Gordon",
+      "city": "Bala",
+      "address": "3132 Highway 169",
+      "latitude": 45.016543,
+      "longitude": -79.615314
+    },
+    {
+      "externalId": "199",
+      "name": "Broadway & Bridge",
+      "city": "Tillsonburg",
+      "address": "200 Broadway Street",
+      "latitude": 42.8620568,
+      "longitude": -80.7280248
+    },
+    {
+      "externalId": "200",
+      "name": "Clarke & Dundas",
+      "city": "London",
+      "address": "348 Clarke Road",
+      "latitude": 43.0032211,
+      "longitude": -81.1743525
+    },
+    {
+      "externalId": "202",
+      "name": "Lakeshore & Murphy",
+      "city": "Sarnia",
+      "address": "1142 Lakeshore Road",
+      "latitude": 43.0151038,
+      "longitude": -82.3654717
+    },
+    {
+      "externalId": "181",
+      "name": "James & Highway 3",
+      "city": "Delhi",
+      "address": "249 James Street",
+      "latitude": 42.854765799999996,
+      "longitude": -80.49352259999999
+    },
+    {
+      "externalId": "169",
+      "name": "Thames & Charles",
+      "city": "Ingersoll",
+      "address": "68 Charles Street West",
+      "latitude": 43.0386202,
+      "longitude": -80.88615109999999
+    },
+    {
+      "externalId": "308",
+      "name": "St. Isidore & Main",
+      "city": "St. Isidore",
+      "address": "2538 St. Isidore Street",
+      "latitude": 45.388526399999996,
+      "longitude": -74.90623699999999
+    },
+    {
+      "externalId": "310",
+      "name": "Wonderland & Oxford",
+      "city": "London",
+      "address": "681 Wonderland North",
+      "latitude": 42.985490999999996,
+      "longitude": -81.29291429999999
+    },
+    {
+      "externalId": "690",
+      "name": "Gorham & Dominion",
+      "city": "Fort Erie-Ridgeway",
+      "address": "409 Gorham Road",
+      "latitude": 42.8857566,
+      "longitude": -79.0602043
+    },
+    {
+      "externalId": "291",
+      "name": "Main & Mcleod",
+      "city": "Ignace",
+      "address": "300 Main Street",
+      "latitude": 49.4163901,
+      "longitude": -91.6609098
+    },
+    {
+      "externalId": "643",
+      "name": "York Mills & Leslie",
+      "city": "Toronto-North York",
+      "address": "808 York Mills Road",
+      "latitude": 43.7538671,
+      "longitude": -79.35817209999999
+    },
+    {
+      "externalId": "296",
+      "name": "Main & Mill",
+      "city": "Milverton",
+      "address": "69 Main Street South",
+      "latitude": 43.5609855,
+      "longitude": -80.92536330000001
+    },
+    {
+      "externalId": "268",
+      "name": "Highway 6 & Haddington",
+      "city": "Caledonia",
+      "address": "309 Argyle Street South",
+      "latitude": 43.064044599999995,
+      "longitude": -79.9602225
+    },
+    {
+      "externalId": "271",
+      "name": "Albert & Josephine",
+      "city": "Wingham",
+      "address": "16 Albert Street West",
+      "latitude": 43.8914447,
+      "longitude": -81.3095565
+    },
+    {
+      "externalId": "249",
+      "name": "Upper Gage & Fennell",
+      "city": "Hamilton",
+      "address": "971 Fennell Avenue East",
+      "latitude": 43.228709699999996,
+      "longitude": -79.8368961
+    },
+    {
+      "externalId": "239",
+      "name": "Wellington & Highway 3",
+      "city": "Aylmer",
+      "address": "30 Wellington Street",
+      "latitude": 42.7716585,
+      "longitude": -80.987428
+    },
+    {
+      "externalId": "347",
+      "name": "Victoria & Parry Sound",
+      "city": "Rosseau",
+      "address": "1145 Highway 141",
+      "latitude": 45.2575329,
+      "longitude": -79.64005689999999
+    },
+    {
+      "externalId": "323",
+      "name": "Highway 69 & Highway 644",
+      "city": "Pointe Au Baril",
+      "address": "Highway 69",
+      "latitude": 45.9389567,
+      "longitude": -80.5827728
+    },
+    {
+      "externalId": "377",
+      "name": "Highway 7 & Highway 38",
+      "city": "Sharbot Lake",
+      "address": "24593 Highway 7",
+      "latitude": 44.7970415,
+      "longitude": -76.6822907
+    },
+    {
+      "externalId": "352",
+      "name": "Highway 15 & Perth",
+      "city": "Elgin",
+      "address": "131 Perth Street",
+      "latitude": 44.6117488,
+      "longitude": -76.2281258
+    },
+    {
+      "externalId": "28",
+      "name": "Broad & Maple",
+      "city": "Dunnville",
+      "address": "222 Broad Street East",
+      "latitude": 42.903215499999995,
+      "longitude": -79.6155581
+    },
+    {
+      "externalId": "147",
+      "name": "Third & Newton",
+      "city": "Nipigon",
+      "address": "21 Third Street",
+      "latitude": 49.0127027,
+      "longitude": -88.26196639999999
+    },
+    {
+      "externalId": "131",
+      "name": "County Road Highway 19 & 21",
+      "city": "Ridgetown",
+      "address": "20 Main Street West",
+      "latitude": 42.4386297,
+      "longitude": -81.88726319999999
+    },
+    {
+      "externalId": "136",
+      "name": "Highway 35 & South Water",
+      "city": "Minden",
+      "address": "18 Water Street",
+      "latitude": 44.9265731,
+      "longitude": -78.7232385
+    },
+    {
+      "externalId": "121",
+      "name": "Russel & Champlain",
+      "city": "Bourget",
+      "address": "3926 Champlain Street",
+      "latitude": 45.431152499999996,
+      "longitude": -75.15629240000001
+    },
+    {
+      "externalId": "111",
+      "name": "Church & Bedford",
+      "city": "Westport",
+      "address": "15 Church Street",
+      "latitude": 44.6791875,
+      "longitude": -76.3961916
+    },
+    {
+      "externalId": "112",
+      "name": "Brunetville & Ash",
+      "city": "Kapuskasing",
+      "address": "25 Brunetville Road",
+      "latitude": 49.4191867,
+      "longitude": -82.41901179999999
+    },
+    {
+      "externalId": "113",
+      "name": "Highway 60 & 62",
+      "city": "Barry's Bay",
+      "address": "18 Dunn Street",
+      "latitude": 45.4880614,
+      "longitude": -77.6802931
+    },
+    {
+      "externalId": "117",
+      "name": "Lorne & Birch",
+      "city": "Chapleau",
+      "address": "25 Lorne Street South",
+      "latitude": 47.842645999999995,
+      "longitude": -83.40081959999999
+    },
+    {
+      "externalId": "120",
+      "name": "West Dock",
+      "city": "Pelee Island",
+      "address": "1109 Westshore Road",
+      "latitude": 41.76181150000001,
+      "longitude": -82.6887335
+    },
+    {
+      "externalId": "103",
+      "name": "Highway 6 & Barber",
+      "city": "Espanola",
+      "address": "139 Barber Street",
+      "latitude": 46.2643748,
+      "longitude": -81.77132189999999
+    },
+    {
+      "externalId": "105",
+      "name": "Highway 41 & Country Road 4",
+      "city": "Tamworth",
+      "address": "714 Addington Street East",
+      "latitude": 44.487880200000006,
+      "longitude": -76.9943448
+    },
+    {
+      "externalId": "96",
+      "name": "Dundas & St. George",
+      "city": "Deseronto",
+      "address": "78 St. George Street",
+      "latitude": 44.1949697,
+      "longitude": -77.0502849
+    },
+    {
+      "externalId": "76",
+      "name": "Grandview & Silver",
+      "city": "Cobalt",
+      "address": "28 Silver Street",
+      "latitude": 47.3956884,
+      "longitude": -79.68602
+    },
+    {
+      "externalId": "492",
+      "name": "Landsdown & Main",
+      "city": "Callander",
+      "address": "5 Main Street North",
+      "latitude": 46.2227347,
+      "longitude": -79.365295
+    },
+    {
+      "externalId": "484",
+      "name": "Korah & Second Line",
+      "city": "Sault Ste. Marie",
+      "address": "275 Second Line West",
+      "latitude": 46.5368421,
+      "longitude": -84.3654299
+    },
+    {
+      "externalId": "487",
+      "name": "Highway 17 & James",
+      "city": "Iron Bridge",
+      "address": "1 James Street",
+      "latitude": 46.277079099999995,
+      "longitude": -83.2141621
+    },
+    {
+      "externalId": "473",
+      "name": "Highway 17 & Highway 552",
+      "city": "Goulais River",
+      "address": "3040 Highway 17 North",
+      "latitude": 46.7339116,
+      "longitude": -84.3491468
+    },
+    {
+      "externalId": "475",
+      "name": "George & Mill",
+      "city": "Sydenham",
+      "address": "4387 Mill Street",
+      "latitude": 44.4100852,
+      "longitude": -76.5972144
+    },
+    {
+      "externalId": "476",
+      "name": "Highway 41 & Chatson",
+      "city": "Denbigh",
+      "address": "22353 Highway 41",
+      "latitude": 45.128132799999996,
+      "longitude": -77.2667831
+    },
+    {
+      "externalId": "446",
+      "name": "Highway 8 & Ontario",
+      "city": "Beamsville",
+      "address": "4315 Ontario Street",
+      "latitude": 43.166527099999996,
+      "longitude": -79.4759277
+    },
+    {
+      "externalId": "448",
+      "name": "Highway 69 & Muskoka Road 5",
+      "city": "Honey Harbour",
+      "address": "2669 Muskoka Road 5",
+      "latitude": 44.871071,
+      "longitude": -79.817106
+    },
+    {
+      "externalId": "451",
+      "name": "Highway 548 & Main",
+      "city": "Richard's Landing",
+      "address": "1198 Richard Street",
+      "latitude": 46.292545399999995,
+      "longitude": -84.0353099
+    },
+    {
+      "externalId": "588",
+      "name": "Highway 17 & Cote",
+      "city": "Verner",
+      "address": "10442 Highway17",
+      "latitude": 46.413189599999995,
+      "longitude": -80.1289488
+    },
+    {
+      "externalId": "577",
+      "name": "Highway 11 & Government",
+      "city": "Moonbeam",
+      "address": "33a Highway 11",
+      "latitude": 49.343194,
+      "longitude": -82.1570241
+    },
+    {
+      "externalId": "578",
+      "name": "Main & Highway 31",
+      "city": "Winchester",
+      "address": "578 Main Street West",
+      "latitude": 45.0907911,
+      "longitude": -75.3613999
+    },
+    {
+      "externalId": "570",
+      "name": "Water & Mill",
+      "city": "Warsaw",
+      "address": "906 Water Street",
+      "latitude": 44.430791899999996,
+      "longitude": -78.13770989999999
+    },
+    {
+      "externalId": "557",
+      "name": "Highway 35 & Highway 60",
+      "city": "Dwight",
+      "address": "25846 Highway 35",
+      "latitude": 45.3221542,
+      "longitude": -78.9941659
+    },
+    {
+      "externalId": "535",
+      "name": "Highway 620 & Centre",
+      "city": "Coe Hill",
+      "address": "8 Centre Street",
+      "latitude": 44.861691099999994,
+      "longitude": -77.84073219999999
+    },
+    {
+      "externalId": "541",
+      "name": "Country Road 16 & Turnberry",
+      "city": "Brussels",
+      "address": "575 Turnberry Street",
+      "latitude": 43.7425946,
+      "longitude": -81.2504659
+    },
+    {
+      "externalId": "531",
+      "name": "Godfrey & Serpentine",
+      "city": "Copper Cliff",
+      "address": "12 Serpentine Street",
+      "latitude": 46.4778581,
+      "longitude": -81.06740289999999
+    },
+    {
+      "externalId": "520",
+      "name": "Highway 15 & Big Hill",
+      "city": "Seeley's Bay",
+      "address": "106 Drynan Way",
+      "latitude": 44.4741153,
+      "longitude": -76.2378221
+    },
+    {
+      "externalId": "524",
+      "name": "Highway 17 & Highway 535",
+      "city": "Hagar",
+      "address": "7260 Highway 535",
+      "latitude": 46.454410499999994,
+      "longitude": -80.4158691
+    },
+    {
+      "externalId": "510",
+      "name": "Queen & 12th Consession",
+      "city": "Langton",
+      "address": "67 Queen Street",
+      "latitude": 42.7455583,
+      "longitude": -80.57999389999999
+    },
+    {
+      "externalId": "503",
+      "name": "Main & Buckshot",
+      "city": "Plevna",
+      "address": "7423 Highway 506",
+      "latitude": 44.962281999999995,
+      "longitude": -76.983946
+    },
+    {
+      "externalId": "613",
+      "name": "Highway 124 & Paget",
+      "city": "Sundridge",
+      "address": "10403 Highway 124",
+      "latitude": 45.770342500000005,
+      "longitude": -79.3939187
+    },
+    {
+      "externalId": "610",
+      "name": "Industrial & Clinton",
+      "city": "Teeswater",
+      "address": "1 Industrial Road",
+      "latitude": 43.9932514,
+      "longitude": -81.2850315
+    },
+    {
+      "externalId": "595",
+      "name": "Highway 124 & Highway 520",
+      "city": "Dunchurch",
+      "address": "7 Church Street",
+      "latitude": 45.645020599999995,
+      "longitude": -79.8541213
+    },
+    {
+      "externalId": "314",
+      "name": "Highway 60 & Highway 58",
+      "city": "Killaloe",
+      "address": "161 Queen Street",
+      "latitude": 45.5551914,
+      "longitude": -77.4161402
+    },
+    {
+      "externalId": "315",
+      "name": "Highway 17 & Tower",
+      "city": "Vermilion Bay",
+      "address": "142 Tower Road",
+      "latitude": 49.8571223,
+      "longitude": -93.3765068
+    },
+    {
+      "externalId": "316",
+      "name": "Elgin & Main",
+      "city": "Athens",
+      "address": "19 Main Street East",
+      "latitude": 44.626213199999995,
+      "longitude": -75.95085569999999
+    },
+    {
+      "externalId": "189",
+      "name": "Highway 11 & Main",
+      "city": "Smooth Rock Falls",
+      "address": "138 Highway 11 East",
+      "latitude": 49.2747007,
+      "longitude": -81.6255022
+    },
+    {
+      "externalId": "180",
+      "name": "Highway 11 & Douglas Avenue",
+      "city": "Beardmore",
+      "address": "222 Main Street",
+      "latitude": 49.6020883,
+      "longitude": -87.9593996
+    },
+    {
+      "externalId": "172",
+      "name": "Louisa & Main",
+      "city": "Thedford",
+      "address": "109 Louisa Street",
+      "latitude": 43.1640997,
+      "longitude": -81.85322529999999
+    },
+    {
+      "externalId": "309",
+      "name": "Highway 43 & Highway 417",
+      "city": "Maxville",
+      "address": "3 Main Street",
+      "latitude": 45.2883328,
+      "longitude": -74.855246
+    },
+    {
+      "externalId": "162",
+      "name": "Highway 11 & Burton",
+      "city": "Matheson",
+      "address": "423 Highway 11",
+      "latitude": 48.5321858,
+      "longitude": -80.4626777
+    },
+    {
+      "externalId": "301",
+      "name": "Queen & Ottawa",
+      "city": "Almonte",
+      "address": "124 Queen Street",
+      "latitude": 45.228428,
+      "longitude": -76.1934781
+    },
+    {
+      "externalId": "290",
+      "name": "Highway 522 & Loring",
+      "city": "Port Loring",
+      "address": "14 Wilson Lake Crescent",
+      "latitude": 45.916191,
+      "longitude": -79.9859003
+    },
+    {
+      "externalId": "292",
+      "name": "Spruce & Balsam",
+      "city": "Ear Falls",
+      "address": "16 Spruce Street",
+      "latitude": 50.637466599999996,
+      "longitude": -93.23849419999999
+    },
+    {
+      "externalId": "280",
+      "name": "Monroe & First",
+      "city": "Elk Lake",
+      "address": "55 First Street",
+      "latitude": 47.7321074,
+      "longitude": -80.33823749999999
+    },
+    {
+      "externalId": "264",
+      "name": "Main & Market",
+      "city": "Lucan",
+      "address": "196 Main Street",
+      "latitude": 43.189119399999996,
+      "longitude": -81.4054019
+    },
+    {
+      "externalId": "256",
+      "name": "Highway 17 & Imperial",
+      "city": "Massey",
+      "address": "250 Imperial Street South",
+      "latitude": 46.2119581,
+      "longitude": -82.07702669999999
+    },
+    {
+      "externalId": "258",
+      "name": "Queen & Spragge",
+      "city": "Manitowaning",
+      "address": "13 Spragge",
+      "latitude": 45.7446281,
+      "longitude": -81.8072442
+    },
+    {
+      "externalId": "245",
+      "name": "Highway 11 & Forestry",
+      "city": "Longlac",
+      "address": "116 Forestry Road",
+      "latitude": 49.7807684,
+      "longitude": -86.5352219
+    },
+    {
+      "externalId": "241",
+      "name": "Highway 11 & Wildflower",
+      "city": "Temagami",
+      "address": "3 Wildflower Avenue",
+      "latitude": 47.0639215,
+      "longitude": -79.7900628
+    },
+    {
+      "externalId": "230",
+      "name": "Front & Tenth",
+      "city": "Keewatin",
+      "address": "202 10th Street",
+      "latitude": 49.761891399999996,
+      "longitude": -94.55413759999999
+    },
+    {
+      "externalId": "349",
+      "name": "Highway 34 & Mill",
+      "city": "Vankleek Hill",
+      "address": "23 Mill Street",
+      "latitude": 45.518136299999995,
+      "longitude": -74.6526356
+    },
+    {
+      "externalId": "350",
+      "name": "Furnival & Queen",
+      "city": "Rodney",
+      "address": "243 Furnival Road",
+      "latitude": 42.5688043,
+      "longitude": -81.6834779
+    },
+    {
+      "externalId": "224",
+      "name": "Bay & Mill",
+      "city": "Beaverton",
+      "address": "336 Bay Street",
+      "latitude": 44.4290003,
+      "longitude": -79.1553145
+    },
+    {
+      "externalId": "339",
+      "name": "Montreal & St. Andrew",
+      "city": "Mitchell",
+      "address": "136 St. Andrew Street",
+      "latitude": 43.467790699999995,
+      "longitude": -81.1957075
+    },
+    {
+      "externalId": "332",
+      "name": "Quebec & Railroad",
+      "city": "Nakina",
+      "address": "112 Quebec Street",
+      "latitude": 50.1781109,
+      "longitude": -86.71025569999999
+    },
+    {
+      "externalId": "337",
+      "name": "Thompson & St. Clair Parkway",
+      "city": "Courtright",
+      "address": "42 Thompson Street",
+      "latitude": 42.820445,
+      "longitude": -82.4730123
+    },
+    {
+      "externalId": "158",
+      "name": "Highway 6 & Manitowaning",
+      "city": "Little Current",
+      "address": "17 Manitowaning Road",
+      "latitude": 45.9792139,
+      "longitude": -81.9256041
+    },
+    {
+      "externalId": "159",
+      "name": "Highway 124 & Ottawa",
+      "city": "South River",
+      "address": "287 Highway 124 North",
+      "latitude": 45.8369834,
+      "longitude": -79.37679609999999
+    },
+    {
+      "externalId": "435",
+      "name": "Highway 2 & Moulinette",
+      "city": "Long Sault",
+      "address": "33 Long Sault Drive",
+      "latitude": 45.0290727,
+      "longitude": -74.8948896
+    },
+    {
+      "externalId": "429",
+      "name": "King & Park",
+      "city": "Burford",
+      "address": "29 Park Avenue",
+      "latitude": 43.1029839,
+      "longitude": -80.42730619999999
+    },
+    {
+      "externalId": "421",
+      "name": "Robinson & Highway 17",
+      "city": "Bruce Mines",
+      "address": "9226 Taylor Street",
+      "latitude": 46.3012084,
+      "longitude": -83.7881587
+    },
+    {
+      "externalId": "423",
+      "name": "Highway 3 & King",
+      "city": "Lansdowne",
+      "address": "992 Prince Street",
+      "latitude": 44.4003687,
+      "longitude": -76.0183948
+    },
+    {
+      "externalId": "409",
+      "name": "Highway 637 & Channel",
+      "city": "Killarney",
+      "address": "17 Channel Street",
+      "latitude": 45.9701447,
+      "longitude": -81.51168109999999
+    },
+    {
+      "externalId": "410",
+      "name": "Highway 7 & Highway 41",
+      "city": "Northbrook",
+      "address": "12297 Hwy 41 Front Street",
+      "latitude": 44.735718399999996,
+      "longitude": -77.1597036
+    },
+    {
+      "externalId": "460",
+      "name": "Highway 42 & Main",
+      "city": "Delta",
+      "address": "39 King Street",
+      "latitude": 44.61205,
+      "longitude": -76.12100079999999
+    },
+    {
+      "externalId": "424",
+      "name": "Main & Bay",
+      "city": "Moosonee",
+      "address": "35 First Street",
+      "latitude": 51.274157699999996,
+      "longitude": -80.6465513
+    },
+    {
+      "externalId": "129",
+      "name": "3 & Main",
+      "city": "Geraldton",
+      "address": "100 Main Street",
+      "latitude": 49.725886900000006,
+      "longitude": -86.9487901
+    },
+    {
+      "externalId": "338",
+      "name": "Highway 101 & Young",
+      "city": "Foleyet",
+      "address": "30 Young Street",
+      "latitude": 48.2446832,
+      "longitude": -82.4417308
+    },
+    {
+      "externalId": "794",
+      "name": "Norwich Avenue & Pattullo Avenue",
+      "city": "Woodstock",
+      "address": "493 Norwich Avenue",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "externalId": "137",
+      "name": "Highway 105 & Discovery",
+      "city": "Red Lake",
+      "address": "4 Discovery Road",
+      "latitude": 51.018446600000004,
+      "longitude": -93.8214629
+    },
+    {
+      "externalId": "87",
+      "name": "Front & Fourth",
+      "city": "Sioux Lookout",
+      "address": "44 Front Street",
+      "latitude": 50.0983469,
+      "longitude": -91.91522259999999
+    },
+    {
+      "externalId": "379",
+      "name": "Koval & Pickle Lake",
+      "city": "Pickle Lake",
+      "address": "18 Koval Street",
+      "latitude": 51.4657406,
+      "longitude": -90.19804669999999
+    },
+    {
+      "externalId": "927",
+      "name": "Dufferin St & Yorkdale Rd",
+      "city": "Toronto",
+      "address": "3401 Dufferin St",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

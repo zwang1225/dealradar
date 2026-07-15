@@ -13,9 +13,15 @@
   </header>
 
   <main>
+    <section id="location">
+      <p id="location-status" class="empty-state">Locating nearest store…</p>
+      <button id="retry-location" type="button" hidden>Try location again</button>
+    </section>
+
     <section id="deals">
       <h2>Deals</h2>
-      <p class="empty-state">No data yet — deals will show up here once the data feed is wired up.</p>
+      <p id="deals-status" class="empty-state">Loading deals…</p>
+      <ul id="deals-list"></ul>
     </section>
   </main>
 
