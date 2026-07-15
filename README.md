@@ -1,7 +1,14 @@
-# BoozeRadar
+# DealRadar
 
-Tracks LCBO deals, stock, and special drops across Ontario. Static
-frontend (plain HTML/CSS/JS), no backend server.
+A deals/stock tracker, currently scoped to LCBO (Ontario) but meant to
+grow into a general multi-retailer tracker over time (e.g. Best Buy and
+others) — hence the name isn't liquor-specific. Static frontend (plain
+HTML/CSS/JS), no backend server.
+
+**Today**: LCBO only. The data layer (`scripts/`, `data/*.json`) and the
+frontend's filtering/sorting are LCBO-shaped for now; extending to another
+retailer means adding its own fetch script + a shared/normalized deal
+shape, not a rewrite of the UI.
 
 ## Data
 

@@ -23,7 +23,7 @@ let selectedCategory = ""; // pipe path, e.g. "Spirits|Whisky|Scotch Whisky", or
 // A small list of favorited category paths — the whole point is quick
 // one-click access to them (rendered as chips), not just a remembered
 // default on page load. Most-recently-favorited first.
-const FAVORITE_CATEGORIES_KEY = "boozeradar:favoriteCategories";
+const FAVORITE_CATEGORIES_KEY = "dealradar:favoriteCategories";
 
 function getFavoriteCategories() {
   try {
