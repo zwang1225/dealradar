@@ -1,10 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Deal,
   Store,
   SortOption,
+  Vote,
   buildCategoryTree,
   computeNearbyStores,
   flattenCategoryPaths,
@@ -40,6 +42,7 @@ export function DealRadar() {
   const [sort, setSort] = useState<SortOption>("price-asc");
   const [categoryPickerOpen, setCategoryPickerOpen] = useState(false);
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [feedback, setFeedback] = useState<Record<string, Vote>>({});
 
   const didInitCategory = useRef(false);
 
@@ -62,6 +65,13 @@ export function DealRadar() {
 
   useEffect(() => {
     setFavorites(getFavoriteCategories());
+  }, []);
+
+  useEffect(() => {
+    fetch("/api/feedback")
+      .then((res) => res.json())
+      .then((data) => setFeedback(data.feedback))
+      .catch(() => {});
   }, []);
 
   const locate = useCallback(() => {
@@ -132,6 +142,32 @@ export function DealRadar() {
     setFavorites(toggleFavoriteCategory(path));
   };
 
+  // Optimistic local update, then persist -- same shape as the favorites
+  // toggle above, just server-backed instead of localStorage. Voting the
+  // same way again clears the vote (matches the favorite star's toggle UX).
+  const handleVote = (sku: string, vote: Vote) => {
+    const isSame = feedback[sku] === vote;
+    setFeedback((current) => {
+      const next = { ...current };
+      if (isSame) {
+        delete next[sku];
+      } else {
+        next[sku] = vote;
+      }
+      return next;
+    });
+
+    if (isSame) {
+      fetch(`/api/feedback?sku=${encodeURIComponent(sku)}`, { method: "DELETE" });
+    } else {
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ sku, vote }),
+      });
+    }
+  };
+
   const located = locationState === "located";
 
   return (
@@ -140,6 +176,9 @@ export function DealRadar() {
         <p className="eyebrow">🍷 LCBO · Ontario</p>
         <h1>DealRadar</h1>
         <p className="subtitle">Tracking LCBO deals, stock, and drops across Ontario.</p>
+        <Link href="/preferences" className="preferences-link">
+          Preferences
+        </Link>
       </header>
 
       <main>
@@ -225,7 +264,14 @@ export function DealRadar() {
           </p>
           <ul id="deals-list">
             {visibleDeals.map((deal) => (
-              <DealCard key={deal.sku} deal={deal} nearbyStores={nearbyStores} radiusKm={radiusKm} />
+              <DealCard
+                key={deal.sku}
+                deal={deal}
+                nearbyStores={nearbyStores}
+                radiusKm={radiusKm}
+                vote={feedback[deal.sku]}
+                onVote={handleVote}
+              />
             ))}
           </ul>
         </section>

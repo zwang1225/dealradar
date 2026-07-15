@@ -28,6 +28,8 @@ export interface NearbyStore {
   distanceKm: number;
 }
 
+export type Vote = "up" | "down";
+
 export interface CategoryNode {
   name: string;
   path: string;

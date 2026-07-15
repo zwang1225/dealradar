@@ -66,6 +66,13 @@ header h1 {
   color: var(--text-muted);
 }
 
+.preferences-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
 .empty-state {
   color: var(--text-muted);
   font-style: italic;
@@ -436,8 +443,110 @@ header h1 {
   color: var(--stock-out);
 }
 
+.vote-buttons {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.vote-button {
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.vote-button:hover {
+  opacity: 1;
+}
+
+.vote-button.active {
+  opacity: 1;
+  border-color: var(--accent);
+  background: var(--badge-discount-bg);
+}
+
 footer {
   margin-top: 3rem;
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+.preferences-page {
+  max-width: 1080px;
+  margin-inline: auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.preferences-page h1 {
+  margin: 0.75rem 0 0;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.field-label {
+  display: block;
+  margin: 1.25rem 0 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.preferences-page input[type="email"] {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.preferences-page input[type="email"]:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.preferences-page textarea {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  resize: vertical;
+}
+
+.preferences-page textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.preferences-page button {
+  font: inherit;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.preferences-page button:hover {
+  border-color: var(--accent);
+}
+
+.preferences-page button:disabled {
+  color: var(--text-muted);
+  cursor: default;
 }

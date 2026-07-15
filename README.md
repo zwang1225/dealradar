@@ -3,9 +3,10 @@
 A deals/stock tracker, currently scoped to LCBO (Ontario) but meant to
 grow into a general multi-retailer tracker over time (e.g. Best Buy and
 others) — hence the name isn't liquor-specific. Next.js (App Router,
-TypeScript) frontend, entirely client-rendered — no auth or database yet.
-Deployed on Vercel, gated by Vercel Authentication since this is a
-single-user tool, not a public product.
+TypeScript) frontend, mostly client-rendered, with a small Postgres-backed
+API for preferences and thumbs-up/down feedback. Deployed on Vercel, gated
+by Vercel Authentication since this is a single-user tool, not a public
+product.
 
 **Today**: LCBO only. The data layer (`scripts/`, `public/data/*.json`) and
 the frontend's filtering/sorting are LCBO-shaped for now; extending to
@@ -49,3 +50,13 @@ npm run dev
 ```
 
 Open `http://localhost:3000`.
+
+The deals page works with just that. Preferences and thumbs up/down need a
+database:
+
+1. Provision a Postgres database from the Vercel dashboard's Storage tab
+   (attached to this project — production already gets its env vars from
+   this automatically).
+2. Copy `.env.example` to `.env.local` and fill in `DATABASE_URL` from that
+   same dashboard.
+3. `npm run db:migrate` (once, to create the tables).

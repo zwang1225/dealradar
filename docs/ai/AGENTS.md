@@ -16,8 +16,10 @@ tracker later, without breaking the static-data contract the frontend depends on
    data flow — pipeline, storage, and how the app consumes it. Read it before
    touching `scripts/`, `lib/deals.ts`, or `app/deal-radar.tsx`.
 4. Note the shape of the project: Next.js (App Router, TypeScript) frontend
-   under `app/`, entirely client-rendered (no server data fetching, no DB —
-   yet). It reads deal/store data as static JSON from `public/data/`.
+   under `app/`, entirely client-rendered. Deal/store data is static JSON
+   from `public/data/`; preferences and thumbs-up/down feedback are the one
+   piece of real server state, backed by Postgres via `lib/db.ts` and
+   `app/api/*` Route Handlers.
 5. `public/data/*.json` is generated output, not hand-authored — see Ground Rules.
 
 ## Ground Rules
@@ -36,16 +38,28 @@ tracker later, without breaking the static-data contract the frontend depends on
 - Pure logic (filtering, sorting, category-tree building, distance calc)
   lives in `lib/deals.ts` as framework-free functions — keep new logic there
   rather than inline in components, so it stays easy to reason about and test.
+- Never hand-edit the Postgres schema in the Neon/Vercel dashboard. Change
+  `scripts/db/migrate.mjs` (the schema's source of truth) and re-run
+  `npm run db:migrate`.
+- Never commit a real `DATABASE_URL` or any other secret. `.env*.local` is
+  gitignored; `.env.example` documents required vars with empty placeholders.
 
 ## Repo Facts
 
-- Frontend: Next.js App Router + TypeScript + React, entirely client-rendered
-  (`app/deal-radar.tsx` is a single `"use client"` component tree — there's
-  no auth, DB, or server logic yet). Styling is one global stylesheet
-  (`app/globals.css`, ported from the pre-Next.js static site) using plain
-  CSS custom properties, not Tailwind.
+- Frontend: Next.js App Router + TypeScript + React, mostly client-rendered
+  (`app/deal-radar.tsx` and `app/preferences/page.tsx` are `"use client"`
+  component trees). Styling is one global stylesheet (`app/globals.css`,
+  ported from the pre-Next.js static site) using plain CSS custom
+  properties, not Tailwind.
+- Backend: two Next.js Route Handlers (`app/api/preferences/route.ts`,
+  `app/api/feedback/route.ts`) backed by Postgres (Neon, provisioned via
+  Vercel's Storage tab) through `lib/db.ts`. Raw SQL, no ORM. No other
+  server logic or auth beyond that — Vercel Authentication gates the whole
+  production deployment.
 - Package manager: npm.
-- Main commands: `npm run dev`, `npm run build`, `npm run typecheck`.
+- Main commands: `npm run dev`, `npm run build`, `npm run typecheck`,
+  `npm run db:migrate` (applies `scripts/db/migrate.mjs` against
+  `DATABASE_URL` from `.env.local`).
 - Data fetchers: plain Node ESM scripts under `scripts/`, no npm dependencies
   of their own. Run directly with `node scripts/fetch-stores.mjs`,
   `node scripts/fetch-deals.mjs`.
@@ -66,6 +80,9 @@ tracker later, without breaking the static-data contract the frontend depends on
   `node scripts/fetch-deals.mjs`. This will modify `public/data/*.json` in
   your working tree — don't commit a test run unless it's an intentional
   refresh.
+- To use `/preferences` or the thumbs up/down buttons locally: copy
+  `.env.example` to `.env.local`, fill in `DATABASE_URL` from the Vercel
+  dashboard's Storage tab, then run `npm run db:migrate` once.
 
 ## High-Impact Paths
 

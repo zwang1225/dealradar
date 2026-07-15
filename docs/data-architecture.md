@@ -1,9 +1,9 @@
 # Data Architecture
 
 How data moves from LCBO's API to the screen, and why it's shaped the way it
-is. Written after the [Next.js migration](ai/AGENTS.md) (Phase 1 of the
-roadmap), before Phase 2 adds the first real per-user mutable state
-(preferences + thumbs-up/down feedback).
+is. Covers Phase 1 (the [Next.js migration](ai/AGENTS.md), static JSON only)
+and Phase 2 (the first real per-user mutable state: preferences + thumbs-up/
+down feedback, backed by Postgres).
 
 ## The pipeline (outside the Next.js app)
 
@@ -51,29 +51,71 @@ public/data/deals.json, public/data/stores.json
 - `app/components/` are presentational only; they take data and callbacks as
   props and don't know where either comes from.
 
+## Preferences + feedback (Phase 2, Postgres)
+
+The first real per-user mutable state, and the first database in this
+project — added because Phase 3 (LLM-picked deals + email) needs actual data
+to read, and `localStorage` can't be read server-side or across devices.
+
+```
+Neon Postgres (provisioned via Vercel's Storage tab)
+  -> lib/db.ts                    (neon() tagged-template client, reads DATABASE_URL)
+  -> app/api/preferences/route.ts, app/api/feedback/route.ts   (Next.js Route Handlers)
+  -> app/preferences/page.tsx, app/components/ThumbButtons.tsx  (UI)
+```
+
+- Two tables, both created/managed by `scripts/db/migrate.mjs` (the schema's
+  source of truth — idempotent, safe to re-run, **never hand-edit the schema
+  in the Neon/Vercel dashboard**):
+  - `preferences` — a single row (`id` pinned to `1` via a CHECK constraint):
+    freeform `notes` text (feeds an LLM prompt in Phase 3, not a strict
+    filter — structured columns per category/brand/price would be
+    premature) plus `email`, the one address Phase 3 will send picks to.
+    No `users` table and no accounts — this is still explicitly a
+    single-user tool, so there's deliberately nothing to key user data by
+    beyond this one row.
+  - `deal_feedback` — `sku` (primary key), `vote` (`'up' | 'down'`),
+    `created_at`. Voting again on the same deal overwrites via
+    `ON CONFLICT`; voting the same way twice clears it (toggle-off), the
+    same UX `lib/favorites.ts` already uses for favorited categories.
+- `lib/db.ts` exports a single `sql` client (`@neondatabase/serverless`'s
+  `neon()`, an HTTP driver — no connection pooling to manage, safe to
+  instantiate once at module scope). Both API routes import it; nothing
+  else needs direct DB access.
+- No auth code in the API routes: Vercel Authentication already gates the
+  *entire* production deployment (set up in Phase 1), so `/api/*` is
+  automatically behind that same single-user gate. Local dev
+  (`npm run dev`) has no such gate — accepted as-is for a single-user tool.
+- Local dev and the migration script need `DATABASE_URL` in a gitignored
+  `.env.local` (see `.env.example`); production gets it auto-injected by
+  Vercel's Postgres integration.
+
 ## Why this shape, and where it stops being enough
 
-This is a single-user tool with almost no interactivity yet — the only
-"write" anywhere is favorited categories in `localStorage`. That's why there
-is deliberately no database, no API routes, and no server actions: static
-JSON + a client-side fetch is the simplest thing that actually works for
-read-only data plus one piece of trivial local state.
+Phase 1 shipped with almost no interactivity — the only "write" anywhere was
+favorited categories in `localStorage`, so static JSON + a client-side fetch
+was the simplest thing that actually worked.
 
-That stops being true at Phase 2. Preferences and thumbs-up/down feedback are
-real per-user mutable state that needs to persist across devices/sessions and
-feed an LLM call — at that point a real database and API routes/server
-actions become necessary, and this doc should be updated to describe that
-layer once it exists.
+Phase 2 crossed that line: preferences and feedback are real per-user state
+that needs to persist across devices/sessions and feed an LLM call, so a
+database and API routes became necessary — see the section above.
+
+What's still *not* here: no LLM calls, no email, no auth beyond Vercel
+Authentication gating the whole deployment. That's Phase 3, which reads the
+`preferences`/`deal_feedback` tables added in this phase.
 
 ## Directory map
 
 - `scripts/` — data pipeline (Node ESM, no framework, no npm dependencies)
   - `fetch-stores.mjs`, `fetch-deals.mjs` — entry points, run daily by CI
   - `lib/lcbo-client.mjs` — shared GraphQL client + pagination helper
-- `public/data/` — pipeline output; the frontend's only data source
+  - `db/migrate.mjs` — schema source of truth for `preferences`/`deal_feedback`
+- `public/data/` — pipeline output; the frontend's read-only data source
 - `lib/` — framework-free TypeScript: `deals.ts` (types + pure logic),
-  `favorites.ts` (localStorage helpers)
+  `favorites.ts` (localStorage helpers), `db.ts` (Postgres client)
 - `app/` — Next.js App Router
-  - `deal-radar.tsx` — the one client component holding all UI state
+  - `deal-radar.tsx` — the main client component holding all deals-page UI state
+  - `preferences/page.tsx` — preferences editor
+  - `api/preferences/`, `api/feedback/` — Route Handlers backing the two tables
   - `components/` — presentational subcomponents
   - `layout.tsx`, `page.tsx`, `globals.css` — App Router boilerplate

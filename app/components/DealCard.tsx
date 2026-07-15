@@ -1,20 +1,26 @@
 import {
   Deal,
   NearbyStore,
+  Vote,
   centsToDollars,
   formatBottleInfo,
   lastCategorySegment,
   nearestInStockStore,
 } from "@/lib/deals";
+import { ThumbButtons } from "./ThumbButtons";
 
 export function DealCard({
   deal,
   nearbyStores,
   radiusKm,
+  vote,
+  onVote,
 }: {
   deal: Deal;
   nearbyStores: NearbyStore[];
   radiusKm: number;
+  vote: Vote | undefined;
+  onVote: (sku: string, vote: Vote) => void;
 }) {
   const match = nearbyStores.length > 0 ? nearestInStockStore(deal, nearbyStores) : null;
   const bottleInfo = formatBottleInfo(deal);
@@ -47,6 +53,7 @@ export function DealCard({
           <p className="stock out-of-stock">Not in stock within {radiusKm} km</p>
         )
       ) : null}
+      <ThumbButtons sku={deal.sku} vote={vote} onVote={onVote} />
     </li>
   );
 }
