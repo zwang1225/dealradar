@@ -1,0 +1,35 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0 1rem 3rem;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+header {
+  padding: 2rem 0 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  color: #666;
+}
+
+.empty-state {
+  color: #888;
+  font-style: italic;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #999;
+}
