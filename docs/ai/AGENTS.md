@@ -58,11 +58,27 @@ list client-side — never a UI rewrite per retailer.
   instead (`app/deal-radar.tsx`, `Promise.allSettled`).
 - Best Buy support is currently **parked**: `scripts/fetch-bestbuy-deals.mjs`
   and all the `retailer`-field/merge/UI plumbing are written, type-check,
-  and build, but are uncommitted and have never actually been run against
-  the real Best Buy API. Blocked on their developer signup rejecting free
-  email providers. Don't assume `bestbuy-deals.json` exists or that the
-  fetch script actually works end-to-end until this is unblocked and
-  verified — see `docs/roadmap.md`.
+  build, and are committed locally (gated, see below) but have never
+  actually been run against the real Best Buy API. Blocked on their
+  developer signup rejecting free email providers. Don't assume
+  `bestbuy-deals.json` exists or that the fetch script actually works
+  end-to-end until this is unblocked and verified — see `docs/roadmap.md`.
+- **Gating convention for blocked/parked features**: when a feature is
+  written but blocked on a secret/credential you don't have (see Best Buy,
+  email verification, and `notify.mjs` above), gate it so it's safe to
+  commit and push without regressing anything currently working, rather
+  than leaving it uncommitted indefinitely. Concretely: CI/workflow steps
+  that need a not-yet-existing secret get `if: env.SECRET_NAME != ''` (skip,
+  don't fail — a failed step aborts later steps in the same job; a skipped
+  one doesn't) with the secrets exposed via job-level `env:` first (`secrets.*`
+  isn't a recognized named-value directly in step `if:` conditions). API
+  routes that need a not-yet-configured secret fall back to their
+  pre-existing behavior instead of throwing (see
+  `isEmailVerificationConfigured()` in `app/api/preferences/route.ts`). UI
+  that depends on not-yet-existing data hides itself rather than showing an
+  empty/broken state (see `availableRetailers` in `app/deal-radar.tsx`).
+  Whether to actually push a gated feature is still a separate decision
+  from committing it — ask first.
 - Keep changes scoped; don't refactor unrelated areas.
 - Pure logic (filtering, sorting, category-tree building, distance calc)
   lives in `lib/deals.ts` as framework-free functions — keep new logic there

@@ -11,12 +11,18 @@ function siteUrl() {
     : "http://localhost:3000";
 }
 
+// Gate for the whole verification flow: RESEND_API_KEY/RESEND_FROM are set
+// as Vercel env vars once someone actually does that setup step (see
+// docs/roadmap.md). Until then, PUT falls back to saving the email
+// directly -- the exact behavior this repo had before verification
+// existed -- rather than throwing on every email change.
+function isEmailVerificationConfigured() {
+  return Boolean(process.env.RESEND_API_KEY && process.env.RESEND_FROM);
+}
+
 async function sendVerificationEmail(to: string, token: string) {
-  const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.RESEND_FROM;
-  if (!apiKey || !from) {
-    throw new Error("RESEND_API_KEY/RESEND_FROM are not set.");
-  }
+  const apiKey = process.env.RESEND_API_KEY!;
+  const from = process.env.RESEND_FROM!;
 
   const verifyUrl = `${siteUrl()}/api/preferences/verify?token=${token}`;
   const res = await fetch("https://api.resend.com/emails", {
@@ -75,7 +81,7 @@ export async function PUT(request: Request) {
         verification_expires_at = NULL,
         updated_at = excluded.updated_at
     `;
-  } else {
+  } else if (isEmailVerificationConfigured()) {
     // New/changed email -- start verification. The verified `email` column
     // is not touched until the link is clicked.
     const token = randomUUID();
@@ -90,6 +96,14 @@ export async function PUT(request: Request) {
         updated_at = excluded.updated_at
     `;
     await sendVerificationEmail(trimmedEmail, token);
+  } else {
+    // Verification isn't configured yet -- save directly, same as before
+    // verification existed, rather than 500ing on every email change.
+    await sql`
+      INSERT INTO preferences (id, notes, email, updated_at)
+      VALUES (1, ${notes}, ${trimmedEmail}, now())
+      ON CONFLICT (id) DO UPDATE SET notes = excluded.notes, email = excluded.email, updated_at = excluded.updated_at
+    `;
   }
 
   const rows = await sql`SELECT notes, email, pending_email FROM preferences WHERE id = 1`;

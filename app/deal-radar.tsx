@@ -29,6 +29,8 @@ const LOCATION_STATUS_TEXT: Record<Exclude<LocationState, "located">, string> = 
   error: "Enable location to see stock near you.",
 };
 
+const RETAILER_LABELS: Record<Retailer, string> = { lcbo: "LCBO", bestbuy: "Best Buy" };
+
 export function DealRadar() {
   const [allDeals, setAllDeals] = useState<Deal[]>([]);
   const [dealsLoadState, setDealsLoadState] = useState<DealsLoadState>("loading");
@@ -113,6 +115,15 @@ export function DealRadar() {
   }, [locate]);
 
   const categoryTree = useMemo(() => buildCategoryTree(allDeals), [allDeals]);
+
+  // Only offer a retailer as a filter option once its data has actually
+  // loaded -- e.g. Best Buy support is currently parked (no
+  // bestbuy-deals.json exists yet), so the whole filter stays hidden
+  // rather than showing a dropdown with a permanently-empty option.
+  const availableRetailers = useMemo(
+    () => [...new Set(allDeals.map((deal) => deal.retailer))].sort(),
+    [allDeals],
+  );
 
   // Default to the most-recently-favorited category on a fresh load, same
   // idea as "remember where I left off". Runs once, the first time deals
@@ -240,10 +251,14 @@ export function DealRadar() {
               aria-label="Filter by store"
               value={retailerFilter}
               onChange={(event) => setRetailerFilter(event.target.value as Retailer | "")}
+              hidden={availableRetailers.length <= 1}
             >
               <option value="">All stores</option>
-              <option value="lcbo">LCBO</option>
-              <option value="bestbuy">Best Buy</option>
+              {availableRetailers.map((retailer) => (
+                <option key={retailer} value={retailer}>
+                  {RETAILER_LABELS[retailer]}
+                </option>
+              ))}
             </select>
 
             <details
