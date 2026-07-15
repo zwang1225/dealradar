@@ -38,6 +38,22 @@ export type SortOption = "price-asc" | "price-desc" | "name-asc" | "in-stock";
 
 export const centsToDollars = (cents: number) => `$${(cents / 100).toFixed(2)}`;
 
+const formatVolume = (unitVolumeMl: number) =>
+  unitVolumeMl >= 1000
+    ? `${(unitVolumeMl / 1000).toFixed(unitVolumeMl % 1000 === 0 ? 0 : 1)} L`
+    : `${unitVolumeMl} mL`;
+
+// "750 mL · 13% ABV" -- either half may be missing in the source data (605/607
+// and 594/607 of LCBO's current on-sale deals have volume/ABV respectively),
+// so this only joins the parts that are actually present, and returns null
+// when neither is.
+export function formatBottleInfo(deal: Pick<Deal, "unitVolumeMl" | "alcoholPercent">): string | null {
+  const parts: string[] = [];
+  if (deal.unitVolumeMl != null) parts.push(formatVolume(deal.unitVolumeMl));
+  if (deal.alcoholPercent != null) parts.push(`${deal.alcoholPercent}% ABV`);
+  return parts.length > 0 ? parts.join(" · ") : null;
+}
+
 // "Products|Wine|Red Wine" -> "Red Wine"
 export const lastCategorySegment = (category: string | undefined | null) =>
   category?.split("|").at(-1) ?? "";

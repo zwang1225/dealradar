@@ -2,6 +2,7 @@ import {
   Deal,
   NearbyStore,
   centsToDollars,
+  formatBottleInfo,
   lastCategorySegment,
   nearestInStockStore,
 } from "@/lib/deals";
@@ -16,6 +17,7 @@ export function DealCard({
   radiusKm: number;
 }) {
   const match = nearbyStores.length > 0 ? nearestInStockStore(deal, nearbyStores) : null;
+  const bottleInfo = formatBottleInfo(deal);
 
   return (
     <li className="deal">
@@ -24,6 +26,7 @@ export function DealCard({
       </div>
       <h3>{deal.name}</h3>
       <p className="category">{lastCategorySegment(deal.category)}</p>
+      {bottleInfo ? <p className="bottle-info">{bottleInfo}</p> : null}
       <p className="price">
         {centsToDollars(deal.priceInCents)}{" "}
         {deal.regularPriceInCents ? (

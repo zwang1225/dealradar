@@ -375,6 +375,12 @@ header h1 {
   letter-spacing: 0.03em;
 }
 
+.deal .bottle-info {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
 .deal .price {
   margin: 0;
   font-size: 1.15rem;
