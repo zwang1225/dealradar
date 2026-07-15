@@ -1,4 +1,4 @@
-name: Fetch LCBO deals
+name: Fetch deals
 
 on:
   schedule:
@@ -18,13 +18,33 @@ jobs:
         with:
           node-version: 20
 
-      - run: node scripts/fetch-stores.mjs
-      - run: node scripts/fetch-deals.mjs
+      # notify.mjs needs @neondatabase/serverless from node_modules;
+      # fetch-lcbo-stores.mjs/fetch-lcbo-deals.mjs/fetch-bestbuy-deals.mjs
+      # only use Node built-ins, so this step never used to be necessary.
+      - run: npm ci
+
+      - run: node scripts/fetch-lcbo-stores.mjs
+      - run: node scripts/fetch-lcbo-deals.mjs
+      - run: node scripts/fetch-bestbuy-deals.mjs
+        env:
+          BESTBUY_API_KEY: ${{ secrets.BESTBUY_API_KEY }}
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/stores.json public/data/deals.json public/data/price-history.json
-          git diff --cached --quiet || git commit -m "chore: update LCBO deals data"
+          git add public/data/lcbo-stores.json public/data/lcbo-deals.json public/data/lcbo-price-history.json public/data/bestbuy-deals.json
+          git diff --cached --quiet || git commit -m "chore: update deals data"
           git push
+
+      # Last step, after data is fetched AND committed/pushed above -- a
+      # failure here (API outage, bad key) must never block or risk today's
+      # deals data from being published.
+      - name: Pick and email today's deals
+        run: node scripts/notify.mjs
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ secrets.RESEND_FROM }}

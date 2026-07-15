@@ -1,5 +1,5 @@
 // Fetches all LCBO store locations (name, address, lat/lng, hours) into
-// public/data/stores.json. Small (~690 rows), so this pulls every store
+// public/data/lcbo-stores.json. Small (~690 rows), so this pulls every store
 // rather than trying to guess "home stores" ahead of time — the frontend
 // does its own nearest-store lookup client-side via the browser Geolocation
 // API, so the full list needs to be available statically. The `stores`
@@ -41,7 +41,7 @@ async function main() {
     "..",
     "public",
     "data",
-    "stores.json",
+    "lcbo-stores.json",
   );
   await writeFile(
     outPath,

@@ -1,4 +1,4 @@
-// Builds public/data/deals.json from LCBO's own "on sale"/"clearance"
+// Builds public/data/lcbo-deals.json from LCBO's own "on sale"/"clearance"
 // merchandising categories (the real signal — LCBO.dev's price-history/series
 // endpoints are present in the schema but empirically empty, so they're not
 // used here). The `deals` array shape written below must stay in sync with
@@ -6,7 +6,7 @@
 // to the Next.js app (plain Node, no TypeScript), so nothing enforces that
 // automatically.
 //
-// Also maintains data/price-history.json — but scoped to the ENTIRE catalog,
+// Also maintains public/data/lcbo-price-history.json — but scoped to the ENTIRE catalog,
 // not just today's on-sale subset. That's the only way to eventually know a
 // discount: LCBO.dev never exposes a "regular price" field, only the current
 // one, so the only way to learn what a product cost before it went on sale
@@ -151,7 +151,7 @@ async function main() {
   const catalogPrices = await fetchCatalogPrices();
   console.log(`Scanned ${catalogPrices.size} total products`);
 
-  const priceHistoryPath = path.join(DATA_DIR, "price-history.json");
+  const priceHistoryPath = path.join(DATA_DIR, "lcbo-price-history.json");
   const priceHistory = await readJsonIfExists(priceHistoryPath, {});
   const previousSnapshot = { ...priceHistory }; // pre-update per-sku refs, read before overwriting below
 
@@ -197,15 +197,16 @@ async function main() {
       priceDropped,
       nearHistoricalLow,
       inStockStoreIds,
+      retailer: "lcbo",
     });
   }
 
   await writeFile(priceHistoryPath, JSON.stringify(priceHistory, null, 2));
   await writeFile(
-    path.join(DATA_DIR, "deals.json"),
+    path.join(DATA_DIR, "lcbo-deals.json"),
     JSON.stringify({ generatedAt: new Date().toISOString(), deals }, null, 2),
   );
-  console.log(`Wrote ${deals.length} deals to data/deals.json`);
+  console.log(`Wrote ${deals.length} deals to public/data/lcbo-deals.json`);
 }
 
 main().catch((err) => {

@@ -1,3 +1,5 @@
+export type Retailer = "lcbo" | "bestbuy";
+
 export interface Deal {
   sku: string;
   name: string;
@@ -12,6 +14,7 @@ export interface Deal {
   priceDropped: boolean;
   nearHistoricalLow: boolean;
   inStockStoreIds: string[];
+  retailer: Retailer;
 }
 
 export interface Store {
@@ -151,15 +154,24 @@ export interface VisibleDealsParams {
   allDeals: Deal[];
   search: string;
   category: string;
+  retailer: Retailer | "";
   sort: SortOption;
   nearbyStores: NearbyStore[];
 }
 
-export function getVisibleDeals({ allDeals, search, category, sort, nearbyStores }: VisibleDealsParams): Deal[] {
+export function getVisibleDeals({
+  allDeals,
+  search,
+  category,
+  retailer,
+  sort,
+  nearbyStores,
+}: VisibleDealsParams): Deal[] {
   const query = search.trim().toLowerCase();
   const effectiveSort = sort === "in-stock" && nearbyStores.length === 0 ? "price-asc" : sort;
 
   const filtered = allDeals.filter((deal) => {
+    if (retailer && deal.retailer !== retailer) return false;
     if (category) {
       const path = normalizedCategory(deal.category);
       if (path !== category && !path.startsWith(category + "|")) return false;

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Deal,
+  Retailer,
   Store,
   SortOption,
   Vote,
@@ -39,6 +40,7 @@ export function DealRadar() {
 
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [retailerFilter, setRetailerFilter] = useState<Retailer | "">("");
   const [sort, setSort] = useState<SortOption>("price-asc");
   const [categoryPickerOpen, setCategoryPickerOpen] = useState(false);
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -46,18 +48,27 @@ export function DealRadar() {
 
   const didInitCategory = useRef(false);
 
+  // Fetches every retailer's deals file independently and merges them --
+  // each fetch script writes its own file (see docs/data-architecture.md),
+  // so one retailer's source being temporarily missing (e.g. before its
+  // first CI run) shouldn't take down the whole page, only shrink the list.
   useEffect(() => {
     let cancelled = false;
-    fetch("/data/deals.json")
-      .then((res) => res.json())
-      .then((data) => {
-        if (cancelled) return;
-        setAllDeals(data.deals);
-        setDealsLoadState("loaded");
-      })
-      .catch(() => {
-        if (!cancelled) setDealsLoadState("error");
-      });
+    Promise.allSettled([
+      fetch("/data/lcbo-deals.json").then((res) => res.json()),
+      fetch("/data/bestbuy-deals.json").then((res) => res.json()),
+    ]).then((results) => {
+      if (cancelled) return;
+      const deals = results
+        .filter((result): result is PromiseFulfilledResult<{ deals: Deal[] }> => result.status === "fulfilled")
+        .flatMap((result) => result.value.deals);
+      if (deals.length === 0) {
+        setDealsLoadState("error");
+        return;
+      }
+      setAllDeals(deals);
+      setDealsLoadState("loaded");
+    });
     return () => {
       cancelled = true;
     };
@@ -83,7 +94,7 @@ export function DealRadar() {
     navigator.geolocation.getCurrentPosition(
       (position) => {
         setUserCoords({ lat: position.coords.latitude, lng: position.coords.longitude });
-        fetch("/data/stores.json")
+        fetch("/data/lcbo-stores.json")
           .then((res) => res.json())
           .then((data) => {
             setAllStores(data.stores);
@@ -122,8 +133,16 @@ export function DealRadar() {
   );
 
   const visibleDeals = useMemo(
-    () => getVisibleDeals({ allDeals, search, category: selectedCategory, sort, nearbyStores }),
-    [allDeals, search, selectedCategory, sort, nearbyStores],
+    () =>
+      getVisibleDeals({
+        allDeals,
+        search,
+        category: selectedCategory,
+        retailer: retailerFilter,
+        sort,
+        nearbyStores,
+      }),
+    [allDeals, search, selectedCategory, retailerFilter, sort, nearbyStores],
   );
 
   const selectCategory = (path: string) => {
@@ -173,9 +192,9 @@ export function DealRadar() {
   return (
     <>
       <header>
-        <p className="eyebrow">🍷 LCBO · Ontario</p>
+        <p className="eyebrow">🛍️ Ontario</p>
         <h1>DealRadar</h1>
-        <p className="subtitle">Tracking LCBO deals, stock, and drops across Ontario.</p>
+        <p className="subtitle">Tracking deals, stock, and drops across Ontario retailers.</p>
         <Link href="/preferences" className="preferences-link">
           Preferences
         </Link>
@@ -215,6 +234,17 @@ export function DealRadar() {
               value={search}
               onChange={(event) => setSearch(event.target.value)}
             />
+
+            <select
+              id="retailer-select"
+              aria-label="Filter by store"
+              value={retailerFilter}
+              onChange={(event) => setRetailerFilter(event.target.value as Retailer | "")}
+            >
+              <option value="">All stores</option>
+              <option value="lcbo">LCBO</option>
+              <option value="bestbuy">Best Buy</option>
+            </select>
 
             <details
               id="category-picker"
@@ -278,7 +308,7 @@ export function DealRadar() {
       </main>
 
       <footer>
-        <p>Not affiliated with LCBO. Data sourced independently.</p>
+        <p>Not affiliated with LCBO or Best Buy. Data sourced independently.</p>
       </footer>
     </>
   );

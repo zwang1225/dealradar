@@ -30,6 +30,7 @@ function makeDeal(overrides: Partial<Deal> = {}): Deal {
     priceDropped: false,
     nearHistoricalLow: false,
     inStockStoreIds: [],
+    retailer: "lcbo",
     ...overrides,
   };
 }
@@ -199,7 +200,20 @@ describe("getVisibleDeals", () => {
     inStockStoreIds: ["1"],
   });
   const allDeals = [cheap, pricey];
-  const noStores = { allDeals, search: "", category: "", sort: "price-asc" as const, nearbyStores: [] };
+  const noStores = {
+    allDeals,
+    search: "",
+    category: "",
+    retailer: "" as const,
+    sort: "price-asc" as const,
+    nearbyStores: [],
+  };
+
+  it("filters by retailer", () => {
+    const bestbuyDeal = makeDeal({ sku: "tv", name: "TV", retailer: "bestbuy" });
+    const result = getVisibleDeals({ ...noStores, allDeals: [...allDeals, bestbuyDeal], retailer: "bestbuy" });
+    expect(result.map((d) => d.sku)).toEqual(["tv"]);
+  });
 
   it("filters by category, including nested descendants via prefix match", () => {
     const result = getVisibleDeals({ ...noStores, category: "Wine" });

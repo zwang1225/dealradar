@@ -488,6 +488,16 @@ footer {
   letter-spacing: -0.02em;
 }
 
+.banner {
+  margin: 1rem 0 0;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--badge-drop-bg);
+  color: var(--badge-drop-text);
+  font-size: 0.85rem;
+}
+
 .field-label {
   display: block;
   margin: 1.25rem 0 0.3rem;
