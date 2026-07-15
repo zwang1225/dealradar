@@ -1,6 +1,10 @@
-// Builds data/deals.json from LCBO's own "on sale"/"clearance" merchandising
-// categories (the real signal — LCBO.dev's price-history/series endpoints
-// are present in the schema but empirically empty, so they're not used here).
+// Builds public/data/deals.json from LCBO's own "on sale"/"clearance"
+// merchandising categories (the real signal — LCBO.dev's price-history/series
+// endpoints are present in the schema but empirically empty, so they're not
+// used here). The `deals` array shape written below must stay in sync with
+// the `Deal` type in lib/deals.ts -- this script has no import relationship
+// to the Next.js app (plain Node, no TypeScript), so nothing enforces that
+// automatically.
 //
 // Also maintains data/price-history.json — but scoped to the ENTIRE catalog,
 // not just today's on-sale subset. That's the only way to eventually know a

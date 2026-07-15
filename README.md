@@ -37,6 +37,10 @@ Per api.lcbo.dev's [terms of service](https://lcbo.dev/legal/terms-of-service):
 personal use, daily polling of a few hundred products — well within
 "reasonable usage." Don't redistribute or resell the underlying data.
 
+See [`docs/data-architecture.md`](docs/data-architecture.md) for the full
+data flow from LCBO's API through to what renders on screen, and why it's
+shaped the way it is.
+
 ## Running locally
 
 ```bash

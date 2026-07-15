@@ -1,8 +1,10 @@
 // Fetches all LCBO store locations (name, address, lat/lng, hours) into
-// data/stores.json. Small (~690 rows), so this pulls every store rather
-// than trying to guess "home stores" ahead of time — the frontend does
-// its own nearest-store lookup client-side via the browser Geolocation
-// API, so the full list needs to be available statically.
+// public/data/stores.json. Small (~690 rows), so this pulls every store
+// rather than trying to guess "home stores" ahead of time — the frontend
+// does its own nearest-store lookup client-side via the browser Geolocation
+// API, so the full list needs to be available statically. The `stores`
+// array shape written below must stay in sync with the `Store` type in
+// lib/deals.ts.
 import { writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";

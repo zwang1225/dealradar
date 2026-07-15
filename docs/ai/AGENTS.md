@@ -12,10 +12,13 @@ tracker later, without breaking the static-data contract the frontend depends on
 
 1. Read this file fully.
 2. Skim [README.md](../../README.md) for product and data-sourcing context.
-3. Note the shape of the project: Next.js (App Router, TypeScript) frontend
+3. Read [`docs/data-architecture.md`](../data-architecture.md) for the full
+   data flow — pipeline, storage, and how the app consumes it. Read it before
+   touching `scripts/`, `lib/deals.ts`, or `app/deal-radar.tsx`.
+4. Note the shape of the project: Next.js (App Router, TypeScript) frontend
    under `app/`, entirely client-rendered (no server data fetching, no DB —
    yet). It reads deal/store data as static JSON from `public/data/`.
-4. `public/data/*.json` is generated output, not hand-authored — see Ground Rules.
+5. `public/data/*.json` is generated output, not hand-authored — see Ground Rules.
 
 ## Ground Rules
 
@@ -65,6 +68,9 @@ tracker later, without breaking the static-data contract the frontend depends on
   refresh.
 
 ## High-Impact Paths
+
+See [`docs/data-architecture.md`](../data-architecture.md) for the full
+picture; the short version:
 
 - `public/data/*.json` — the frontend's only data source, with no schema
   validation. A shape change here breaks the UI silently; keep it in sync
