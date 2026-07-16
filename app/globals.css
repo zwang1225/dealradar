@@ -6,6 +6,17 @@
   display: none !important;
 }
 
+/* Reserve the scrollbar's space permanently, whether or not it's actually
+   showing. Without this, Radix's scroll-lock (Popover/Select opening) hides
+   the real scrollbar and compensates with body padding -- but that
+   compensation doesn't perfectly cancel out against this page's centered,
+   max-width body, so the page visibly shifts left every time a dropdown
+   opens. Reserving the gutter up front means there's never a scrollbar
+   appearing/disappearing for that compensation to react to. */
+html {
+  scrollbar-gutter: stable;
+}
+
 :root {
   color-scheme: light dark;
   font-family: system-ui, -apple-system, sans-serif;
@@ -33,13 +44,22 @@
   box-sizing: border-box;
 }
 
+/* Deliberately unstyled beyond background/color -- Radix Select's
+   underlying scroll-lock (react-remove-scroll) injects a
+   `body[data-scroll-locked]` rule that zeroes out this element's own
+   padding/margin while a Select is open. Centering/max-width/padding live
+   on .page (the wrapper inside <body>, see layout.tsx) instead, so that
+   reset has nothing of ours to clobber. */
 body {
   margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page {
   padding: 0 1.5rem 4rem;
   max-width: 1080px;
   margin-inline: auto;
-  background: var(--bg);
-  color: var(--text);
 }
 
 header {
@@ -166,49 +186,17 @@ header h1 {
   flex: 1 1 220px;
 }
 
-.category-picker {
-  position: relative;
-  font-size: 0.9rem;
-}
-
-.category-picker > summary {
-  list-style: none;
-  cursor: pointer;
-  min-width: 160px;
-  padding: 0.55rem 0.7rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--surface);
-  color: var(--text);
-}
-
-.category-picker > summary::-webkit-details-marker {
-  display: none;
-}
-
-.category-picker > summary::after {
-  content: "▾";
-  float: right;
-  color: var(--text-muted);
-}
-
-.category-picker[open] > summary::after {
-  content: "▴";
-}
-
+/* The outer picker is now Popover.Root/Trigger/Content (Radix Themes) --
+   Popover.Content is portaled and positions/styles itself (background,
+   border, shadow, padding), so .category-tree below is just the inner
+   scrollable list, not a positioned/chromed box anymore. It used to be
+   (pre-Radix) a <details> with this div absolutely positioned under it;
+   forcing that same absolute positioning inside Popover.Content's own
+   positioning context was making the tree render off-screen. */
 .category-tree {
-  position: absolute;
-  top: calc(100% + 4px);
-  left: 0;
-  z-index: 5;
-  min-width: 280px;
+  min-width: 260px;
   max-height: 360px;
   overflow-y: auto;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  box-shadow: var(--shadow-hover);
-  padding: 0.4rem;
 }
 
 .category-option {
@@ -335,6 +323,15 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 1.1rem;
+}
+
+.load-more-sentinel {
+  grid-column: 1 / -1;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-style: italic;
 }
 
 .deal {

@@ -115,9 +115,18 @@ list client-side — never a UI rewrite per retailer.
 
 - Frontend: Next.js App Router + TypeScript + React, mostly client-rendered
   (`app/deal-radar.tsx` and `app/preferences/page.tsx` are `"use client"`
-  component trees). Styling is one global stylesheet (`app/globals.css`,
-  ported from the pre-Next.js static site) using plain CSS custom
-  properties, not Tailwind.
+  component trees). UI components (Button, Select, Popover, Card, Badge,
+  TextField, TextArea, IconButton) come from **Radix Themes**
+  (`@radix-ui/themes`) — a pre-styled kit, chosen specifically to avoid
+  Tailwind's utility-class sprawl; styled via component props and CSS
+  variables instead. Domain-specific visuals with no Radix equivalent
+  (deals grid layout, discount/price-drop/all-time-low badge colors, the
+  thumb-wrap white chip behind product images) stay in `app/globals.css`
+  (plain CSS custom properties, ported from the pre-Next.js static site).
+  Dark mode: the site follows the OS automatically (no manual toggle) —
+  see the inline script in `app/layout.tsx` that sets a `.dark`/`.light`
+  class from `prefers-color-scheme`, since Radix Themes' own dark-mode CSS
+  is gated behind that ancestor class and won't follow the OS on its own.
 - Backend: three Next.js Route Handlers (`app/api/preferences/route.ts`,
   `app/api/preferences/verify/route.ts`, `app/api/feedback/route.ts`) backed
   by Postgres (Neon, provisioned via Vercel's Storage tab) through

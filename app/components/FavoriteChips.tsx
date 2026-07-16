@@ -1,3 +1,4 @@
+import { Badge, Flex, IconButton } from "@radix-ui/themes";
 import { lastCategorySegment } from "@/lib/deals";
 
 export function FavoriteChips({
@@ -9,23 +10,28 @@ export function FavoriteChips({
   onSelect: (path: string) => void;
   onRemove: (path: string) => void;
 }) {
+  if (favorites.length === 0) return null;
+
   return (
-    <div id="favorite-chips" className="favorite-chips" hidden={favorites.length === 0}>
+    <Flex id="favorite-chips" gap="2" wrap="wrap" className="favorite-chips">
       {favorites.map((path) => (
-        <span className="favorite-chip" key={path}>
+        <Badge key={path} size="2" variant="soft" color="ruby" radius="full" className="favorite-chip">
           <button type="button" className="favorite-chip-select" onClick={() => onSelect(path)}>
             ★ {lastCategorySegment(path)}
           </button>
-          <button
+          <IconButton
             type="button"
-            className="favorite-chip-remove"
+            size="1"
+            variant="ghost"
+            color="gray"
+            radius="full"
             aria-label="Remove favorite"
             onClick={() => onRemove(path)}
           >
             ×
-          </button>
-        </span>
+          </IconButton>
+        </Badge>
       ))}
-    </div>
+    </Flex>
   );
 }

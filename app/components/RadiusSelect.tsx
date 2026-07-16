@@ -1,3 +1,5 @@
+import { Select, Text } from "@radix-ui/themes";
+
 const RADIUS_OPTIONS_KM = [5, 10, 25, 50, 100];
 
 export function RadiusSelect({
@@ -9,21 +11,21 @@ export function RadiusSelect({
   onChange: (radiusKm: number) => void;
   hidden: boolean;
 }) {
+  if (hidden) return null;
+
   return (
-    <label id="radius-label" hidden={hidden}>
-      Within
-      <select
-        id="radius-select"
-        aria-label="Search radius"
-        value={value}
-        onChange={(event) => onChange(Number(event.target.value))}
-      >
-        {RADIUS_OPTIONS_KM.map((km) => (
-          <option key={km} value={km}>
-            {km} km
-          </option>
-        ))}
-      </select>
-    </label>
+    <Text as="label" id="radius-label" size="2" className="radius-label">
+      Within{" "}
+      <Select.Root value={String(value)} onValueChange={(next) => onChange(Number(next))} size="2">
+        <Select.Trigger aria-label="Search radius" />
+        <Select.Content>
+          {RADIUS_OPTIONS_KM.map((km) => (
+            <Select.Item key={km} value={String(km)}>
+              {km} km
+            </Select.Item>
+          ))}
+        </Select.Content>
+      </Select.Root>
+    </Text>
   );
 }

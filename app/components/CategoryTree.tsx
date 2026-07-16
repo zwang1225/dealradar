@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@radix-ui/themes";
 import { CategoryNode } from "@/lib/deals";
 
 function CategoryOption({
@@ -14,9 +15,12 @@ function CategoryOption({
   const isActive = selectedCategory === node.path;
 
   const button = (
-    <button
+    <Button
       type="button"
-      className={`category-option${isActive ? " active" : ""}`}
+      variant={isActive ? "solid" : "ghost"}
+      color={isActive ? "ruby" : "gray"}
+      size="2"
+      className="category-option"
       data-category={node.path}
       onClick={(event) => {
         event.preventDefault();
@@ -24,7 +28,7 @@ function CategoryOption({
       }}
     >
       {node.name}
-    </button>
+    </Button>
   );
 
   if (node.children.length === 0) {
@@ -58,9 +62,12 @@ export function CategoryTree({
 }) {
   return (
     <div id="category-tree" className="category-tree">
-      <button
+      <Button
         type="button"
-        className={`category-option${selectedCategory === "" ? " active" : ""}`}
+        variant={selectedCategory === "" ? "solid" : "ghost"}
+        color={selectedCategory === "" ? "ruby" : "gray"}
+        size="2"
+        className="category-option"
         data-category=""
         onClick={(event) => {
           event.preventDefault();
@@ -68,7 +75,7 @@ export function CategoryTree({
         }}
       >
         All categories
-      </button>
+      </Button>
       {tree.map((node) => (
         <CategoryOption key={node.path} node={node} selectedCategory={selectedCategory} onSelect={onSelect} />
       ))}

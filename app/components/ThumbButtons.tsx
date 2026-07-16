@@ -1,3 +1,4 @@
+import { Flex, IconButton } from "@radix-ui/themes";
 import { Vote } from "@/lib/deals";
 
 export function ThumbButtons({
@@ -10,25 +11,27 @@ export function ThumbButtons({
   onVote: (sku: string, vote: Vote) => void;
 }) {
   return (
-    <div className="vote-buttons">
-      <button
+    <Flex gap="2" className="vote-buttons">
+      <IconButton
         type="button"
-        className={`vote-button${vote === "up" ? " active" : ""}`}
+        variant={vote === "up" ? "solid" : "soft"}
+        color={vote === "up" ? "ruby" : "gray"}
         aria-label="Good pick"
         aria-pressed={vote === "up"}
         onClick={() => onVote(sku, "up")}
       >
         👍
-      </button>
-      <button
+      </IconButton>
+      <IconButton
         type="button"
-        className={`vote-button${vote === "down" ? " active" : ""}`}
+        variant={vote === "down" ? "solid" : "soft"}
+        color={vote === "down" ? "ruby" : "gray"}
         aria-label="Not for me"
         aria-pressed={vote === "down"}
         onClick={() => onVote(sku, "down")}
       >
         👎
-      </button>
-    </div>
+      </IconButton>
+    </Flex>
   );
 }

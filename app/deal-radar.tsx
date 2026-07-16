@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { Button, IconButton, Popover, Select, TextField } from "@radix-ui/themes";
 import {
   Deal,
   Retailer,
@@ -22,6 +24,12 @@ import { RadiusSelect } from "./components/RadiusSelect";
 
 type LocationState = "locating" | "located" | "unsupported" | "error";
 type DealsLoadState = "loading" | "loaded" | "error";
+
+// Rendering all 600+ deal cards (each with an image) at once is the actual
+// cost here -- images already lazy-load via the <img loading="lazy">
+// attribute, but the DOM nodes themselves don't. Infinite scroll caps how
+// many are ever mounted at a time.
+const PAGE_SIZE = 30;
 
 const LOCATION_STATUS_TEXT: Record<Exclude<LocationState, "located">, string> = {
   locating: "Locating nearest store…",
@@ -156,6 +164,27 @@ export function DealRadar() {
     [allDeals, search, selectedCategory, retailerFilter, sort, nearbyStores],
   );
 
+  // Only the current filter/search/sort/category selection resets how many
+  // cards are mounted -- not radius/nearbyStores, so tweaking the radius
+  // doesn't collapse a list you've already scrolled through back down.
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [search, selectedCategory, retailerFilter, sort]);
+
+  const pagedDeals = useMemo(() => visibleDeals.slice(0, visibleCount), [visibleDeals, visibleCount]);
+  const hasMore = pagedDeals.length < visibleDeals.length;
+
+  const { ref: loadMoreRef, inView } = useInView({
+    rootMargin: "600px", // start loading before the sentinel is actually on screen
+    skip: !hasMore,
+  });
+  useEffect(() => {
+    if (inView && hasMore) {
+      setVisibleCount((count) => Math.min(count + PAGE_SIZE, visibleDeals.length));
+    }
+  }, [inView, hasMore, visibleDeals.length]);
+
   const selectCategory = (path: string) => {
     setSelectedCategory(path);
     setCategoryPickerOpen(false);
@@ -206,9 +235,9 @@ export function DealRadar() {
         <p className="eyebrow">🛍️ Ontario</p>
         <h1>DealRadar</h1>
         <p className="subtitle">Tracking deals, stock, and drops across Ontario retailers.</p>
-        <Link href="/preferences" className="preferences-link">
-          Preferences
-        </Link>
+        <Button asChild variant="ghost" size="2" className="preferences-link">
+          <Link href="/preferences">Preferences</Link>
+        </Button>
       </header>
 
       <main>
@@ -216,14 +245,11 @@ export function DealRadar() {
           <p id="location-status" className="empty-state" hidden={located}>
             {locationState === "located" ? "" : LOCATION_STATUS_TEXT[locationState]}
           </p>
-          <button
-            id="retry-location"
-            type="button"
-            hidden={locationState !== "error"}
-            onClick={locate}
-          >
-            Try location again
-          </button>
+          {locationState === "error" ? (
+            <Button id="retry-location" type="button" variant="soft" size="2" onClick={locate}>
+              Try location again
+            </Button>
+          ) : null}
 
           <RadiusSelect value={radiusKm} onChange={setRadiusKm} hidden={!located} />
         </section>
@@ -237,65 +263,70 @@ export function DealRadar() {
           </div>
 
           <div id="filter-bar">
-            <input
+            <TextField.Root
               id="search-input"
               type="search"
               placeholder="Search deals…"
               aria-label="Search deals"
+              size="2"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
             />
 
-            <select
-              id="retailer-select"
-              aria-label="Filter by store"
-              value={retailerFilter}
-              onChange={(event) => setRetailerFilter(event.target.value as Retailer | "")}
-              hidden={availableRetailers.length <= 1}
-            >
-              <option value="">All stores</option>
-              {availableRetailers.map((retailer) => (
-                <option key={retailer} value={retailer}>
-                  {RETAILER_LABELS[retailer]}
-                </option>
-              ))}
-            </select>
+            {availableRetailers.length > 1 ? (
+              <Select.Root
+                value={retailerFilter || "all"}
+                onValueChange={(next) => setRetailerFilter(next === "all" ? "" : (next as Retailer))}
+                size="2"
+              >
+                <Select.Trigger id="retailer-select" aria-label="Filter by store" />
+                <Select.Content>
+                  <Select.Item value="all">All stores</Select.Item>
+                  {availableRetailers.map((retailer) => (
+                    <Select.Item key={retailer} value={retailer}>
+                      {RETAILER_LABELS[retailer]}
+                    </Select.Item>
+                  ))}
+                </Select.Content>
+              </Select.Root>
+            ) : null}
 
-            <details
-              id="category-picker"
-              className="category-picker"
-              open={categoryPickerOpen}
-              onToggle={(event) => setCategoryPickerOpen(event.currentTarget.open)}
-            >
-              <summary id="category-picker-summary">
-                {selectedCategory ? lastCategorySegment(selectedCategory) : "All categories"}
-              </summary>
-              <CategoryTree tree={categoryTree} selectedCategory={selectedCategory} onSelect={selectCategory} />
-            </details>
-            <button
+            <Popover.Root open={categoryPickerOpen} onOpenChange={setCategoryPickerOpen}>
+              <Popover.Trigger>
+                <Button id="category-picker" variant="soft" color="gray" size="2">
+                  {selectedCategory ? lastCategorySegment(selectedCategory) : "All categories"}
+                </Button>
+              </Popover.Trigger>
+              <Popover.Content>
+                <CategoryTree tree={categoryTree} selectedCategory={selectedCategory} onSelect={selectCategory} />
+              </Popover.Content>
+            </Popover.Root>
+            <IconButton
               id="favorite-category-button"
               type="button"
+              variant="soft"
+              color={isFavorite ? "ruby" : "gray"}
               title={isFavorite ? "Remove favorite category" : "Save as favorite category"}
               aria-pressed={isFavorite}
               disabled={!selectedCategory}
               onClick={handleToggleFavorite}
             >
               {isFavorite ? "★" : "☆"}
-            </button>
+            </IconButton>
 
-            <select
-              id="sort-select"
-              aria-label="Sort deals"
-              value={sort}
-              onChange={(event) => setSort(event.target.value as SortOption)}
-            >
-              <option value="price-asc">Price: Low to High</option>
-              <option value="price-desc">Price: High to Low</option>
-              <option value="name-asc">Name: A to Z</option>
-              <option value="in-stock" id="sort-in-stock-option" hidden={!located}>
-                In Stock Near Me First
-              </option>
-            </select>
+            <Select.Root value={sort} onValueChange={(next) => setSort(next as SortOption)} size="2">
+              <Select.Trigger id="sort-select" aria-label="Sort deals" />
+              <Select.Content>
+                <Select.Item value="price-asc">Price: Low to High</Select.Item>
+                <Select.Item value="price-desc">Price: High to Low</Select.Item>
+                <Select.Item value="name-asc">Name: A to Z</Select.Item>
+                {located ? (
+                  <Select.Item value="in-stock" id="sort-in-stock-option">
+                    In Stock Near Me First
+                  </Select.Item>
+                ) : null}
+              </Select.Content>
+            </Select.Root>
           </div>
 
           <FavoriteChips favorites={favorites} onSelect={selectCategory} onRemove={handleRemoveFavorite} />
@@ -308,7 +339,7 @@ export function DealRadar() {
                 : "No deals match your filters."}
           </p>
           <ul id="deals-list">
-            {visibleDeals.map((deal) => (
+            {pagedDeals.map((deal) => (
               <DealCard
                 key={deal.sku}
                 deal={deal}
@@ -318,6 +349,11 @@ export function DealRadar() {
                 onVote={handleVote}
               />
             ))}
+            {hasMore ? (
+              <li ref={loadMoreRef} className="load-more-sentinel" aria-hidden="true">
+                Loading more deals…
+              </li>
+            ) : null}
           </ul>
         </section>
       </main>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Button, TextArea, TextField } from "@radix-ui/themes";
 
 type SaveState = "loading" | "idle" | "saving" | "saved";
 
@@ -73,9 +74,10 @@ export default function PreferencesPage() {
         {verifiedEmail ? `Currently sending to ${verifiedEmail}.` : "Not set yet."}
         {pendingEmail ? ` Waiting on verification for ${pendingEmail} — check your inbox.` : ""}
       </p>
-      <input
+      <TextField.Root
         id="notification-email"
         type="email"
+        size="2"
         value={email}
         onChange={(event) => {
           setEmail(event.target.value);
@@ -92,8 +94,9 @@ export default function PreferencesPage() {
         Freeform notes for future personalized picks — categories or brands you like or want to
         avoid, price range, anything else worth knowing.
       </p>
-      <textarea
+      <TextArea
         id="preference-notes"
+        size="2"
         value={notes}
         onChange={(event) => {
           setNotes(event.target.value);
@@ -104,8 +107,9 @@ export default function PreferencesPage() {
         disabled={saveState === "loading"}
       />
 
-      <button
+      <Button
         type="button"
+        size="2"
         onClick={handleSave}
         disabled={saveState === "loading" || saveState === "saving"}
       >
@@ -116,7 +120,7 @@ export default function PreferencesPage() {
             : saveState === "saved"
               ? "Saved"
               : "Save"}
-      </button>
+      </Button>
     </main>
   );
 }
