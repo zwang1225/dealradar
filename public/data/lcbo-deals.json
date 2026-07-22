@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T13:56:25.334Z",
+  "generatedAt": "2026-07-22T13:59:13.089Z",
   "deals": [
     {
       "sku": "35204",
@@ -16,6 +16,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "1",
@@ -119,6 +120,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "253",
         "217",
@@ -181,6 +183,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "106",
         "1",
@@ -210,6 +213,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "658",
         "643",
@@ -277,6 +281,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "431",
         "115",
@@ -396,6 +401,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "348",
         "425",
@@ -516,6 +522,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "187",
         "191",
@@ -635,6 +642,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "28",
         "438",
@@ -754,6 +762,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "392",
         "497",
@@ -874,6 +883,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "741",
         "368",
@@ -995,6 +1005,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "227",
         "130",
@@ -1115,6 +1126,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "132",
@@ -1234,6 +1246,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "346",
         "404",
@@ -1354,6 +1367,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "49",
         "81",
@@ -1473,6 +1487,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "459",
         "132",
@@ -1592,6 +1607,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "187",
         "602",
@@ -1711,6 +1727,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "187",
         "227",
@@ -1830,6 +1847,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "392",
         "222",
@@ -1949,6 +1967,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "165",
         "130",
@@ -2068,6 +2087,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "58",
         "132",
@@ -2187,6 +2207,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "55",
         "22",
@@ -2306,6 +2327,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "490",
         "112",
@@ -2425,6 +2447,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "130",
         "140",
@@ -2544,6 +2567,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "74",
         "83",
@@ -2664,6 +2688,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "569",
         "287",
@@ -2783,6 +2808,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "387",
         "589",
@@ -2902,6 +2928,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "171",
         "564",
@@ -3023,6 +3050,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "454",
@@ -3142,6 +3170,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "392",
         "459",
@@ -3261,6 +3290,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "1",
         "201",
@@ -3380,6 +3410,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "346",
         "569",
@@ -3499,6 +3530,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "393",
         "38",
@@ -3618,6 +3650,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "392",
         "411",
@@ -3737,6 +3770,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "776",
         "586",
@@ -3856,6 +3890,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "130",
         "140",
@@ -3975,6 +4010,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "771",
         "401",
@@ -4096,6 +4132,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "20",
         "227",
@@ -4215,6 +4252,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "703",
         "641",
@@ -4335,6 +4373,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "74",
         "453",
@@ -4454,6 +4493,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "55",
@@ -4574,6 +4614,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "367",
         "743",
@@ -4695,6 +4736,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "454",
         "579",
@@ -4814,6 +4856,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "227",
         "58",
@@ -4933,6 +4976,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "112",
         "140",
@@ -5052,6 +5096,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "361",
         "154",
@@ -5171,6 +5216,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "411",
         "344",
@@ -5290,6 +5336,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "55",
         "236",
@@ -5409,6 +5456,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "156",
         "61",
@@ -5529,6 +5577,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "13",
@@ -5648,6 +5697,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "199",
         "236",
@@ -5768,6 +5818,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "45",
         "660",
@@ -5888,6 +5939,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "187",
         "401",
@@ -6007,6 +6059,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "41",
         "130",
@@ -6127,6 +6180,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "501",
         "359",
@@ -6246,6 +6300,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "684",
         "61",
@@ -6365,6 +6420,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "653",
         "77",
@@ -6484,6 +6540,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "61",
         "698",
@@ -6603,6 +6660,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "39",
         "266",
@@ -6723,6 +6781,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "490",
         "227",
@@ -6842,6 +6901,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "406",
         "302",
@@ -6962,6 +7022,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "102",
         "624",
@@ -7081,6 +7142,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "78",
         "81",
@@ -7200,6 +7262,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "656",
         "326",
@@ -7316,6 +7379,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "275",
         "430",
@@ -7435,6 +7499,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "629",
@@ -7554,6 +7619,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "416",
@@ -7673,6 +7739,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "132",
@@ -7792,6 +7859,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "329",
         "83",
@@ -7911,6 +7979,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "310",
         "329",
@@ -8030,6 +8099,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "68",
         "200",
@@ -8149,6 +8219,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "412",
@@ -8268,6 +8339,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "623",
         "218",
@@ -8387,6 +8459,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "269",
         "771",
@@ -8449,6 +8522,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "787",
         "779",
@@ -8569,6 +8643,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "325",
         "573",
@@ -8688,6 +8763,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "326",
         "499",
@@ -8808,6 +8884,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "65",
         "367",
@@ -8928,6 +9005,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "60",
         "602",
@@ -9047,6 +9125,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "486",
@@ -9166,6 +9245,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "84",
         "649",
@@ -9287,6 +9367,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "252",
@@ -9406,6 +9487,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "21",
         "641",
@@ -9525,6 +9607,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "697",
         "343",
@@ -9644,6 +9727,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "509",
         "643",
@@ -9764,6 +9848,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "537",
         "392",
@@ -9883,6 +9968,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "402",
         "602",
@@ -10002,6 +10088,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "526",
         "210",
@@ -10122,6 +10209,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "697",
         "164",
@@ -10242,6 +10330,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "580",
@@ -10361,6 +10450,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "312",
         "60",
@@ -10481,6 +10571,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "38",
@@ -10600,6 +10691,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "537",
         "513",
@@ -10719,6 +10811,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "668",
         "325",
@@ -10838,6 +10931,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "229",
         "665",
@@ -10957,6 +11051,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "401",
         "752",
@@ -11076,6 +11171,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "51",
         "179",
@@ -11195,6 +11291,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "501",
         "497",
@@ -11310,6 +11407,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "361",
         "497",
@@ -11425,6 +11523,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "551",
         "509",
@@ -11544,6 +11643,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "165",
         "384",
@@ -11663,6 +11763,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "187",
         "703",
@@ -11783,6 +11884,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "80",
         "227",
@@ -11903,6 +12005,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "522",
         "55",
@@ -12022,6 +12125,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "509",
         "318",
@@ -12141,6 +12245,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "359",
         "156",
@@ -12260,6 +12365,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "156",
         "495",
@@ -12379,6 +12485,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "454",
         "359",
@@ -12498,6 +12605,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "355",
         "115",
@@ -12617,6 +12725,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "84",
         "449",
@@ -12736,6 +12845,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "198",
@@ -12855,6 +12965,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "384",
         "359",
@@ -12975,6 +13086,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "334",
         "459",
@@ -13095,6 +13207,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "679",
         "51",
@@ -13214,6 +13327,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "54",
@@ -13334,6 +13448,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "522",
         "229",
@@ -13453,6 +13568,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "392",
         "658",
@@ -13572,6 +13688,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "22",
         "426",
@@ -13691,6 +13808,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "344",
         "229",
@@ -13810,6 +13928,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "199",
         "31",
@@ -13929,6 +14048,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "267",
@@ -14048,6 +14168,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "95",
         "269",
@@ -14167,6 +14288,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "378",
         "154",
@@ -14286,6 +14408,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "431",
@@ -14406,6 +14529,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "25",
         "149",
@@ -14525,6 +14649,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "568",
         "329",
@@ -14645,6 +14770,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "252",
         "229",
@@ -14765,6 +14891,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "217",
         "511",
@@ -14884,6 +15011,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "139",
         "509",
@@ -15003,6 +15131,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "445",
         "590",
@@ -15123,6 +15252,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "229",
         "1",
@@ -15242,6 +15372,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "384",
         "355",
@@ -15361,6 +15492,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "452",
         "282",
@@ -15480,6 +15612,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "522",
         "187",
@@ -15599,6 +15732,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "115",
         "384",
@@ -15719,6 +15853,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "249",
         "10",
@@ -15838,6 +15973,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "282",
         "142",
@@ -15958,6 +16094,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "371",
         "554",
@@ -16078,6 +16215,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "200",
         "412",
@@ -16197,6 +16335,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "384",
         "244",
@@ -16317,6 +16456,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "443",
         "402",
@@ -16436,6 +16576,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "522",
         "149",
@@ -16556,6 +16697,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "165",
         "507",
@@ -16675,6 +16817,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "363",
         "454",
@@ -16795,6 +16938,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "509",
         "605",
@@ -16914,6 +17058,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "187",
         "454",
@@ -17033,6 +17178,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "237",
         "263",
@@ -17152,6 +17298,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "26",
         "602",
@@ -17272,6 +17419,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "522",
         "401",
@@ -17392,6 +17540,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "667",
         "486",
@@ -17511,6 +17660,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "787",
         "658",
@@ -17630,6 +17780,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "188",
         "156",
@@ -17749,6 +17900,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "643",
         "552",
@@ -17868,6 +18020,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "644",
         "787",
@@ -17987,6 +18140,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "269",
         "502",
@@ -18106,6 +18260,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "569",
         "111",
@@ -18225,6 +18380,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "573",
@@ -18344,6 +18500,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "385",
         "612",
@@ -18463,6 +18620,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "522",
         "288",
@@ -18582,6 +18740,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "445",
         "388",
@@ -18701,6 +18860,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "624",
         "486",
@@ -18820,6 +18980,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "443",
         "23",
@@ -18939,6 +19100,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "787",
         "554",
@@ -19058,6 +19220,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "55",
         "390",
@@ -19177,6 +19340,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "130",
         "469",
@@ -19297,6 +19461,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "374",
         "787",
@@ -19418,6 +19583,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "497",
         "401",
@@ -19537,6 +19703,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "787",
         "545",
@@ -19656,6 +19823,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "32",
         "605",
@@ -19775,6 +19943,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "392",
         "467",
@@ -19894,6 +20063,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "638",
         "449",
@@ -20013,6 +20183,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "387",
         "229",
@@ -20132,6 +20303,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "51",
         "31",
@@ -20251,6 +20423,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "490",
         "392",
@@ -20370,6 +20543,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "490",
         "165",
@@ -20490,6 +20664,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "343",
@@ -20609,6 +20784,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "140",
         "439",
@@ -20729,6 +20905,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "445",
@@ -20848,6 +21025,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "571",
         "44",
@@ -20967,6 +21145,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "21",
         "426",
@@ -21086,6 +21265,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "171",
         "529",
@@ -21205,6 +21385,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "363",
         "522",
@@ -21324,6 +21505,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "650",
         "167",
@@ -21444,6 +21626,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "207",
         "167",
@@ -21564,6 +21747,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "761",
         "384",
@@ -21683,6 +21867,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "229",
         "490",
@@ -21803,6 +21988,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "390",
@@ -21923,6 +22109,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "546",
         "124",
@@ -22043,6 +22230,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "443",
         "228",
@@ -22162,6 +22350,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "218",
         "694",
@@ -22281,6 +22470,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "49",
         "443",
@@ -22400,6 +22590,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "522",
         "182",
@@ -22520,6 +22711,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "187",
         "227",
@@ -22640,6 +22832,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "634",
@@ -22759,6 +22952,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "522",
         "70",
@@ -22878,6 +23072,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "759",
         "31",
@@ -22998,6 +23193,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "470",
         "186",
@@ -23117,6 +23313,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "329",
         "744",
@@ -23236,6 +23433,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "497",
         "173",
@@ -23355,6 +23553,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "243",
         "367",
@@ -23474,6 +23673,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "325",
         "279",
@@ -23593,6 +23793,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "87",
         "32",
@@ -23712,6 +23913,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "384",
         "60",
@@ -23831,6 +24033,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "154",
         "54",
@@ -23950,6 +24153,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "404",
         "179",
@@ -24069,6 +24273,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "624",
         "125",
@@ -24188,6 +24393,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "545",
         "300",
@@ -24307,6 +24513,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "26",
         "554",
@@ -24427,6 +24634,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "355",
         "196",
@@ -24546,6 +24754,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "325",
@@ -24665,6 +24874,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "344",
         "286",
@@ -24784,6 +24994,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "495",
         "533",
@@ -24904,6 +25115,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "143",
         "217",
@@ -25023,6 +25235,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "279",
         "167",
@@ -25142,6 +25355,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "355",
         "312",
@@ -25261,6 +25475,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "169",
         "649",
@@ -25380,6 +25595,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "759",
         "209",
@@ -25499,6 +25715,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "217",
@@ -25618,6 +25835,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "221",
@@ -25737,6 +25955,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "217",
         "10",
@@ -25856,6 +26075,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "227",
         "412",
@@ -25975,6 +26195,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "444",
         "427",
@@ -26094,6 +26315,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "217",
         "10",
@@ -26213,6 +26435,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "355",
         "453",
@@ -26332,6 +26555,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "217",
         "321",
@@ -26451,6 +26675,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "329",
         "175",
@@ -26570,6 +26795,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "586",
@@ -26689,6 +26915,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "263",
         "378",
@@ -26808,6 +27035,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "298",
         "452",
@@ -26927,6 +27155,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "156",
         "618",
@@ -27046,6 +27275,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "95",
         "490",
@@ -27166,6 +27396,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "444",
@@ -27285,6 +27516,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "412",
         "741",
@@ -27404,6 +27636,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "346",
         "623",
@@ -27523,6 +27756,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "252",
         "752",
@@ -27642,6 +27876,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "317",
@@ -27761,6 +27996,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "499",
@@ -27880,6 +28116,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "547",
         "32",
@@ -27999,6 +28236,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "554",
@@ -28118,6 +28356,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "344",
         "602",
@@ -28237,6 +28476,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "601",
         "623",
@@ -28356,6 +28596,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "1",
         "244",
@@ -28475,6 +28716,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "340",
@@ -28594,6 +28836,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "329",
         "149",
@@ -28713,6 +28956,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "652",
@@ -28832,6 +29076,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "359",
         "23",
@@ -28951,6 +29196,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "513",
         "485",
@@ -29070,6 +29316,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "384",
         "95",
@@ -29189,6 +29436,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "412",
@@ -29308,6 +29556,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "382",
         "200",
@@ -29427,6 +29676,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "11",
@@ -29546,6 +29796,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "497",
         "10",
@@ -29665,6 +29916,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "511",
@@ -29784,6 +30036,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "28",
         "459",
@@ -29903,6 +30156,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "386",
         "556",
@@ -30022,6 +30276,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "355",
         "179",
@@ -30141,6 +30396,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "64",
         "243",
@@ -30260,6 +30516,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "383",
         "351",
@@ -30379,6 +30636,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "279",
@@ -30498,6 +30756,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "499",
         "532",
@@ -30528,6 +30787,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "217",
         "575",
@@ -30647,6 +30907,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "511",
         "326",
@@ -30767,6 +31028,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "412",
@@ -30886,6 +31148,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "58",
         "367",
@@ -31005,6 +31268,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "346",
         "383",
@@ -31124,6 +31388,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "214",
         "545",
@@ -31243,6 +31508,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "195",
         "779",
@@ -31362,6 +31628,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "648",
         "401",
@@ -31481,6 +31748,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "1",
         "741",
@@ -31600,6 +31868,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "10",
@@ -31719,6 +31988,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "345",
         "279",
@@ -31838,6 +32108,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "187",
         "300",
@@ -31957,6 +32228,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "325",
         "648",
@@ -32076,6 +32348,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "26",
         "617",
@@ -32195,6 +32468,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "367",
         "630",
@@ -32314,6 +32588,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "522",
         "112",
@@ -32433,6 +32708,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "554",
         "329",
@@ -32552,6 +32828,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "655",
         "217",
@@ -32671,6 +32948,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "33",
         "36",
@@ -32791,6 +33069,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "288",
         "217",
@@ -32910,6 +33189,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "60",
         "452",
@@ -33029,6 +33309,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "31",
         "378",
@@ -33148,6 +33429,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "212",
         "393",
@@ -33267,6 +33549,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "612",
         "132",
@@ -33386,6 +33669,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "417",
@@ -33505,6 +33789,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "454",
         "359",
@@ -33624,6 +33909,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "359",
         "385",
@@ -33743,6 +34029,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "617",
@@ -33862,6 +34149,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "351",
         "551",
@@ -33981,6 +34269,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "44",
         "250",
@@ -34100,6 +34389,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "392",
         "12",
@@ -34219,6 +34509,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "387",
         "751",
@@ -34338,6 +34629,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "443",
         "459",
@@ -34457,6 +34749,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "554",
         "10",
@@ -34576,6 +34869,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "497",
         "249",
@@ -34695,6 +34989,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "325",
         "457",
@@ -34814,6 +35109,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "187",
         "408",
@@ -34933,6 +35229,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "279",
         "287",
@@ -35052,6 +35349,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "385",
         "187",
@@ -35171,6 +35469,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "556",
         "383",
@@ -35290,6 +35589,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "461",
         "623",
@@ -35409,6 +35709,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "187",
@@ -35528,6 +35829,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "149",
@@ -35647,6 +35949,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "266",
         "288",
@@ -35766,6 +36069,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "416",
         "321",
@@ -35885,6 +36189,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "580",
@@ -36004,6 +36309,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "593",
         "25",
@@ -36123,6 +36429,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "329",
         "698",
@@ -36242,6 +36549,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "661",
@@ -36361,6 +36669,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "545",
         "311",
@@ -36480,6 +36789,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "638",
         "641",
@@ -36599,6 +36909,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "655",
         "555",
@@ -36718,6 +37029,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "773",
         "759",
@@ -36837,6 +37149,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "217",
         "751",
@@ -36956,6 +37269,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "759",
         "684",
@@ -37075,6 +37389,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "226",
         "70",
@@ -37178,6 +37493,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "171",
         "26",
@@ -37297,6 +37613,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "217",
         "164",
@@ -37417,6 +37734,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "325",
         "551",
@@ -37537,6 +37855,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "137",
         "548",
@@ -37656,6 +37975,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "545",
         "618",
@@ -37775,6 +38095,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "394",
@@ -37894,6 +38215,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "386",
         "759",
@@ -38013,6 +38335,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "623",
         "661",
@@ -38132,6 +38455,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "7",
         "619",
@@ -38251,6 +38575,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "179",
         "676",
@@ -38370,6 +38695,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "511",
         "221",
@@ -38489,6 +38815,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "573",
         "394",
@@ -38608,6 +38935,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "490",
         "260",
@@ -38727,6 +39055,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "601",
         "367",
@@ -38846,6 +39175,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "627",
         "445",
@@ -38965,6 +39295,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "263",
         "648",
@@ -39084,6 +39415,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "443",
@@ -39203,6 +39535,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "192",
         "236",
@@ -39322,6 +39655,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "643",
         "445",
@@ -39441,6 +39775,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "536",
         "623",
@@ -39560,6 +39895,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "404",
         "624",
@@ -39679,6 +40015,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "36",
         "144",
@@ -39765,6 +40102,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "187",
@@ -39885,6 +40223,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "631",
         "83",
@@ -40004,6 +40343,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "412",
         "156",
@@ -40123,6 +40463,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "661",
         "171",
@@ -40242,6 +40583,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "326",
         "624",
@@ -40361,6 +40703,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "485",
         "590",
@@ -40480,6 +40823,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "452",
         "394",
@@ -40599,6 +40943,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "772",
         "619",
@@ -40718,6 +41063,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "445",
         "10",
@@ -40807,6 +41153,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "632",
         "346",
@@ -40926,6 +41273,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "537",
         "569",
@@ -41045,6 +41393,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "624",
@@ -41164,6 +41513,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "186",
         "344",
@@ -41283,6 +41633,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "744",
         "416",
@@ -41402,6 +41753,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "12",
         "192",
@@ -41521,6 +41873,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "392",
@@ -41640,6 +41993,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "23",
         "279",
@@ -41759,6 +42113,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "140",
         "580",
@@ -41878,6 +42233,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "346",
         "649",
@@ -41997,6 +42353,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "511",
         "132",
@@ -42116,6 +42473,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "26",
         "417",
@@ -42235,6 +42593,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "407",
         "649",
@@ -42354,6 +42713,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "412",
         "25",
@@ -42473,6 +42833,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "183",
         "590",
@@ -42592,6 +42953,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "509",
         "58",
@@ -42712,6 +43074,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "486",
         "644",
@@ -42831,6 +43194,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "344",
         "360",
@@ -42950,6 +43314,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "329",
         "536",
@@ -43070,6 +43435,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "497",
         "198",
@@ -43189,6 +43555,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "288",
         "148",
@@ -43308,6 +43675,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "329",
         "346",
@@ -43427,6 +43795,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "164",
         "83",
@@ -43541,6 +43910,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "359",
@@ -43660,6 +44030,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "404",
@@ -43779,6 +44150,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "124",
         "629",
@@ -43899,6 +44271,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "486",
@@ -44018,6 +44391,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "196",
@@ -44137,6 +44511,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "486",
         "579",
@@ -44256,6 +44631,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "31",
@@ -44375,6 +44751,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "432",
         "156",
@@ -44494,6 +44871,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "776",
         "416",
@@ -44613,6 +44991,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "47",
         "14",
@@ -44732,6 +45111,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "407",
@@ -44851,6 +45231,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "416",
         "329",
@@ -44970,6 +45351,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "212",
         "602",
@@ -45089,6 +45471,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "511",
         "346",
@@ -45182,6 +45565,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "202",
         "23",
@@ -45301,6 +45685,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "21",
         "697",
@@ -45420,6 +45805,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "343",
         "72",
@@ -45539,6 +45925,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "125",
         "641",
@@ -45658,6 +46045,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "456",
         "226",
@@ -45751,6 +46139,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "222",
         "427",
@@ -45870,6 +46259,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "744",
         "505",
@@ -45989,6 +46379,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "243",
         "528",
@@ -46108,6 +46499,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "73",
         "384",
@@ -46227,6 +46619,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "49",
         "266",
@@ -46346,6 +46739,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "212",
         "505",
@@ -46465,6 +46859,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "629",
@@ -46584,6 +46979,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "624",
         "617",
@@ -46703,6 +47099,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "217",
         "751",
@@ -46822,6 +47219,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "187",
@@ -46941,6 +47339,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "416",
         "661",
@@ -47060,6 +47459,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "756",
         "132",
@@ -47179,6 +47579,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "501",
         "411",
@@ -47298,6 +47699,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "171",
         "186",
@@ -47417,6 +47819,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "83",
         "699",
@@ -47536,6 +47939,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "57",
         "228",
@@ -47655,6 +48059,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "564",
         "580",
@@ -47774,6 +48179,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "140",
         "497",
@@ -47893,6 +48299,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "522",
         "384",
@@ -48012,6 +48419,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "591",
         "513",
@@ -48131,6 +48539,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "445",
         "511",
@@ -48250,6 +48659,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "355",
         "698",
@@ -48369,6 +48779,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "93",
         "522",
@@ -48489,6 +48900,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "310",
@@ -48608,6 +49020,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "243",
         "38",
@@ -48727,6 +49140,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "164",
         "266",
@@ -48846,6 +49260,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "606",
         "83",
@@ -48965,6 +49380,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "359",
@@ -49084,6 +49500,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "83",
@@ -49203,6 +49620,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "392",
         "404",
@@ -49322,6 +49740,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "321",
         "443",
@@ -49441,6 +49860,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "25",
         "329",
@@ -49560,6 +49980,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "88",
         "467",
@@ -49679,6 +50100,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "509",
         "392",
@@ -49798,6 +50220,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "164",
         "467",
@@ -49917,6 +50340,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "467",
         "392",
@@ -50036,6 +50460,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "528",
         "355",
@@ -50155,6 +50580,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "384",
         "787",
@@ -50274,6 +50700,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "489",
         "602",
@@ -50393,6 +50820,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "392",
         "522",
@@ -50512,6 +50940,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "638",
@@ -50631,6 +51060,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "787",
         "51",
@@ -50751,6 +51181,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "564",
@@ -50870,6 +51301,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "649",
@@ -50989,6 +51421,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "287",
         "363",
@@ -51108,6 +51541,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "568",
         "40",
@@ -51227,6 +51661,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "486",
         "164",
@@ -51346,6 +51781,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "420",
@@ -51465,6 +51901,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "553",
         "486",
@@ -51584,6 +52021,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "624",
         "10",
@@ -51703,6 +52141,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "630",
@@ -51824,6 +52263,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "132",
         "38",
@@ -51943,6 +52383,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "703",
         "554",
@@ -52011,6 +52452,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "443",
@@ -52130,6 +52572,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "31",
         "132",
@@ -52249,6 +52692,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "536",
         "580",
@@ -52299,6 +52743,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "1",
         "38",
@@ -52404,6 +52849,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "486",
@@ -52523,6 +52969,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "23",
         "523",
@@ -52642,6 +53089,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "511",
         "346",
@@ -52719,6 +53167,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "523",
         "511",
@@ -52782,6 +53231,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "329",
         "346",
@@ -52901,6 +53351,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "631",
         "416",
@@ -53020,6 +53471,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "438",
         "359",
@@ -53139,6 +53591,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "26",
         "355",
@@ -53258,6 +53711,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "378",
         "99",
@@ -53377,6 +53831,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "360",
         "657",
@@ -53446,6 +53901,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "631",
         "36",
@@ -53565,6 +54021,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "80",
         "109",
@@ -53684,6 +54141,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "605",
         "486",
@@ -53803,6 +54261,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "346",
         "445",
@@ -53922,6 +54381,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "211",
@@ -54041,6 +54501,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "631",
         "497",
@@ -54160,6 +54621,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "346",
         "787",
@@ -54279,6 +54741,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "329",
         "537",
@@ -54398,6 +54861,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "564",
@@ -54517,6 +54981,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "383",
         "511",
@@ -54594,6 +55059,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "657",
         "360",
@@ -54640,6 +55106,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "605",
         "67",
@@ -54759,6 +55226,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "501",
@@ -54878,6 +55346,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "407",
         "278",
@@ -54997,6 +55466,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "177",
@@ -55023,6 +55493,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "149",
@@ -55142,6 +55613,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "528",
         "38",
@@ -55261,6 +55733,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "242",
         "749",
@@ -55286,6 +55759,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "569",
         "511",
@@ -55405,6 +55879,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "351",
         "154",
@@ -55524,6 +55999,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "556",
         "569",
@@ -55643,6 +56119,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "542",
         "217"
@@ -55664,6 +56141,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "129",
         "511",
@@ -55783,6 +56261,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "751",
         "623",
@@ -55805,6 +56284,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "631",
         "436",
@@ -55924,6 +56404,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "19",
         "648"
@@ -55945,6 +56426,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "330",
         "569",
@@ -56064,6 +56546,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "505",
         "630",
@@ -56099,6 +56582,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "19",
         "751"
@@ -56120,6 +56604,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "171",
         "776",
@@ -56239,6 +56724,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "233",
         "225",
@@ -56353,6 +56839,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "623",
@@ -56400,6 +56887,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "40",
         "187",
@@ -56519,6 +57007,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "57",
         "624",
@@ -56638,6 +57127,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "346",
         "397",
@@ -56754,6 +57244,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "491",
         "259",
@@ -56873,6 +57364,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "555",
         "390",
@@ -56962,6 +57454,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "19",
         "8",
@@ -56985,6 +57478,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "212",
         "83",
@@ -57104,6 +57598,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "452",
         "326",
@@ -57223,6 +57718,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "424",
         "630",
@@ -57342,6 +57838,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "411",
         "609",
@@ -57461,6 +57958,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "477",
         "123",
@@ -57580,6 +58078,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "149",
@@ -57644,6 +58143,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "102",
         "511",
@@ -57763,6 +58263,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "391",
         "452",
@@ -57807,6 +58308,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "129",
         "210",
@@ -57926,6 +58428,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "154",
         "511",
@@ -58045,6 +58548,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "485",
         "619",
@@ -58072,6 +58576,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "3",
         "556",
@@ -58191,6 +58696,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "486",
@@ -58280,6 +58786,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "102",
         "346",
@@ -58399,6 +58906,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "80",
         "217",
@@ -58518,6 +59026,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "243",
         "278",
@@ -58637,6 +59146,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "177",
         "623",
@@ -58677,6 +59187,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "649",
         "413",
@@ -58796,6 +59307,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "632",
         "38",
@@ -58909,6 +59421,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "671",
         "10",
@@ -59028,6 +59541,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "390",
@@ -59128,6 +59642,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "691",
         "213",
@@ -59247,6 +59762,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "393",
         "265",
@@ -59366,6 +59882,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "641",
@@ -59454,6 +59971,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "321",
         "89",
@@ -59573,6 +60091,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "776",
         "228",
@@ -59674,6 +60193,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "602",
         "632",
@@ -59718,6 +60238,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "149",
@@ -59782,6 +60303,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "222",
         "616",
@@ -59901,6 +60423,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "217",
@@ -60020,6 +60543,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "4",
         "619",
@@ -60095,6 +60619,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "177",
         "580",
@@ -60123,6 +60648,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "149",
@@ -60242,6 +60768,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "169",
         "509",
@@ -60361,6 +60888,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "72",
         "621",
@@ -60469,6 +60997,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "115",
         "492",
@@ -60588,6 +61117,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "50",
         "22",
@@ -60707,6 +61237,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "132",
         "298",
@@ -60815,6 +61346,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "445",
@@ -60915,6 +61447,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "57",
         "154",
@@ -61034,6 +61567,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "641",
         "217",
@@ -61092,6 +61626,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "212",
@@ -61211,6 +61746,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "545",
         "83",
@@ -61293,6 +61829,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "1",
         "38",
@@ -61320,6 +61857,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "511",
@@ -61371,6 +61909,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "288",
@@ -61490,6 +62029,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "344",
         "360",
@@ -61609,6 +62149,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "703"
@@ -61630,6 +62171,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "542",
@@ -61731,6 +62273,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "378",
         "5",
@@ -61850,6 +62393,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "481",
         "490",
@@ -61969,6 +62513,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "83",
         "35",
@@ -62088,6 +62633,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "394",
         "212",
@@ -62207,6 +62753,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "623",
         "82",
@@ -62326,6 +62873,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "344",
         "187",
@@ -62445,6 +62993,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "346",
@@ -62560,6 +63109,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "4",
         "619",
@@ -62620,6 +63170,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "528",
         "10",
@@ -62739,6 +63290,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "164",
         "10",
@@ -62858,6 +63410,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "329",
         "156",
@@ -62977,6 +63530,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "511",
         "38",
@@ -63041,6 +63595,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "569",
         "511",
@@ -63160,6 +63715,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "496",
         "238",
@@ -63215,6 +63771,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "243",
@@ -63334,6 +63891,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "362",
         "76",
@@ -63360,6 +63918,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "155",
         "616",
@@ -63479,6 +64038,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "346",
         "15",
@@ -63530,6 +64090,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "443",
         "619",
@@ -63649,6 +64210,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "334",
         "259",
@@ -63712,6 +64274,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "177",
         "590",
@@ -63738,6 +64301,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "3",
         "575",
@@ -63808,6 +64372,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "511",
         "779",
@@ -63927,6 +64492,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "590",
         "177",
@@ -63987,6 +64553,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "452",
@@ -64029,6 +64596,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "217",
         "355",
@@ -64071,6 +64639,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "367",
@@ -64101,6 +64670,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "794",
         "167",
@@ -64219,6 +64789,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "193",
         "80",
@@ -64338,6 +64909,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "378",
         "5",
@@ -64457,6 +65029,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "458",
         "84",
@@ -64576,6 +65149,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "200",
         "700",
@@ -64695,6 +65269,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "149",
         "485",
@@ -64752,6 +65327,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "452",
         "346",
@@ -64825,6 +65401,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "452",
         "83",
@@ -64855,6 +65432,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "4",
         "619",
@@ -64923,6 +65501,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "528",
@@ -65009,6 +65588,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "542",
         "250",
@@ -65101,6 +65681,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "296",
         "492",
@@ -65220,6 +65801,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "327",
         "582",
@@ -65339,6 +65921,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "140",
         "318",
@@ -65458,6 +66041,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "17",
         "507",
@@ -65577,6 +66161,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "679",
         "329",
@@ -65682,6 +66267,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "502",
         "424",
@@ -65801,6 +66387,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "424",
         "162",
@@ -65920,6 +66507,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "632",
         "397",
@@ -65943,6 +66531,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "200",
         "566",
@@ -66063,6 +66652,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "4",
@@ -66088,6 +66678,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "549",
         "427",
@@ -66138,6 +66729,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "4",
         "154",
@@ -66190,6 +66782,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "346",
         "360",
@@ -66215,6 +66808,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "511",
         "632",
@@ -66334,6 +66928,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "222",
         "585",
@@ -66373,6 +66968,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "19"
       ],
@@ -66393,6 +66989,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "624",
         "485",
@@ -66481,6 +67078,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "360",
@@ -66505,6 +67103,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "392",
@@ -66624,6 +67223,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "4",
         "619",
@@ -66650,6 +67250,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "624",
         "412",
@@ -66770,6 +67371,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "10",
         "38",
@@ -66810,6 +67412,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "38",
         "486",
@@ -66910,6 +67513,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "401",
         "217",
@@ -66933,6 +67537,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "403",
         "102",
@@ -66995,6 +67600,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "619",
         "82",
@@ -67018,6 +67624,7 @@
       ],
       "priceDropped": false,
       "nearHistoricalLow": true,
+      "isNew": false,
       "inStockStoreIds": [
         "355",
         "528",
