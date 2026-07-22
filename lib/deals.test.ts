@@ -207,6 +207,7 @@ describe("getVisibleDeals", () => {
     retailer: "" as const,
     sort: "price-asc" as const,
     nearbyStores: [],
+    storeId: "",
   };
 
   it("filters by retailer", () => {
@@ -242,5 +243,20 @@ describe("getVisibleDeals", () => {
     const nearbyStores = [{ store: makeStore({ externalId: "1" }), distanceKm: 1 }];
     const result = getVisibleDeals({ ...noStores, sort: "in-stock", nearbyStores });
     expect(result.map((d) => d.sku)).toEqual(["pricey", "cheap"]);
+  });
+
+  it("filters to only deals in stock at the selected store", () => {
+    const result = getVisibleDeals({ ...noStores, storeId: "1" });
+    expect(result.map((d) => d.sku)).toEqual(["pricey"]);
+  });
+
+  it("shows every deal when no store is selected", () => {
+    const result = getVisibleDeals({ ...noStores, storeId: "" });
+    expect(result.map((d) => d.sku)).toEqual(["cheap", "pricey"]);
+  });
+
+  it("returns nothing for a store no visible deal is stocked at", () => {
+    const result = getVisibleDeals({ ...noStores, storeId: "does-not-exist" });
+    expect(result).toEqual([]);
   });
 });

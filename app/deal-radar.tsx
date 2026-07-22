@@ -21,6 +21,7 @@ import { CategoryTree } from "./components/CategoryTree";
 import { DealCard } from "./components/DealCard";
 import { FavoriteChips } from "./components/FavoriteChips";
 import { RadiusSelect } from "./components/RadiusSelect";
+import { StoreSelect } from "./components/StoreSelect";
 
 type LocationState = "locating" | "located" | "unsupported" | "error";
 type DealsLoadState = "loading" | "loaded" | "error";
@@ -50,6 +51,7 @@ export function DealRadar() {
 
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedStoreId, setSelectedStoreId] = useState("");
   const [retailerFilter, setRetailerFilter] = useState<Retailer | "">("");
   const [sort, setSort] = useState<SortOption>("price-asc");
   const [categoryPickerOpen, setCategoryPickerOpen] = useState(false);
@@ -95,6 +97,16 @@ export function DealRadar() {
       .catch(() => {});
   }, []);
 
+  // Fetched independently of geolocation -- StoreSelect lets a user pick a
+  // specific store by name/city even when location access is denied or
+  // unsupported, so the store list can't be gated behind that succeeding.
+  useEffect(() => {
+    fetch("/data/lcbo-stores.json")
+      .then((res) => res.json())
+      .then((data) => setAllStores(data.stores))
+      .catch(() => {});
+  }, []);
+
   const locate = useCallback(() => {
     setLocationState("locating");
     if (!("geolocation" in navigator)) {
@@ -104,12 +116,7 @@ export function DealRadar() {
     navigator.geolocation.getCurrentPosition(
       (position) => {
         setUserCoords({ lat: position.coords.latitude, lng: position.coords.longitude });
-        fetch("/data/lcbo-stores.json")
-          .then((res) => res.json())
-          .then((data) => {
-            setAllStores(data.stores);
-            setLocationState("located");
-          });
+        setLocationState("located");
       },
       () => {
         setUserCoords(null);
@@ -160,17 +167,18 @@ export function DealRadar() {
         retailer: retailerFilter,
         sort,
         nearbyStores,
+        storeId: selectedStoreId,
       }),
-    [allDeals, search, selectedCategory, retailerFilter, sort, nearbyStores],
+    [allDeals, search, selectedCategory, retailerFilter, sort, nearbyStores, selectedStoreId],
   );
 
-  // Only the current filter/search/sort/category selection resets how many
-  // cards are mounted -- not radius/nearbyStores, so tweaking the radius
-  // doesn't collapse a list you've already scrolled through back down.
+  // Only the current filter/search/sort/category/store selection resets how
+  // many cards are mounted -- not radius/nearbyStores, so tweaking the
+  // radius doesn't collapse a list you've already scrolled through back down.
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [search, selectedCategory, retailerFilter, sort]);
+  }, [search, selectedCategory, retailerFilter, sort, selectedStoreId]);
 
   const pagedDeals = useMemo(() => visibleDeals.slice(0, visibleCount), [visibleDeals, visibleCount]);
   const hasMore = pagedDeals.length < visibleDeals.length;
@@ -301,6 +309,13 @@ export function DealRadar() {
                 <CategoryTree tree={categoryTree} selectedCategory={selectedCategory} onSelect={selectCategory} />
               </Popover.Content>
             </Popover.Root>
+
+            <StoreSelect
+              stores={allStores}
+              userCoords={userCoords}
+              selectedStoreId={selectedStoreId}
+              onSelect={setSelectedStoreId}
+            />
             <IconButton
               id="favorite-category-button"
               type="button"

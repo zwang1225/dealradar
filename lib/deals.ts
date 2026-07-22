@@ -157,6 +157,13 @@ export interface VisibleDealsParams {
   retailer: Retailer | "";
   sort: SortOption;
   nearbyStores: NearbyStore[];
+  // A specific store's externalId, e.g. picked from StoreSelect -- distinct
+  // from nearbyStores/radiusKm, which only affect the "in stock near me"
+  // sort and each DealCard's own distance readout. This actually removes
+  // deals that aren't in stock at the one chosen store, regardless of
+  // distance (LCBO-only concept today; Best Buy deals have no
+  // inStockStoreIds, so they're always dropped once a store is picked).
+  storeId: string;
 }
 
 export function getVisibleDeals({
@@ -166,6 +173,7 @@ export function getVisibleDeals({
   retailer,
   sort,
   nearbyStores,
+  storeId,
 }: VisibleDealsParams): Deal[] {
   const query = search.trim().toLowerCase();
   const effectiveSort = sort === "in-stock" && nearbyStores.length === 0 ? "price-asc" : sort;
@@ -177,6 +185,7 @@ export function getVisibleDeals({
       if (path !== category && !path.startsWith(category + "|")) return false;
     }
     if (query && !deal.name.toLowerCase().includes(query)) return false;
+    if (storeId && !deal.inStockStoreIds.includes(storeId)) return false;
     return true;
   });
 

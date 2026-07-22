@@ -253,6 +253,48 @@ header h1 {
   flex: 1;
 }
 
+.store-select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 260px;
+}
+
+.store-select-list {
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.store-option {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.5rem;
+  border: none;
+  background: none;
+  color: var(--text);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.store-option:hover {
+  background: var(--bg);
+}
+
+.store-option-city {
+  flex-shrink: 0;
+}
+
+.store-select-empty {
+  padding: 0.35rem 0.5rem;
+  margin: 0;
+}
+
 #favorite-category-button {
   font-size: 1rem;
   line-height: 1;
