@@ -147,6 +147,10 @@ async function main() {
   const dealProducts = await fetchDealProducts(slugs);
   console.log(`Found ${dealProducts.size} distinct deal products`);
 
+  const dealsPath = path.join(DATA_DIR, "lcbo-deals.json");
+  const previousDealsFile = await readJsonIfExists(dealsPath, { deals: [] });
+  const previousDealSkus = new Set(previousDealsFile.deals.map((deal) => deal.sku));
+
   console.log("Scanning full catalog for price history...");
   const catalogPrices = await fetchCatalogPrices();
   console.log(`Scanned ${catalogPrices.size} total products`);
@@ -196,16 +200,14 @@ async function main() {
       saleCategories: product.saleCategories,
       priceDropped,
       nearHistoricalLow,
+      isNew: !previousDealSkus.has(product.sku),
       inStockStoreIds,
       retailer: "lcbo",
     });
   }
 
   await writeFile(priceHistoryPath, JSON.stringify(priceHistory, null, 2));
-  await writeFile(
-    path.join(DATA_DIR, "lcbo-deals.json"),
-    JSON.stringify({ generatedAt: new Date().toISOString(), deals }, null, 2),
-  );
+  await writeFile(dealsPath, JSON.stringify({ generatedAt: new Date().toISOString(), deals }, null, 2));
   console.log(`Wrote ${deals.length} deals to public/data/lcbo-deals.json`);
 }
 

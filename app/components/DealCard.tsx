@@ -42,6 +42,7 @@ export function DealCard({
           ) : null}
         </p>
         <p className="badges">
+          {deal.isNew ? <span className="badge badge-new">New today</span> : null}
           {deal.discountPercent ? <span className="badge badge-discount">-{deal.discountPercent}%</span> : null}
           {deal.priceDropped ? <span className="badge badge-drop">Price drop</span> : null}
           {deal.nearHistoricalLow ? <span className="badge badge-low">Near all-time low</span> : null}

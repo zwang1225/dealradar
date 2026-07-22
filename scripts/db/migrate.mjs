@@ -20,29 +20,6 @@ async function main() {
     )
   `;
 
-  // ADD COLUMN IF NOT EXISTS rather than baking these into the CREATE TABLE
-  // above, since that statement no-ops once the table already exists -- this
-  // keeps the migration re-runnable against a DB that was already migrated
-  // before these columns were added.
-  await sql`
-    ALTER TABLE preferences ADD COLUMN IF NOT EXISTS email TEXT NOT NULL DEFAULT ''
-  `;
-
-  // `email` is the verified/active notification address. A newly typed
-  // email sits in `pending_email` (with a token + expiry) until its owner
-  // clicks the verification link -- see app/api/preferences/verify/route.ts.
-  // `email` is never written to directly except by that endpoint, or by
-  // clearing it outright (removing a target needs no verification).
-  await sql`
-    ALTER TABLE preferences ADD COLUMN IF NOT EXISTS pending_email TEXT
-  `;
-  await sql`
-    ALTER TABLE preferences ADD COLUMN IF NOT EXISTS verification_token TEXT
-  `;
-  await sql`
-    ALTER TABLE preferences ADD COLUMN IF NOT EXISTS verification_expires_at TIMESTAMPTZ
-  `;
-
   await sql`
     CREATE TABLE IF NOT EXISTS deal_feedback (
       sku TEXT PRIMARY KEY,
@@ -51,7 +28,7 @@ async function main() {
     )
   `;
 
-  console.log("Schema applied: preferences (+email, +pending_email verification), deal_feedback.");
+  console.log("Schema applied: preferences, deal_feedback.");
 }
 
 main().catch((err) => {

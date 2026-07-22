@@ -36,6 +36,8 @@ html {
   --badge-drop-text: light-dark(#1a6b1a, #7bd88f);
   --badge-low-bg: light-dark(#fff3d6, #3a2c05);
   --badge-low-text: light-dark(#8a6d00, #e8c34a);
+  --badge-new-bg: light-dark(#e5edfd, #16233d);
+  --badge-new-text: light-dark(#2b5a9c, #a0c4f2);
   --stock-in: light-dark(#1a6b1a, #7bd88f);
   --stock-out: light-dark(#a33333, #ff9b9b);
 }
@@ -466,6 +468,11 @@ header h1 {
 .badge-low {
   background: var(--badge-low-bg);
   color: var(--badge-low-text);
+}
+
+.badge-new {
+  background: var(--badge-new-bg);
+  color: var(--badge-new-text);
 }
 
 .stock {

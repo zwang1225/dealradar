@@ -43,35 +43,16 @@ functionality until its secrets exist:
   run `fetch-bestbuy-deals.mjs` once for real to verify before relying on
   it. See [`docs/ai/skills/adding-a-retailer/SKILL.md`](ai/skills/adding-a-retailer/SKILL.md)
   for the pattern this established.
-- **Email verification for `preferences.email`** — magic-link flow so a
-  typed email only becomes active once its owner clicks a confirmation
-  link; applies on every change, not just the first
-  (`app/api/preferences/route.ts`, `app/api/preferences/verify/route.ts`,
-  `app/preferences/page.tsx`, schema columns in `scripts/db/migrate.mjs`).
-  Blocked on a Resend API key + `RESEND_FROM`. **Gate**:
-  `isEmailVerificationConfigured()` in `route.ts` checks whether
-  `RESEND_API_KEY`/`RESEND_FROM` are set as **Vercel** env vars before
-  starting the verification flow; if not, `PUT` falls back to saving the
-  email directly — the exact behavior this repo had before verification
-  existed. No 500s regardless of whether those env vars exist. Once
-  unblocked: set those two as Vercel project env vars, confirm "Enable
-  access to System Environment Variables" is checked (for
-  `VERCEL_PROJECT_PRODUCTION_URL`), then verify the real send-and-click
-  flow once before relying on it.
-- **Phase 3 — LLM-picked deals + email** (`scripts/notify.mjs`,
-  `scripts/notify.test.mjs`) — reads `preferences`/`deal_feedback`, asks an
-  LLM to pick/rank deals, emails the result. Blocked on an LLM-billing
-  decision: OpenAI was chosen, but ChatGPT Plus/Pro subscriptions can't pay
-  for API calls (separate billing systems) — needs a standard pay-per-token
-  API key instead (~$1-2/month estimated for this use case). `OPENAI_MODEL`
-  is deliberately a required env var with no hardcoded default, since the
-  current model lineup was unclear when this was written. **Gate**: the
-  workflow's notify step is `if: env.DATABASE_URL != ''` — skipped, not
-  failed (and this was already the last step, after the commit step, so it
-  couldn't have blocked the LCBO refresh regardless). Once unblocked: add
-  `DATABASE_URL`/`OPENAI_API_KEY`/`OPENAI_MODEL`/`RESEND_API_KEY`/
-  `RESEND_FROM` as GitHub Actions secrets, run `notify.mjs` once locally to
-  verify a real send before relying on it in CI.
+
+## Removed
+
+- **Email verification for `preferences.email`** and **Phase 3 — LLM-picked
+  deals + email** (`scripts/notify.mjs`) were designed but never unblocked
+  (Best Buy-style free-email-provider friction on the former, an
+  LLM-billing decision left unresolved on the latter) and have been
+  removed rather than left parked indefinitely. `/preferences` is
+  notes-only now. If daily picks-by-email gets revisited, it'd need a new
+  delivery mechanism designed from scratch rather than reviving this code.
 
 ## Next
 

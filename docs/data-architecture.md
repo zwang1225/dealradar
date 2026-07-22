@@ -3,16 +3,17 @@
 How data moves from each retailer's API to the screen, and why it's shaped
 the way it is. Covers Phase 1 (the [Next.js migration](ai/AGENTS.md), static
 JSON only), Phase 2 (the first real per-user mutable state: preferences +
-thumbs-up/down feedback, backed by Postgres), Phase 3 (LLM-picked deals
-emailed daily, reading the data Phase 2 collected), and multi-retailer
-support (Best Buy alongside LCBO).
+thumbs-up/down feedback, backed by Postgres), and multi-retailer support
+(Best Buy alongside LCBO).
 
-**Status note**: Best Buy support, email verification, and Phase 3 are all
-written and described below as the intended design, but are **parked** —
-uncommitted, not deployed, not verified against the real APIs. See
-[`docs/roadmap.md`](roadmap.md) for exactly what's live vs. parked; don't
-assume anything Best-Buy-related in this doc is actually running in
-production.
+**Status note**: Best Buy support is written and described below as the
+intended design, but is **parked** — uncommitted, not deployed, not
+verified against the real API. See [`docs/roadmap.md`](roadmap.md) for
+exactly what's live vs. parked; don't assume anything Best-Buy-related in
+this doc is actually running in production. Email verification and a
+Phase 3 LLM-picked-deals-by-email feature were designed and built but have
+since been removed entirely (see roadmap's "Removed" section) — neither is
+described below anymore.
 
 ## The pipeline (outside the Next.js app)
 
@@ -25,8 +26,6 @@ api.lcbo.dev (GraphQL)          api.bestbuy.com (REST)
                           .github/workflows/fetch-deals.yml (daily cron, commits + pushes)
                                               |
                                 Vercel (auto-deploys on every push to main)
-                                              |
-                          scripts/notify.mjs (last step of the same job -- see Phase 3 section below)
 ```
 
 - `scripts/` is deliberately **not** part of the Next.js app — no API routes,
@@ -92,8 +91,9 @@ public/data/lcbo-deals.json, public/data/bestbuy-deals.json, public/data/lcbo-st
 ## Preferences + feedback (Phase 2, Postgres)
 
 The first real per-user mutable state, and the first database in this
-project — added because Phase 3 (LLM-picked deals + email) needs actual data
-to read, and `localStorage` can't be read server-side or across devices.
+project — added because per-user notes and voting need to persist across
+devices/sessions, and `localStorage` can't be read server-side or across
+devices.
 
 ```
 Neon Postgres (provisioned via Vercel's Storage tab)
@@ -106,22 +106,14 @@ Neon Postgres (provisioned via Vercel's Storage tab)
   source of truth — idempotent, safe to re-run, **never hand-edit the schema
   in the Neon/Vercel dashboard**):
   - `preferences` — a single row (`id` pinned to `1` via a CHECK constraint):
-    freeform `notes` text (feeds an LLM prompt in Phase 3, not a strict
-    filter — structured columns per category/brand/price would be
-    premature) plus `email`, the one **verified** address Phase 3 will send
-    picks to. No `users` table and no accounts — this is still explicitly a
-    single-user tool, so there's deliberately nothing to key user data by
-    beyond this one row.
+    freeform `notes` text only — structured columns per category/brand/price
+    would be premature. No `users` table and no accounts — this is still
+    explicitly a single-user tool, so there's deliberately nothing to key
+    user data by beyond this one row.
   - `deal_feedback` — `sku` (primary key), `vote` (`'up' | 'down'`),
     `created_at`. Voting again on the same deal overwrites via
     `ON CONFLICT`; voting the same way twice clears it (toggle-off), the
     same UX `lib/favorites.ts` already uses for favorited categories.
-- `email` is only ever set by a magic-link verification flow, never
-  directly from the `/preferences` form — see "Email verification" below.
-  This applies every time the email is changed, not just once: a
-  newly-typed address only becomes active after its owner clicks the link
-  sent to it, and the previously-verified address stays authoritative until
-  then.
 - `lib/db.ts` exports a single `sql` client (`@neondatabase/serverless`'s
   `neon()`, an HTTP driver — no connection pooling to manage, safe to
   instantiate once at module scope). Both API routes import it; nothing
@@ -134,97 +126,6 @@ Neon Postgres (provisioned via Vercel's Storage tab)
   `.env.local` (see `.env.example`); production gets it auto-injected by
   Vercel's Postgres integration.
 
-## Email verification
-
-`preferences.email` is never written directly from the `/preferences` form
-— a typed address only becomes the active `email` after its owner clicks a
-magic link sent to it. This applies on every change, not just the first
-time: the previously-verified address stays authoritative until a new one
-is confirmed, so a typo or an unauthorized edit can't silently redirect
-notifications to the wrong inbox.
-
-```
-app/preferences/page.tsx (PUT /api/preferences)
-  -> pending_email + verification_token + verification_expires_at set, email unchanged
-  -> Resend sends a link to app/api/preferences/verify/route.ts
-  -> clicking it: valid + unexpired token -> email = pending_email, pending cleared
-```
-
-- `app/api/preferences/route.ts`'s `PUT` handler: if the submitted email
-  equals the current verified `email`, nothing email-related changes (just a
-  notes update — avoids sending a verification email on every unrelated
-  save). If it's submitted empty, `email` clears immediately — removing a
-  notification target needs no verification, only adding/changing one does.
-  Otherwise it sets `pending_email` + a fresh `verification_token`
-  (`crypto.randomUUID()`) + a 24h expiry, and emails the link — the verified
-  `email` column isn't touched until the link is actually clicked.
-- `app/api/preferences/verify/route.ts` is a `GET` handler (it's reached by
-  clicking a link from an email client, which only ever issues `GET`) that
-  validates the token, applies the pending email if valid/unexpired, and
-  redirects back to `/preferences` with a `verified=1` or `verifyError=...`
-  query param the page reads to show a banner.
-- The verification link is built from Vercel's `VERCEL_PROJECT_PRODUCTION_URL`
-  system env var, not `VERCEL_URL` — `VERCEL_URL` is itself gated by Vercel
-  Authentication and would produce a link the recipient can't use, while
-  `VERCEL_PROJECT_PRODUCTION_URL` is Vercel's documented way to build
-  production links under Deployment Protection.
-- This sends real email from the **Vercel-hosted** app itself (unlike
-  `notify.mjs` below, which runs in GitHub Actions), so `RESEND_API_KEY`/
-  `RESEND_FROM` need to be set as Vercel project environment variables, not
-  just GitHub Actions secrets — even though the values can be the same.
-- Not covered by the Vitest suite: this logic is inherently DB- and
-  network-coupled (token lookup, expiry check, sending email), the same
-  category `docs/ai/AGENTS.md` already carves out as not needing
-  `*.test.ts` coverage. Verified manually instead.
-
-## LLM picks + email (Phase 3, `scripts/notify.mjs` — currently parked)
-
-Written but not yet wired up with real API keys, not committed, and not
-running in production. Parked while deciding on LLM billing (OpenAI API
-access is billed separately from any ChatGPT subscription — no way to pay
-for it via a Plus/Pro plan). Documented here as the intended design once
-resumed.
-
-```
-public/data/lcbo-deals.json + preferences/deal_feedback (Postgres)
-  -> scripts/notify.mjs    (last step of .github/workflows/fetch-deals.yml, plain fetch() to both APIs)
-  -> OpenAI (pick/rank)  -> Resend (send)
-```
-
-Written before Best Buy support landed — still only reads
-`lcbo-deals.json`. Extending it to `bestbuy-deals.json` too is a follow-up
-once Phase 3 is actually resumed, not done speculatively while it's parked.
-
-- Runs as the **last** step in the same daily GitHub Actions job as the LCBO
-  fetch, after that data is fetched *and committed* — a failure here (API
-  outage, bad key) can never block or risk today's deals data from being
-  published.
-- Reads Postgres **directly** (same `neon()` pattern as
-  `scripts/db/migrate.mjs`), not through `app/api/*`. Those routes sit behind
-  Vercel Authentication, which would block this script's automated request —
-  so this bypasses Vercel/Next.js entirely for both the DB read and the
-  OpenAI/Resend calls. Plain `fetch()`, no SDKs, matching every other script
-  in `scripts/`.
-- No-ops cleanly (exit 0, not a failure) in two cases: no notification email
-  set yet, or the LLM decides nothing is worth picking that day. Never sends
-  an empty or padded-for-the-sake-of-it email.
-- The prompt only ever contains fields actually present in `lcbo-deals.json`
-  (not yet extended to `bestbuy-deals.json`, see above), trimmed to what
-  picking needs (`trimDealForPrompt` in `notify.mjs` — drops
-  `inStockStoreIds`, which can run 80+ entries per deal, plus
-  `thumbnailUrl`/`saleCategories`). Same "never fabricate" rule as the
-  regular-price/discount logic in `fetch-lcbo-deals.mjs`.
-- `OPENAI_MODEL` has no hardcoded fallback — required env var, set explicitly
-  at setup time rather than risk silently running against a wrong or
-  deprecated model name.
-- The email's only link is back to the DealRadar site itself — there's no
-  per-product deep link available. `api.lcbo.dev` exposes no product
-  URL/slug (confirmed via GraphQL introspection), and guessing at lcbo.com's
-  own URL scheme from the sku proved unreliable in practice.
-- The pure, non-network parts (`trimDealForPrompt`, `buildPrompt`,
-  `shouldSkip`, `buildEmailHtml`) are exported and covered by
-  `scripts/notify.test.mjs` — same "test the core logic" bar as `lib/*.test.ts`.
-
 ## Why this shape, and where it stops being enough
 
 Phase 1 shipped with almost no interactivity — the only "write" anywhere was
@@ -232,21 +133,15 @@ favorited categories in `localStorage`, so static JSON + a client-side fetch
 was the simplest thing that actually worked.
 
 Phase 2 crossed that line: preferences and feedback are real per-user state
-that needs to persist across devices/sessions and feed an LLM call, so a
-database and API routes became necessary.
+that needs to persist across devices/sessions, so a database and API routes
+became necessary.
 
-Between Phase 2 and Phase 3, email verification closed a real gap: nothing
-previously confirmed a typed email was legitimate before it became the
-active notification target. Phase 3, once resumed, closes the loop by
-reading what Phase 2 collected to actually do something with it. Separately,
-working through Best Buy support designed out the per-retailer-file pattern
+Working through Best Buy support designed out the per-retailer-file pattern
 the `adding-a-retailer` skill had only proposed before — though Best Buy
 itself is parked (blocked on their developer signup, see `docs/roadmap.md`),
 not yet run against the real API. What's still not here: no accounts/
 multi-user support (a deliberate non-goal — see the `preferences` note
-above), no in-app UI for reviewing past picks, no retry/alerting if a daily
-run fails silently beyond GitHub Actions' own run history, no per-store
-inventory for Best Buy.
+above), no per-store inventory for Best Buy.
 
 ## Directory map
 
@@ -257,10 +152,7 @@ inventory for Best Buy.
   - `fetch-bestbuy-deals.mjs` — Best Buy entry point, run daily by CI, no
     npm dependencies; no shared client file yet (only one Best Buy script)
   - `db/migrate.mjs` — schema source of truth for `preferences`/`deal_feedback`
-    and their columns, including the email-verification ones
-  - `notify.mjs`, `notify.test.mjs` — Phase 3's LLM-pick + email step (currently
-    parked, see above), would run last in the same daily CI job; uses
-    `@neondatabase/serverless`, otherwise plain `fetch()`
+    and their columns
 - `public/data/` — pipeline output; the frontend's read-only data source.
   `lcbo-*.json` and `bestbuy-deals.json` are independent files, merged
   client-side (see above), not one shared file.
@@ -270,8 +162,8 @@ inventory for Best Buy.
 - `app/` — Next.js App Router
   - `deal-radar.tsx` — the main client component holding all deals-page UI
     state, including the retailer filter
-  - `preferences/page.tsx` — preferences editor, including email verification status
-  - `api/preferences/`, `api/preferences/verify/`, `api/feedback/` — Route
-    Handlers backing preferences (+ its verification flow) and feedback
+  - `preferences/page.tsx` — notes-only preferences editor
+  - `api/preferences/`, `api/feedback/` — Route Handlers backing
+    preferences and feedback
   - `components/` — presentational subcomponents
   - `layout.tsx`, `page.tsx`, `globals.css` — App Router boilerplate

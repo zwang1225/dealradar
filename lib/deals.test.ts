@@ -29,6 +29,7 @@ function makeDeal(overrides: Partial<Deal> = {}): Deal {
     saleCategories: [],
     priceDropped: false,
     nearHistoricalLow: false,
+    isNew: false,
     inStockStoreIds: [],
     retailer: "lcbo",
     ...overrides,
@@ -208,6 +209,7 @@ describe("getVisibleDeals", () => {
     sort: "price-asc" as const,
     nearbyStores: [],
     storeId: "",
+    newOnly: false,
   };
 
   it("filters by retailer", () => {
@@ -258,5 +260,16 @@ describe("getVisibleDeals", () => {
   it("returns nothing for a store no visible deal is stocked at", () => {
     const result = getVisibleDeals({ ...noStores, storeId: "does-not-exist" });
     expect(result).toEqual([]);
+  });
+
+  it("filters to only new-today deals when newOnly is set", () => {
+    const newDeal = makeDeal({ sku: "fresh", name: "Fresh Deal", isNew: true });
+    const result = getVisibleDeals({ ...noStores, allDeals: [...allDeals, newDeal], newOnly: true });
+    expect(result.map((d) => d.sku)).toEqual(["fresh"]);
+  });
+
+  it("shows every deal when newOnly is false, regardless of isNew", () => {
+    const result = getVisibleDeals({ ...noStores, newOnly: false });
+    expect(result.map((d) => d.sku)).toEqual(["cheap", "pricey"]);
   });
 });

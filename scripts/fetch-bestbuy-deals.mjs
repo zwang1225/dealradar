@@ -11,7 +11,7 @@
 // within that), no redistribution/derivative-works resale, personal-use
 // apps are permitted. Rate limit: 5 req/sec, 50k calls/day for a standard
 // key -- this script adds a short delay between pages to stay safely under.
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -68,7 +68,7 @@ async function fetchAllOnSaleProducts() {
   return products;
 }
 
-function toDeal(product) {
+function toDeal(product, previousDealSkus) {
   const priceInCents = Math.round(product.salePrice * 100);
   const regularPriceInCents =
     product.onSale && product.regularPrice > product.salePrice ? Math.round(product.regularPrice * 100) : null;
@@ -89,21 +89,32 @@ function toDeal(product) {
     // equivalent fields, which ARE backed by real tracking).
     priceDropped: false,
     nearHistoricalLow: false,
+    isNew: !previousDealSkus.has(String(product.sku)),
     inStockStoreIds: [],
     retailer: "bestbuy",
   };
+}
+
+async function readJsonIfExists(filePath, fallback) {
+  try {
+    return JSON.parse(await readFile(filePath, "utf8"));
+  } catch (err) {
+    if (err.code === "ENOENT") return fallback;
+    throw err;
+  }
 }
 
 async function main() {
   const products = await fetchAllOnSaleProducts();
   console.log(`Fetched ${products.length} on-sale Best Buy products`);
 
-  const deals = products.map(toDeal);
+  const dealsPath = path.join(DATA_DIR, "bestbuy-deals.json");
+  const previousDealsFile = await readJsonIfExists(dealsPath, { deals: [] });
+  const previousDealSkus = new Set(previousDealsFile.deals.map((deal) => deal.sku));
 
-  await writeFile(
-    path.join(DATA_DIR, "bestbuy-deals.json"),
-    JSON.stringify({ generatedAt: new Date().toISOString(), deals }, null, 2),
-  );
+  const deals = products.map((product) => toDeal(product, previousDealSkus));
+
+  await writeFile(dealsPath, JSON.stringify({ generatedAt: new Date().toISOString(), deals }, null, 2));
   console.log(`Wrote ${deals.length} deals to public/data/bestbuy-deals.json`);
 }
 

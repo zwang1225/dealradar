@@ -13,6 +13,7 @@ export interface Deal {
   saleCategories: string[];
   priceDropped: boolean;
   nearHistoricalLow: boolean;
+  isNew: boolean;
   inStockStoreIds: string[];
   retailer: Retailer;
 }
@@ -164,6 +165,10 @@ export interface VisibleDealsParams {
   // distance (LCBO-only concept today; Best Buy deals have no
   // inStockStoreIds, so they're always dropped once a store is picked).
   storeId: string;
+  // Only deals whose sku wasn't present in the *previous* day's deals file
+  // for its retailer (see the fetch scripts' `isNew` computation) -- not
+  // "new to the on-sale list ever", just "new since yesterday's run".
+  newOnly: boolean;
 }
 
 export function getVisibleDeals({
@@ -174,6 +179,7 @@ export function getVisibleDeals({
   sort,
   nearbyStores,
   storeId,
+  newOnly,
 }: VisibleDealsParams): Deal[] {
   const query = search.trim().toLowerCase();
   const effectiveSort = sort === "in-stock" && nearbyStores.length === 0 ? "price-asc" : sort;
@@ -186,6 +192,7 @@ export function getVisibleDeals({
     }
     if (query && !deal.name.toLowerCase().includes(query)) return false;
     if (storeId && !deal.inStockStoreIds.includes(storeId)) return false;
+    if (newOnly && !deal.isNew) return false;
     return true;
   });
 

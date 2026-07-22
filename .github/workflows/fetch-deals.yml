@@ -11,27 +11,17 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    # Exposed as job-level env so the `if:` conditions below can check
+    # Exposed as job-level env so the `if:` condition below can check
     # presence via `env.*` -- `secrets.*` isn't a recognized named-value in
     # step `if:` conditions.
     env:
       BESTBUY_API_KEY: ${{ secrets.BESTBUY_API_KEY }}
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-      RESEND_FROM: ${{ secrets.RESEND_FROM }}
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      # notify.mjs needs @neondatabase/serverless from node_modules;
-      # fetch-lcbo-stores.mjs/fetch-lcbo-deals.mjs/fetch-bestbuy-deals.mjs
-      # only use Node built-ins, so this step never used to be necessary.
-      - run: npm ci
 
       - run: node scripts/fetch-lcbo-stores.mjs
       - run: node scripts/fetch-lcbo-deals.mjs
@@ -52,12 +42,3 @@ jobs:
           git add public/data/*.json
           git diff --cached --quiet || git commit -m "chore: update deals data"
           git push
-
-      # Last step, after data is fetched AND committed/pushed above -- a
-      # failure here (API outage, bad key) must never block or risk today's
-      # deals data from being published. Gated the same way as Best Buy
-      # above: skipped, not failed, until DATABASE_URL exists as a repo
-      # secret (Phase 3 / notify.mjs is parked -- see docs/roadmap.md).
-      - name: Pick and email today's deals
-        if: env.DATABASE_URL != ''
-        run: node scripts/notify.mjs

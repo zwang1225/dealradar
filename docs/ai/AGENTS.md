@@ -18,20 +18,15 @@ list client-side — never a UI rewrite per retailer.
 3. Read [`docs/data-architecture.md`](../data-architecture.md) for the full
    data flow — pipeline, storage, and how the app consumes it. Read it before
    touching `scripts/`, `lib/deals.ts`, or `app/deal-radar.tsx`. Check
-   [`docs/roadmap.md`](../roadmap.md) for what's shipped vs. parked — some
-   code in this tree (Best Buy support, email verification, `notify.mjs`) is
-   written but not committed or deployed yet.
+   [`docs/roadmap.md`](../roadmap.md) for what's shipped vs. parked — Best
+   Buy support is written but not committed or deployed yet.
 4. Note the shape of the project: Next.js (App Router, TypeScript) frontend
    under `app/`, entirely client-rendered. Deal/store data is static JSON
    from `public/data/`, one file per retailer per data type (`lcbo-deals.json`
    live; `bestbuy-deals.json` written but parked, see Ground Rules), merged
-   client-side in `app/deal-radar.tsx`. Preferences and thumbs-up/down feedback are real
-   server state, backed by Postgres via `lib/db.ts` and `app/api/*` Route
-   Handlers. `preferences.email` is only ever set via magic-link
-   verification (`app/api/preferences/verify/route.ts`), never written
-   directly. `scripts/notify.mjs` (currently parked, uncommitted) would
-   close the loop daily: picks/ranks deals with an LLM using that data, and
-   emails the picks -- outside Next.js entirely, run by GitHub Actions.
+   client-side in `app/deal-radar.tsx`. Preferences (freeform notes) and
+   thumbs-up/down feedback are real server state, backed by Postgres via
+   `lib/db.ts` and `app/api/*` Route Handlers.
 5. `public/data/*.json` is generated output, not hand-authored — see Ground Rules.
 
 ## Ground Rules
@@ -64,21 +59,18 @@ list client-side — never a UI rewrite per retailer.
   `bestbuy-deals.json` exists or that the fetch script actually works
   end-to-end until this is unblocked and verified — see `docs/roadmap.md`.
 - **Gating convention for blocked/parked features**: when a feature is
-  written but blocked on a secret/credential you don't have (see Best Buy,
-  email verification, and `notify.mjs` above), gate it so it's safe to
-  commit and push without regressing anything currently working, rather
-  than leaving it uncommitted indefinitely. Concretely: CI/workflow steps
-  that need a not-yet-existing secret get `if: env.SECRET_NAME != ''` (skip,
-  don't fail — a failed step aborts later steps in the same job; a skipped
-  one doesn't) with the secrets exposed via job-level `env:` first (`secrets.*`
-  isn't a recognized named-value directly in step `if:` conditions). API
-  routes that need a not-yet-configured secret fall back to their
-  pre-existing behavior instead of throwing (see
-  `isEmailVerificationConfigured()` in `app/api/preferences/route.ts`). UI
-  that depends on not-yet-existing data hides itself rather than showing an
-  empty/broken state (see `availableRetailers` in `app/deal-radar.tsx`).
-  Whether to actually push a gated feature is still a separate decision
-  from committing it — ask first.
+  written but blocked on a secret/credential you don't have (see Best Buy
+  above), gate it so it's safe to commit and push without regressing
+  anything currently working, rather than leaving it uncommitted
+  indefinitely. Concretely: CI/workflow steps that need a not-yet-existing
+  secret get `if: env.SECRET_NAME != ''` (skip, don't fail — a failed step
+  aborts later steps in the same job; a skipped one doesn't) with the
+  secret exposed via job-level `env:` first (`secrets.*` isn't a recognized
+  named-value directly in step `if:` conditions). UI that depends on
+  not-yet-existing data hides itself rather than showing an empty/broken
+  state (see `availableRetailers` in `app/deal-radar.tsx`). Whether to
+  actually push a gated feature is still a separate decision from
+  committing it — ask first.
 - Keep changes scoped; don't refactor unrelated areas.
 - Pure logic (filtering, sorting, category-tree building, distance calc)
   lives in `lib/deals.ts` as framework-free functions — keep new logic there
@@ -92,24 +84,11 @@ list client-side — never a UI rewrite per retailer.
   `npm run db:migrate`.
 - Never commit a real `DATABASE_URL` or any other secret. `.env*.local` is
   gitignored; `.env.example` documents required vars with empty placeholders.
-- `scripts/notify.mjs` reads Postgres directly and calls OpenAI/Resend via
-  plain `fetch()` — it must stay dependency-free like the rest of `scripts/`
-  beyond `@neondatabase/serverless` (already used by `db/migrate.mjs`). Don't
-  route it through `app/api/*`; those sit behind Vercel Authentication, which
-  blocks this script's automated requests.
-- `OPENAI_MODEL` has no hardcoded fallback in `notify.mjs` — required env
-  var, set explicitly rather than silently guessed. Don't add a default.
-- The LLM prompt in `notify.mjs` must only ever contain fields actually
-  present in `lcbo-deals.json` — same "never fabricate" rule as the
-  regular-price/discount logic in `fetch-lcbo-deals.mjs`.
-- `notify.mjs` is currently **parked**: written and tested, but not
-  committed, not wired up with real API keys, not running anywhere. Don't
-  assume it's live in production just because it exists in the tree.
-- Never write to `preferences.email` directly from `PUT
-  /api/preferences` — only `app/api/preferences/verify/route.ts` may set
-  it (after validating a token), or the `PUT` handler clearing it to `''`
-  outright. Changing it always goes through `pending_email` +
-  `verification_token` first.
+- `preferences` is notes-only — there is no notification email field.
+  Email verification and a daily LLM-picks-by-email feature (`scripts/notify.mjs`)
+  were designed and built once but have been removed entirely; don't revive
+  them from git history without re-deciding the design from scratch (see
+  `docs/roadmap.md`'s "Removed" section for why they were cut).
 
 ## Repo Facts
 
@@ -127,14 +106,11 @@ list client-side — never a UI rewrite per retailer.
   see the inline script in `app/layout.tsx` that sets a `.dark`/`.light`
   class from `prefers-color-scheme`, since Radix Themes' own dark-mode CSS
   is gated behind that ancestor class and won't follow the OS on its own.
-- Backend: three Next.js Route Handlers (`app/api/preferences/route.ts`,
-  `app/api/preferences/verify/route.ts`, `app/api/feedback/route.ts`) backed
-  by Postgres (Neon, provisioned via Vercel's Storage tab) through
-  `lib/db.ts`. Raw SQL, no ORM. `app/api/preferences/route.ts`'s `PUT` also
-  calls Resend directly (plain `fetch()`, no SDK) to send verification
-  emails — needs `RESEND_API_KEY`/`RESEND_FROM` as **Vercel** env vars (not
-  just GitHub Actions secrets). No other server logic or auth beyond that —
-  Vercel Authentication gates the whole production deployment.
+- Backend: two Next.js Route Handlers (`app/api/preferences/route.ts`,
+  `app/api/feedback/route.ts`) backed by Postgres (Neon, provisioned via
+  Vercel's Storage tab) through `lib/db.ts`. Raw SQL, no ORM. No other
+  server logic or auth beyond that — Vercel Authentication gates the whole
+  production deployment.
 - Package manager: npm.
 - Main commands: `npm run dev`, `npm run build`, `npm run typecheck`,
   `npm test` (Vitest, colocated `lib/*.test.ts` — pure logic only, no
@@ -148,19 +124,11 @@ list client-side — never a UI rewrite per retailer.
 - `scripts/lib/lcbo-client.mjs` is the shared GraphQL client + pagination
   helper the two LCBO fetch scripts depend on. Best Buy has no shared
   client file yet — only one Best Buy script exists so far.
-- `scripts/notify.mjs`: LLM-picks + email — **currently parked**,
-  uncommitted, not deployed. Once resumed: run daily by CI as the last step
-  (after data is fetched and committed), reading Postgres directly via
-  `@neondatabase/serverless`, calling OpenAI + Resend via plain `fetch()`.
-  Still only reads `lcbo-deals.json` — extending it to Best Buy is a
-  follow-up, not done speculatively while parked. Full design in
-  `docs/data-architecture.md`'s "LLM picks + email" section.
 - `.github/workflows/fetch-deals.yml`'s **committed/live** version schedules
   just the two LCBO fetches → commit + push (daily cron +
   `workflow_dispatch`), which auto-deploys via Vercel. The working tree's
-  uncommitted version also adds a Best Buy fetch step and the `notify.mjs`
-  step — neither is live in CI until Best Buy and Phase 3 are unparked and
-  this file is actually committed.
+  uncommitted version also adds a Best Buy fetch step — not live in CI
+  until Best Buy is unparked and this file is actually committed.
 - Hosting: Vercel, gated by Vercel Authentication (Hobby-tier, zero-code —
   restricts the live URL to the owning Vercel account since this is a
   single-user tool, not a public product).
@@ -181,16 +149,6 @@ list client-side — never a UI rewrite per retailer.
 - To use `/preferences` or the thumbs up/down buttons locally: copy
   `.env.example` to `.env.local`, fill in `DATABASE_URL` from the Vercel
   dashboard's Storage tab, then run `npm run db:migrate` once.
-- To test email verification locally: also set `RESEND_API_KEY`/
-  `RESEND_FROM` in `.env.local` (in production these are Vercel project env
-  vars, set separately from the GitHub Actions secrets of the same name
-  planned for `notify.mjs`). Saving a new email on `/preferences` sends a
-  real verification email — there's no dry-run mode.
-- To test `scripts/notify.mjs` locally: also set `OPENAI_API_KEY`,
-  `OPENAI_MODEL`, `RESEND_API_KEY`, `RESEND_FROM` in `.env.local`, set a
-  notification email on `/preferences` (it no-ops without one), then
-  `node --env-file=.env.local scripts/notify.mjs`. This sends a real email
-  if it doesn't no-op — there's no dry-run mode.
 
 ## High-Impact Paths
 

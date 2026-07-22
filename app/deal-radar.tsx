@@ -53,6 +53,7 @@ export function DealRadar() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedStoreId, setSelectedStoreId] = useState("");
   const [retailerFilter, setRetailerFilter] = useState<Retailer | "">("");
+  const [newOnly, setNewOnly] = useState(false);
   const [sort, setSort] = useState<SortOption>("price-asc");
   const [categoryPickerOpen, setCategoryPickerOpen] = useState(false);
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -168,8 +169,9 @@ export function DealRadar() {
         sort,
         nearbyStores,
         storeId: selectedStoreId,
+        newOnly,
       }),
-    [allDeals, search, selectedCategory, retailerFilter, sort, nearbyStores, selectedStoreId],
+    [allDeals, search, selectedCategory, retailerFilter, sort, nearbyStores, selectedStoreId, newOnly],
   );
 
   // Only the current filter/search/sort/category/store selection resets how
@@ -178,7 +180,7 @@ export function DealRadar() {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [search, selectedCategory, retailerFilter, sort, selectedStoreId]);
+  }, [search, selectedCategory, retailerFilter, sort, selectedStoreId, newOnly]);
 
   const pagedDeals = useMemo(() => visibleDeals.slice(0, visibleCount), [visibleDeals, visibleCount]);
   const hasMore = pagedDeals.length < visibleDeals.length;
@@ -316,6 +318,17 @@ export function DealRadar() {
               selectedStoreId={selectedStoreId}
               onSelect={setSelectedStoreId}
             />
+            <Button
+              id="new-today-toggle"
+              type="button"
+              variant={newOnly ? "solid" : "soft"}
+              color={newOnly ? "ruby" : "gray"}
+              size="2"
+              aria-pressed={newOnly}
+              onClick={() => setNewOnly((current) => !current)}
+            >
+              New today
+            </Button>
             <IconButton
               id="favorite-category-button"
               type="button"

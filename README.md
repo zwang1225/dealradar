@@ -3,9 +3,9 @@
 A deals/stock tracker spanning multiple Ontario retailers — hence the name
 isn't liquor-specific, even though LCBO was the first source. Next.js (App
 Router, TypeScript) frontend, mostly client-rendered, with a small
-Postgres-backed API for preferences (email-verified via magic link) and
-thumbs-up/down feedback. Deployed on Vercel, gated by Vercel Authentication
-since this is a single-user tool, not a public product.
+Postgres-backed API for preferences (freeform notes) and thumbs-up/down
+feedback. Deployed on Vercel, gated by Vercel Authentication since this is a
+single-user tool, not a public product.
 
 **Today**: LCBO is live. Best Buy support is written but parked — see below.
 The data layer (`scripts/`, `public/data/*.json`) is per-retailer — each
@@ -75,28 +75,6 @@ data flow from LCBO's API through to what renders on screen, and why it's
 shaped the way it is. See [`docs/roadmap.md`](docs/roadmap.md) for what's
 shipped vs. parked.
 
-## Email verification (parked)
-
-Written and builds clean, but not yet committed — see
-[`docs/roadmap.md`](docs/roadmap.md). Once shipped: setting a notification
-email on `/preferences` won't take effect immediately — it'll send a magic
-link to that address, and only activate it once clicked. This applies every
-time the email is changed, not just once; the previously-verified address
-stays active until a new one is confirmed.
-
-Needs `RESEND_API_KEY` and `RESEND_FROM` set as **Vercel project**
-environment variables (Settings → Environment Variables) — this fires from
-the deployed app itself, not CI. Also confirm "Enable access to System
-Environment Variables" is checked in the Vercel project settings, since the
-verification link is built from Vercel's `VERCEL_PROJECT_PRODUCTION_URL`.
-
-## Daily picks email (parked)
-
-`scripts/notify.mjs` is written and tested but not yet wired up with real
-API keys or deployed — parked while deciding on LLM billing (see
-`docs/data-architecture.md`'s "LLM picks + email" section for the intended
-design and the required secrets once it's resumed).
-
 ## Running locally
 
 ```bash
@@ -115,7 +93,3 @@ database:
 2. Copy `.env.example` to `.env.local` and fill in `DATABASE_URL` from that
    same dashboard.
 3. `npm run db:migrate` (once, to create the tables).
-
-To test email verification locally, also fill in `RESEND_API_KEY`/
-`RESEND_FROM` in `.env.local` — saving a new email on `/preferences` sends a
-real email, there's no dry-run mode.
